@@ -1,3 +1,17 @@
+/* Reveal Functionality */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* ------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +19,6 @@
 }
 
 .container_main_for_header {
-    background-color: royalblue;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -111,6 +124,44 @@
     #menu_icon {
         display: block;
         cursor: pointer;
+    }
+    .container_main_for_header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        justify-content: center;
+    }
+    .container_top_for_header {
+        display: flex;
+        align-items: center;
+        background-color: #1F2937;
+        height: 6vw;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .navigators {
+        display: none;
+    }
+    
+    .login_signup_buttons {
+        display: none;
+    }
+    #menu_icon {
+        display: block;
+        cursor: pointer;
+    }
+    .container_main_for_header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        justify-content: center;
+    }
+    .container_top_for_header {
+        display: flex;
+        align-items: center;
+        background-color: #1F2937;
+        height: 6vw;
+        padding: 0 20px;
     }
 }
 
@@ -285,6 +336,7 @@
     #recommendation_cards {
         flex-direction: column;
         margin: 2vw calc(100% - 82vw);
+        width: 0%;
     }
     .recommendation_card {
         width: 60vw;
