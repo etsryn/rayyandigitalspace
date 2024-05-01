@@ -170,6 +170,18 @@
         height: 6vw;
         padding: 0 20px;
     }
+    .container_top_for_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1F2937;
+        height: 10vw;
+        padding: 0 20px;
+    }
+    #logo p {
+        color: #D8B4FE;
+        font-size: 5vw;
+    }
 }
 
 /* Media Query for Navigation Bar Ends*/
@@ -258,6 +270,20 @@
         max-height: 26.3vh;
         display: block;
         transition: all 0.7s ease-out;
+    }
+    .content_page_first .division_content_page_first_left #title {
+        font-size: 2.5vw;
+    }
+    .content_page_first .division_content_page_first_left #title #h_2 {
+        font-size: 3.5vw;
+        margin-top: 4.5vw;
+        margin-bottom: 4.5vw;
+    }
+    .content_page_first .division_content_page_first_left #title p {
+        font-size: 2.2vw;
+        text-align: center;
+        line-height: 3vw;
+        min-width: 85%;
     }
 }
 
@@ -398,21 +424,17 @@
 @media (max-width: 360px) {
     #recommendation_cards {
         flex-direction: column;
-        margin: 2vw calc(100% - 82vw);
-        width: 0%;
-        margin: 9vh 0vh 0vh 0vh;
+        margin: 25vw calc(100% - 82vw) 0vh 10vh;
+        width: 100%;
     }
     .recommendation_card {
-        width: 25vw;
-        margin: 1vw 5vw;
+        width: 70vw;
     }  
-    #recommendation_cards #recommendation_card_second_child {
-        margin-left: 5vw;
-    }
     .heading_as_separator #h_1 {
         width: 100%;
         height: 2.5vw;
-        margin-top: 12vw;
+        margin-top: 22vw;
+        font-size: 3vh;
     }
     .content_page_second {
         width: 100%;
@@ -422,11 +444,11 @@
     .content_page_first {
         height: 22.3vw;
     }
-    .content_page_first {
+    /* .content_page_first {
         width: 100%;
     }
     .content_page_second {
         width: 100%;
-    }
+    } */
 }
 /* Media Query for Recommendation Card Ends*/
