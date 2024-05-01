@@ -434,7 +434,7 @@
         width: 100%;
         height: 2.5vw;
         margin-top: 22vw;
-        font-size: 3vh;
+        font-size: 2vh;
     }
     .content_page_second {
         width: 100%;
@@ -444,11 +444,11 @@
     .content_page_first {
         height: 22.3vw;
     }
-    /* .content_page_first {
+    .content_page_first {
         width: 100%;
     }
     .content_page_second {
         width: 100%;
-    } */
+    }
 }
 /* Media Query for Recommendation Card Ends*/
