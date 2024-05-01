@@ -180,7 +180,7 @@
     }
     #logo p {
         color: #D8B4FE;
-        font-size: 5vw;
+        font-size: 7vw;
     }
 }
 
@@ -258,6 +258,20 @@
         display: block;
         transition: all 0.7s ease-out;
     }
+    .content_page_first .division_content_page_first_left #title #h_1 {
+        font-size: 4.5vw;
+    }
+    .content_page_first .division_content_page_first_left #title #h_2 {
+        font-size: 3.5vw;
+        margin-top: 4.5vw;
+        margin-bottom: 4.5vw;
+    }
+    .content_page_first .division_content_page_first_left #title p {
+        font-size: 2.2vw;
+        text-align: center;
+        line-height: 3vw;
+        min-width: 85%;
+    }
 }
 
 @media (max-width: 360px) {
@@ -271,8 +285,8 @@
         display: block;
         transition: all 0.7s ease-out;
     }
-    .content_page_first .division_content_page_first_left #title {
-        font-size: 2.5vw;
+    .content_page_first .division_content_page_first_left #title #h_1 {
+        font-size: 4.5vw;
     }
     .content_page_first .division_content_page_first_left #title #h_2 {
         font-size: 3.5vw;
@@ -396,7 +410,7 @@
 @media (max-width: 600px) {
     #recommendation_cards {
         flex-direction: column;
-        margin: 2vw calc(100% - 82vw);
+        margin: 28vw calc(100% - 82vw);
         width: 0%;
     }
     .recommendation_card {
@@ -409,11 +423,12 @@
     .heading_as_separator #h_1 {
         width: 100%;
         height: 2.5vw;
-        margin-top: 0vw;
+        margin-top: 25vw;
     }
     .content_page_second {
         width: 100%;
         padding-top: 0px;
+        height: 100.3vh;
     }
 
     .content_page_first {
