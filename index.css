@@ -157,6 +157,7 @@
     #menu_icon {
         display: block;
         cursor: pointer;
+        font-size: 3vh;
     }
     .container_main_for_header {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -443,11 +444,11 @@
 @media (max-width: 360px) {
     #recommendation_cards {
         flex-direction: column;
-        margin: 35vw calc(100% - 82vw) 0vh 10vh;
+        margin: 35vw calc(100% - 82vw) 0vh 7vh;
         width: 100%;
     }
     .recommendation_card {
-        width: 70vw;
+        width: 75vw;
     }  
     .heading_as_separator #h_1 {
         width: 100%;
