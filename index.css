@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_main_for_header {
+    background-color: royalblue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    background-color: #1F2937;
+    padding: 1.1vw;
+    margin-left: 2vw;
+}
+
+#logo p {
+    color: #D8B4FE;
+    font-size: 3vw;
+}
+
+.container_top_for_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2937;
+    height: 6vw;
+    padding: 0 20px;
+}
+
+.navigation_right {
+    display: flex;
+    align-items: center;
+}
+
+.navigators ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav_link_buttons {
+    margin-right: 10px;
+    background: transparent;
+}
+
+.nav_link_buttons a {
+    text-decoration: none;
+    color: #D8B4FE;
+    padding: 0.65vw 1vw;
+    border-radius: 10px;
+    display: block;
+    font-size: 1.1vw;
+}
+
+.login_signup_buttons button {
+    padding: 0.65vw 1vw;
+    background-color: #C084FC; /* Matching theme color */
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 1.1vw;
+    color: white; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.login_signup_buttons button:hover {
+    background-color: #A56CFD; /* Darker shade on hover */
+}
+
+#separator_line {
+    width: 100%;
+    height: 0.08vh;
+    background-color: #fff;
+}
+
+.container_bottom_for_header {
+    background-color: #1F2937;
+    height: 2.5vw;
+    text-align: center;
+    padding: 0.7vw;
+}
+
+#live_running_updates {
+    background-color: #1F2937;
+    color: rgb(156 163 175);
+    font-size: 1.05vw;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#menu_icon {
+    color: #D8B4FE; /* Icon color */
+    font-size: 2vw; /* Adjust icon size */
+    margin-right: 20px; /* Adjust spacing from other elements */
+    display: none;
+}
+
+
+/* Media Query for Navigation Bar */
+
+@media (max-width: 600px) {
+    .navigators {
+        display: none;
+    }
+    
+    .login_signup_buttons {
+        display: none;
+    }
+    #menu_icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Media Query for Navigation Bar Ends*/
+
+.content_page_first {
+    background-color: #111827;
+    width: 100%;
+    height: 26.3vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.division_content_page_first_left {
+    width: 55%;
+    height: 25vw;
+}
+
+.division_content_page_first_left #title {
+    padding: 4vw 4vw;
+    font-size: 1.5vw;
+}
+
+.division_content_page_first_right {
+    width: 45%;
+    height: 25vw;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.division_content_page_first_right img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(0.6);
+    background: transparent;
+}
+
+.content_page_first .division_content_page_first_left #title {
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+.content_page_first .division_content_page_first_left #title span {
+    color: #9333EA;
+}
+
+.content_page_first .division_content_page_first_left #title #h_2 {
+    margin-top: 1.5vw;
+    color: #fff;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.content_page_first .division_content_page_first_left #title p {
+    margin-top: 2vw;
+    color: rgb(156 163 175);
+    font-size: 1.2vw;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6vw;
+}
+
+/* Media Query for Image Bar */
+
+@media (max-width: 600px) {
+    .division_content_page_first_right {
+        display: none;
+    }
+
+    .content_page_first {
+        width: 100%;
+        max-height: 26.3vh;
+        display: block;
+        transition: all 0.7s ease-out;
+    }
+}
+
+/* Media Query for Image Bar Ends*/
+
+/* Media Query for Intro Part */
+
+@media (max-width: 600px) {
+    .division_content_page_first_left {
+        width: 100%;
+        height: 25vw;
+        text-align: center;
+        transition: all 0.7s ease-out;
+    }
+
+    .content_page_first .division_content_page_first_left #title p {
+        margin: 2vw auto;
+        width: 75%;
+    }
+}
+
+/* Media Query for Intro Part Ends*/
+
+.content_page_second {
+    /* background-color: #fff; */
+    background-color: #111827;
+    width: 100%;
+    height: 52.3vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+}
+
+.heading_as_separator {
+    background: transparent;
+    width: 100% ;
+    height: 3vw;
+}
+
+.heading_as_separator #h_1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: transparent;
+    width: 100%;
+    height: 2.5vw;
+    font-size: 1.7vw;
+    justify-content: center;
+    margin-top: 0.5vw;
+    color: #9333EA;
+}
+
+#recommendation_cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.recommendation_card svg {
+    width: 1.7vw;
+}
+
+.recommendation_card {
+    min-width: 40vw;
+    height: auto;
+    background-color: #374151;
+    padding: 1.5vw;
+    color: #9CA3AF;
+    border-radius: 5px;
+    margin: 3vw 2vw;
+}   
+#recommendation_cards #recommendation_card_second_child {
+    margin-left: 1vw;
+}
+
+#recommendation_cards .recommendation_card p {
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    font-size: 1.1vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 3px;
+}
+
+#recommendation_cards .recommendation_card h3 {
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+#recommendation_cards .recommendation_card h4 {
+    font-size: 1vw;
+}
+
+/* Media Query for Recommendation Card */
+
+@media (max-width: 600px) {
+    #recommendation_cards {
+        flex-direction: column;
+        margin: 2vw calc(100% - 82vw);
+    }
+    .recommendation_card {
+        width: 60vw;
+        margin: 1vw 2vw;
+    }  
+    #recommendation_cards #recommendation_card_second_child {
+        margin-left: 2vw;
+    }
+    .heading_as_separator #h_1 {
+        width: 100%;
+        height: 2.5vw;
+        margin-top: 0vw;
+    }
+    .content_page_second {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .content_page_first {
+        height: 22.3vw;
+    }
+}
+
+/* Media Query for Recommendation Card Ends*/
