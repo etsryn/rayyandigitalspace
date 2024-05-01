@@ -1,5 +1,5 @@
 /* Reveal Functionality */
-.reveal {
+/* .reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -9,7 +9,7 @@
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
-}
+} */
 /* ------------------- */
 
 * {
