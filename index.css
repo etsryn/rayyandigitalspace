@@ -140,6 +140,13 @@
 }
 
 @media (max-width: 360px) {
+    html, body {
+        width: auto;
+        height: 100%;
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove default padding */
+        overflow-x: hidden; /* Optional: hide horizontal scrollbar */
+    }
     .navigators {
         display: none;
     }
@@ -153,7 +160,7 @@
     }
     .container_main_for_header {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 50%;
+        width: 100%;
         justify-content: center;
     }
     .container_top_for_header {
@@ -416,10 +423,10 @@
         height: 22.3vw;
     }
     .content_page_first {
-        width: 50%;
+        width: 100%;
     }
     .content_page_second {
-        width: 50%;
+        width: 100%;
     }
 }
 /* Media Query for Recommendation Card Ends*/
