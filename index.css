@@ -404,7 +404,22 @@
     }
     .recommendation_card {
         width: 75vw;
+        padding-left: 5vw;
+        padding-bottom: 5vw;
     }  
+    #recommendation_cards .recommendation_card svg {
+        width: 2.6vw;
+    }
+    #recommendation_cards .recommendation_card p {
+       font-size: 3vw;
+    }
+    #recommendation_cards .recommendation_card h3 {
+        margin-top: 5.5vw;
+        font-size: 3vw;
+    }
+    #recommendation_cards .recommendation_card h4 {
+        font-size: 2.4vw;
+    }
     .heading_as_separator #h_1 {
         width: 100%;
         height: 2.5vw;
