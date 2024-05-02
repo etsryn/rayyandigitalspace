@@ -110,87 +110,6 @@
     display: none;
 }
 
-
-/* Media Query for Navigation Bar */
-
-@media (max-width: 600px) {
-    .navigators {
-        display: none;
-    }
-    
-    .login_signup_buttons {
-        display: none;
-    }
-    #menu_icon {
-        display: block;
-        cursor: pointer;
-    }
-    .container_main_for_header {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        justify-content: center;
-    }
-    .container_top_for_header {
-        display: flex;
-        align-items: center;
-        background-color: #1F2937;
-        height: 6vw;
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 360px) {
-    html, body {
-        width: auto;
-        height: 100%;
-        margin: 0; /* Remove default margins */
-        padding: 0; /* Remove default padding */
-        overflow-x: hidden; /* Optional: hide horizontal scrollbar */
-    }
-    .navigators {
-        display: none;
-    }
-    
-    .login_signup_buttons {
-        display: none;
-    }
-    #menu_icon {
-        display: block;
-        cursor: pointer;
-        font-size: 3vh;
-    }
-    .container_main_for_header {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        justify-content: center;
-    }
-    .container_bottom_for_header {
-        background-color: #1F2937;
-        height: 5.5vw;
-        text-align: center;
-        padding-top: 1.5vw;
-    }
-    .container_top_for_header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #1F2937;
-        height: 15vw;
-        padding: 0 20px;
-    }
-    #live_running_updates {
-        font-size: 2.5vw;
-        font-weight: 500;
-        letter-spacing: 2px;
-    }
-    #logo p {
-        color: #D8B4FE;
-        font-size: 7vw;
-    }
-}
-
-/* Media Query for Navigation Bar Ends*/
-
 .content_page_first {
     background-color: #111827;
     width: 100%;
@@ -250,99 +169,7 @@
     line-height: 1.6vw;
 }
 
-/* Media Query for Image Bar */
-
-@media (max-width: 600px) {
-    .division_content_page_first_right {
-        display: none;
-    }
-
-    .content_page_first {
-        width: 100%;
-        max-height: 26.3vh;
-        display: block;
-        transition: all 0.7s ease-out;
-    }
-    .content_page_first .division_content_page_first_left #title #h_1 {
-        font-size: 4.5vw;
-    }
-    .content_page_first .division_content_page_first_left #title #h_2 {
-        font-size: 3.5vw;
-        margin-top: 4.5vw;
-        margin-bottom: 4.5vw;
-    }
-    .content_page_first .division_content_page_first_left #title p {
-        font-size: 2.2vw;
-        text-align: center;
-        line-height: 3vw;
-        min-width: 85%;
-    }
-}
-
-@media (max-width: 360px) {
-    .division_content_page_first_right {
-        display: none;
-    }
-
-    .content_page_first {
-        width: 100%;
-        max-height: 26.3vh;
-        display: block;
-        transition: all 0.7s ease-out;
-    }
-    .content_page_first .division_content_page_first_left #title #h_1 {
-        font-size: 3.7vw;
-    }
-    .content_page_first .division_content_page_first_left #title #h_2 {
-        font-size: 3.5vw;
-        margin-top: 4.5vw;
-        margin-bottom: 4.5vw;
-    }
-    .content_page_first .division_content_page_first_left #title p {
-        font-size: 2.2vw;
-        text-align: center;
-        line-height: 3vw;
-        min-width: 85%;
-    }
-}
-
-/* Media Query for Image Bar Ends*/
-
-/* Media Query for Intro Part */
-
-@media (max-width: 600px) {
-    .division_content_page_first_left {
-        width: 100%;
-        height: 25vw;
-        text-align: center;
-        transition: all 0.7s ease-out;
-    }
-
-    .content_page_first .division_content_page_first_left #title p {
-        margin: 2vw auto;
-        width: 75%;
-    }
-}
-
-@media (max-width: 360px) {
-    
-    .division_content_page_first_left {
-        width: 100%;
-        height: 25vw;
-        text-align: center;
-        transition: all 0.7s ease-out;
-    }
-
-    .content_page_first .division_content_page_first_left #title p {
-        margin: 2vw auto;
-        width: 75%;
-    }
-}
-
-/* Media Query for Intro Part Ends*/
-
 .content_page_second {
-    /* background-color: #fff; */
     background-color: #111827;
     width: 100%;
     height: 52.3vh;
@@ -388,9 +215,6 @@
     color: #9CA3AF;
     border-radius: 5px;
     margin: 3vw 2vw;
-}   
-#recommendation_cards #recommendation_card_second_child {
-    margin-left: 1vw;
 }
 
 #recommendation_cards .recommendation_card p {
@@ -410,17 +234,70 @@
     font-size: 1vw;
 }
 
-/* Media Query for Recommendation Card */
+/* Media Queries Starts */
 
-@media (max-width: 600px) {
+@media (min-width: 361px) and (max-width: 600px) {
+    .navigators {
+        display: none;
+    }
+    
+    .login_signup_buttons {
+        display: none;
+    }
+    #menu_icon {
+        display: block;
+        cursor: pointer;
+    }
+    .container_main_for_header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        justify-content: center;
+    }
+    .container_top_for_header {
+        display: flex;
+        align-items: center;
+        background-color: #1F2937;
+        height: 6vw;
+        padding: 0 20px;
+    }
+    .division_content_page_first_right {
+        display: none;
+    }
+
+  
+    .content_page_first .division_content_page_first_left #title #h_1 {
+        font-size: 4.5vw;
+    }
+    .content_page_first .division_content_page_first_left #title #h_2 {
+        font-size: 3.5vw;
+        margin-top: 4.5vw;
+        margin-bottom: 4.5vw;
+    }
+    .content_page_first .division_content_page_first_left #title p {
+        font-size: 2.2vw;
+        text-align: center;
+        line-height: 3vw;
+        min-width: 85%;
+    }
+    .division_content_page_first_left {
+        width: 100%;
+        height: 25vw;
+        text-align: center;
+        transition: all 0.7s ease-out;
+    }
+
+    .content_page_first .division_content_page_first_left #title p {
+        margin: 2vw auto;
+        width: 75%;
+    }
     #recommendation_cards {
         flex-direction: column;
-        margin: 28vw calc(100% - 82vw);
+        margin: 10vw calc(100% - 82vw);
         width: 0%;
     }
     .recommendation_card {
         width: 60vw;
-        margin: 1vw 2vw;
+        margin: 3vw 2vw;
     }  
     #recommendation_cards #recommendation_card_second_child {
         margin-left: 2vw;
@@ -428,23 +305,101 @@
     .heading_as_separator #h_1 {
         width: 100%;
         height: 2.5vw;
-        margin-top: 25vw;
+        padding-top: 5vw;
+        font-size: 4.2vw;
+    }
+    .content_page_first {
+        width: 100%;
+        min-height: 40vw;
+        display: block;
+        transition: all 0.7s ease-out;
     }
     .content_page_second {
         width: 100%;
-        padding-top: 0px;
-        height: 100.3vh;
-    }
-
-    .content_page_first {
-        height: 22.3vw;
+        height: 103vh;
+        display: block;
     }
 }
 
 @media (max-width: 360px) {
+    html, body {
+        width: auto;
+        height: 100%;
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove default padding */
+        /* overflow-x: hidden; Optional: hide horizontal scrollbar */
+    }
+    .navigators {
+        display: none;
+    }
+    
+    .login_signup_buttons {
+        display: none;
+    }
+    #menu_icon {
+        display: block;
+        cursor: pointer;
+        font-size: 3vh;
+    }
+    .container_main_for_header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        justify-content: center;
+    }
+    .container_bottom_for_header {
+        background-color: #1F2937;
+        height: 5.5vw;
+        text-align: center;
+        padding-top: 1.5vw;
+    }
+    .container_top_for_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1F2937;
+        height: 15vw;
+        padding: 0 20px;
+    }
+    #live_running_updates {
+        font-size: 2.5vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    #logo p {
+        color: #D8B4FE;
+        font-size: 7vw;
+    }
+    .division_content_page_first_right {
+        display: none;
+    }
+    .content_page_first .division_content_page_first_left #title #h_1 {
+        font-size: 3.7vw;
+    }
+    .content_page_first .division_content_page_first_left #title #h_2 {
+        font-size: 3.5vw;
+        margin-top: 4.5vw;
+        margin-bottom: 4.5vw;
+    }
+    .content_page_first .division_content_page_first_left #title p {
+        font-size: 2.2vw;
+        text-align: center;
+        line-height: 3vw;
+        min-width: 85%;
+    }
+    .division_content_page_first_left {
+        width: 100%;
+        height: 25vw;
+        text-align: center;
+        transition: all 0.7s ease-out;
+    }
+
+    .content_page_first .division_content_page_first_left #title p {
+        margin: 2vw auto;
+        width: 75%;
+    }
     #recommendation_cards {
         flex-direction: column;
-        margin: 35vw calc(100% - 82vw) 0vh 7vh;
+        padding: 5vw 0vw 0vw 10vw;
         width: 100%;
     }
     .recommendation_card {
@@ -453,22 +408,17 @@
     .heading_as_separator #h_1 {
         width: 100%;
         height: 2.5vw;
-        margin-top: 32vw;
-        font-size: 2vh;
-    }
-    .content_page_second {
-        width: 100%;
-        padding-top: 0px;
-    }
-
-    .content_page_first {
-        height: 22.3vw;
+        font-size: 4vw;
     }
     .content_page_first {
         width: 100%;
+        min-height: 40vw;
+        display: block;
+        transition: all 0.7s ease-out;
     }
     .content_page_second {
         width: 100%;
+        height: 103vh;
+        display: block;
     }
 }
-/* Media Query for Recommendation Card Ends*/
