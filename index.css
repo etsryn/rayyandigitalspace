@@ -284,6 +284,84 @@ header .container_main_for_header {
     font-size: 1vw;
 }
 
+/* Drop-Down */
+#nav_options {
+    position: absolute;
+    width: 15vw;
+    height: auto; /* Change height to auto for responsiveness */
+    padding: 1vw;
+    background-color: #111827;
+    z-index: 3;
+    right: 5.8vw;
+    flex-direction: column;
+    list-style: none;
+    border: 1px solid white;
+    display: none;
+}
+
+#horizontal_line_in_option_drop {
+    width: 100%;
+    height: 0.1vw;
+    background-color: #fff;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#nav_options button {
+    border: none;
+}
+
+#nav_options button:hover {
+    box-shadow: 0px 0px 5px 0.1px #9333EA; /* Adjust values as needed */
+}
+
+#nav_options #header_of_option_drop svg {
+    cursor: pointer;
+    color: #fff;
+    width: 2vw;
+}
+
+#header_of_option_drop {
+    display: flex;
+    flex-direction: row;
+}
+
+#header_of_option_drop p {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: #fff;
+    padding-top: 0.5vw;
+}
+
+#nav_options a {
+    font-size: 1.1vw;
+}
+
+#nav_options #header_of_option_drop p {
+    font-size: 1.1vw;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    #nav_options {
+        width: 20%;
+        height: auto; /* Change height to auto for responsiveness */
+        right: 0; /* Reset right property for full width */
+    }
+
+    #header_of_option_drop p, #nav_options a {
+        font-size: 1.1vw; /* Adjust font size for smaller screens */
+    }
+    #header_of_option_drop {
+        align-items: center;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    #nav_options #header_of_option_drop svg {
+        width: 2vw;
+    }
+}
+
 /* Media Queries Starts */
 
 @media (min-width: 361px) and (max-width: 700px) {
@@ -369,6 +447,11 @@ header .container_main_for_header {
         height: 103vh;
         display: block;
     }
+    #nav_options {
+        /* display: flex; */
+        margin-right: 7.9vh;
+    }
+
 }
 
 @media (max-width: 360px) {
@@ -475,6 +558,10 @@ header .container_main_for_header {
         width: 100%;
         height: 2.5vw;
         font-size: 4vw;
+    }
+    #nav_options {
+        margin-right: 7.9vh;
+        width: 30vw;
     }
     .content_page_first {
         width: 100%;
