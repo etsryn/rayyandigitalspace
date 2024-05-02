@@ -561,7 +561,18 @@ header .container_main_for_header {
     }
     #nav_options {
         margin-right: 7.9vh;
-        width: 30vw;
+        width: 40vw;
+        height: 60vw;
+    }
+    #header_of_option_drop p, #nav_options a {
+        font-size: 3.8vw;
+            padding-top: 1vw;
+    }
+    #header_of_option_drop p{
+        display: none;
+    }
+    #nav_options #header_of_option_drop svg {
+        width: 5vw;
     }
     .content_page_first {
         width: 100%;
