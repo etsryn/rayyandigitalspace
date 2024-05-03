@@ -602,6 +602,7 @@ input[type="submit"]:hover {
 		transition: all 3s ease;
 	}
 }
+
 @media (max-width: 360px) {
 	html, body {
 		width: auto;
@@ -653,6 +654,8 @@ input[type="submit"]:hover {
 	.division_content_page_first_right {
 		width: 100%;
 		padding-top: 20vw;
+		/* background-color: red; */
+		height: 152.3vh;
 	}
 	.division_content_page_first_left {
 		width: 100%;
@@ -703,7 +706,7 @@ input[type="submit"]:hover {
 	}
 	.content_page_first {
 		width: 100%;
-		min-height: 100%;
+		height: auto;
 		display: flex;
 		flex-direction: column;
 		transition: all 0.7s ease-out;
