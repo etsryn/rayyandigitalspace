@@ -659,7 +659,7 @@ input[type="submit"]:hover {
 		position: absolute;
 		display: none;
 		flex-direction: column;
-		width: 34vw;
+		width: 55vw;
 		height: auto;
 		padding: 1vw;
 		background-color: #111827;
@@ -678,15 +678,45 @@ input[type="submit"]:hover {
 		font-family: cursive;
 	}
 	#nav_options #header_of_option_drop p {
-		font-size: 1.5vw;
+		font-size: 2.5vw;
 	}
 	#nav_options #header_of_option_drop svg {
-		width: 3vw;
+		width: 6vw;
 	}
 	#nav_options .nav_link_buttons a {
-		font-size: 2vw;
-		font-family: cursive;
+		font-size: 4vw;
+		padding: 2vw 0vw;
+		margin: 1vw;
+		font-family: 'Times New Roman', Times, serif;
 	}
+	.dropdown_login_signup_buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 2vw;
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+		margin-right: 1vw;
+	}
+	.dropdown_login_signup_buttons button {
+		padding: 1.8vw 2.2vw;
+		background-color: #c084fc;
+		border: none;
+		border-radius: 5px;
+		margin-left: 1.1vw;
+		font-size: 3.5vw;
+		font-family: 'Times New Roman', Times, serif;
+		text-align: center;
+		justify-content: center;
+		color: white;
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+	.dropdown_login_signup_buttons button:hover {
+		background-color: #a56cfd;
+		transform: translateY(-2px);
+		box-shadow: -4 -4px 5px rgba(0, 0, 0, 1);
+	}
+	/* x */
 	.container_main_for_header .container_top_for_header {
 		padding-top: 1vw;
 		height: 12vw;
