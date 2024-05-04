@@ -178,15 +178,15 @@ header .container_main_for_header {
 .division_content_page_first_right {
     width: 45%;
     height: 25vw;
-    /* background-color: brown; */
     display: flex;
     justify-content: center;
     align-items: center;
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .division_content_page_first_right img {
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
     filter: brightness(0.6);
     background: transparent;
     z-index: 0;
@@ -391,8 +391,65 @@ header .container_main_for_header {
     .division_content_page_first_right {
         display: none;
     }
-
-  
+    /* Designing SignUp/SugnIn Buttons */
+	.dropdown_login_signup_buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 1vw;
+		margin-top: 1vw;
+	}
+	.dropdown_login_signup_buttons button {
+		padding: 1vw 1.5vw;
+		background-color: #c084fc;
+		border: none;
+		border-radius: 5px;
+		margin-left: 1.1vw;
+		font-size: 1.6vw;
+		font-family: cursive;
+		text-align: center;
+		justify-content: center;
+		color: white;
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+	.dropdown_login_signup_buttons button:hover {
+		background-color: #a56cfd;
+		transform: translateY(-2px);
+		box-shadow: -4 -4px 5px rgba(0, 0, 0, 1);
+	}
+	/* Designing DropDown Box Structure */
+	#nav_options {
+		position: absolute;
+		display: none;
+		flex-direction: column;
+		width: 34vw;
+		height: auto;
+		padding: 1vw;
+		background-color: #111827;
+		z-index: 3;
+		right: 4.9vw;
+		list-style: none;
+		border: 1px solid white;
+		border-radius: 5px;
+	}
+	#nav_options #header_of_option_drop {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 1vw;
+		padding-top: 1vw;
+		padding-bottom: 1vw;
+		font-family: cursive;
+	}
+	#nav_options #header_of_option_drop p {
+		font-size: 1.5vw;
+	}
+	#nav_options #header_of_option_drop svg {
+		width: 3vw;
+	}
+	#nav_options .nav_link_buttons a {
+		font-size: 2vw;
+		font-family: cursive;
+	}
     .content_page_first .division_content_page_first_left #title #h_1 {
         font-size: 4.5vw;
     }
@@ -447,11 +504,6 @@ header .container_main_for_header {
         height: 103vh;
         display: block;
     }
-    #nav_options {
-        /* display: flex; */
-        margin-right: 7.9vh;
-    }
-
 }
 
 @media (max-width: 360px) {
@@ -559,22 +611,69 @@ header .container_main_for_header {
         height: 2.5vw;
         font-size: 4vw;
     }
-    #nav_options {
-        border-radius: 5px;
-        margin-right: 7.9vh;
-        width: 40vw;
-        height: 60vw;
-    }
-    #header_of_option_drop p, #nav_options a {
-        font-size: 3.8vw;
-            padding-top: 1vw;
-    }
-    #header_of_option_drop p{
-        display: none;
-    }
-    #nav_options #header_of_option_drop svg {
-        width: 5vw;
-    }
+    /* Designing SignUp/SugnIn Buttons */
+	.dropdown_login_signup_buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 2vw;
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+		margin-right: 1vw;
+	}
+	.dropdown_login_signup_buttons button {
+		padding: 1.8vw 2.2vw;
+		background-color: #c084fc;
+		border: none;
+		border-radius: 5px;
+		margin-left: 1.1vw;
+		font-size: 3.5vw;
+		font-family: 'Times New Roman', Times, serif;
+		text-align: center;
+		justify-content: center;
+		color: white;
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+	.dropdown_login_signup_buttons button:hover {
+		background-color: #a56cfd;
+		transform: translateY(-2px);
+		box-shadow: -4 -4px 5px rgba(0, 0, 0, 1);
+	}
+	/* Designing DropDown Box Structure */
+	#nav_options {
+		position: absolute;
+		display: none;
+		flex-direction: column;
+		width: 55vw;
+		height: auto;
+		padding: 1vw;
+		background-color: #111827;
+		z-index: 3;
+		right: 4.9vw;
+		list-style: none;
+		border: 1px solid white;
+		border-radius: 5px;
+	}
+	#nav_options #header_of_option_drop {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 1vw;
+		padding-top: 1vw;
+		padding-bottom: 1vw;
+		font-family: cursive;
+	}
+	#nav_options #header_of_option_drop p {
+		font-size: 2.5vw;
+	}
+	#nav_options #header_of_option_drop svg {
+		width: 6vw;
+	}
+	#nav_options .nav_link_buttons a {
+		font-size: 4vw;
+		padding: 2vw 0vw;
+		margin: 1vw;
+		font-family: 'Times New Roman', Times, serif;
+	}
     .content_page_first {
         width: 100%;
         min-height: 65vw;
