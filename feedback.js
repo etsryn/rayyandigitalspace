@@ -13,15 +13,15 @@ function reveal() {
     }
 }
 
-// ENDS HERE
+// ENDS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-var toggle_count = 2;
+// For Toggle Button on Index Page Desktop Mode
+var toggle_count_index = 2;
 window.addEventListener('DOMContentLoaded', function() {
     document.getElementById("svgIcon").addEventListener("click", function() {
-        // Your onclick functionality here
-        if(toggle_count%2==0) {
-            toggle_count++;
+        if(toggle_count_index%2==0) {
+            toggle_count_index++;
             document.getElementById("color_change_item_1").style.backgroundColor = "#fff";
             document.getElementById("logo").style.backgroundColor = "#fff";
             document.getElementById("color_change_item_2").style.color = "#7E22CE";
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("color_change_item_15").style.color = "#000";
             document.getElementById("color_change_item_16").style.color = "#000";
         } else {
-            toggle_count++;
+            toggle_count_index++;
             document.getElementById("color_change_item_1").style.backgroundColor = "#1F2937";
             document.getElementById("logo").style.backgroundColor = "#1F2937";
             document.getElementById("color_change_item_2").style.color = "#D8B4FE";
@@ -81,15 +81,13 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// ENDS HERE
+// ENDS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-var toggle_count = 2;
+// For Toggle Button on Index Page Minimized Screen Mode [DropDown Toggle Button]
 window.addEventListener('DOMContentLoaded', function() {
     document.getElementById("svgIcon_").addEventListener("click", function() {
-        // Your onclick functionality here
-        if(toggle_count%2==0) {
-            toggle_count++;
+        if(toggle_count_index%2==0) {
+            toggle_count_index++;
             document.getElementById("color_change_item_1").style.backgroundColor = "#fff";
             document.getElementById("logo").style.backgroundColor = "#fff";
             document.getElementById("color_change_item_2").style.color = "#7E22CE";
@@ -117,7 +115,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("color_change_item_15").style.color = "#000";
             document.getElementById("color_change_item_16").style.color = "#000";
         } else {
-            toggle_count++;
+            toggle_count_index++;
             document.getElementById("color_change_item_1").style.backgroundColor = "#1F2937";
             document.getElementById("logo").style.backgroundColor = "#1F2937";
             document.getElementById("color_change_item_2").style.color = "#D8B4FE";
@@ -144,56 +142,169 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("recommendation_card_second_child").style.color = "#9CA3AF";
             document.getElementById("color_change_item_15").style.color = "#fff";
             document.getElementById("color_change_item_16").style.color = "#fff";
-
         }
     });
 });
 
+// ENDS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-var toggle_dropdown_menu = 2;
+// For Toggle Button on Feedback Page Desktop Mode
+var toggle_count_feedback = 2;
 window.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("menu_3_icon").addEventListener("click", function() {
-        // Your onclick functionality here
-        if(toggle_dropdown_menu%2==0) {
-            toggle_dropdown_menu++;
-            document.getElementById("nav_options").style.display = "flex";
+    document.getElementById("svgIcon").addEventListener("click", function() {
+        if(toggle_count_feedback%2==0) {
+            toggle_count_feedback++;
+            document.getElementById("color_change_item_1").style.backgroundColor = "#fff";
+            document.getElementById("logo").style.backgroundColor = "#fff";
+            document.getElementById("color_change_item_2").style.color = "#7E22CE";
+            document.getElementById("color_change_item_3").style.color = "#000";
+            document.getElementById("color_change_item_4").style.color = "#000";
+            document.getElementById("color_change_item_5").style.color = "#000";
+            document.getElementById("color_change_item_6").style.color = "#000";
+            document.getElementById("color_change_item_7").style.color = "#000";
+            document.getElementById("color_change_item_8").style.color = "#000";
+            document.getElementById("color_change_item_9").style.color = "#000";
+            document.getElementById("svgIcon").style.color = "#9333EA";
+            document.getElementById("separator_line").style.backgroundColor = "#9CA3AF";
+            document.getElementById("color_change_item_10").style.backgroundColor = "#fff";
+            document.getElementById("live_running_updates").style.backgroundColor = "#fff";
+            document.getElementById("live_running_updates").style.color = "#000";
+            document.getElementById("color_change_item_12").style.backgroundColor = "#fff";
+            document.getElementById("color_change_item_13").style.backgroundColor = "#fff";
+            document.getElementById("h_1").style.color = "#000";
+            document.getElementById("h_2").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.4)"
+            document.getElementById("h_2").style.color = "rgba(0,0,0,0.7)"
+            document.getElementById("h_2").style.backgroundColor = "#F3F4F6"
+            document.getElementById("h_2").style.borderRadius = "10px"
+            document.getElementById("container_fb_form").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.4)"
+            document.getElementById("container_fb_form").style.animation = "slideIn 2s ease-in-out"
         } else {
-            toggle_dropdown_menu++;
-            document.getElementById("nav_options").style.display = "none";
+            toggle_count_feedback++;
+            document.getElementById("color_change_item_1").style.backgroundColor = "#1F2937";
+            document.getElementById("logo").style.backgroundColor = "#1F2937";
+            document.getElementById("color_change_item_2").style.color = "#D8B4FE";
+            document.getElementById("color_change_item_3").style.color = "#fff";
+            document.getElementById("color_change_item_4").style.color = "#fff";
+            document.getElementById("color_change_item_5").style.color = "#fff";
+            document.getElementById("color_change_item_6").style.color = "#fff";
+            document.getElementById("color_change_item_7").style.color = "#fff";
+            document.getElementById("color_change_item_8").style.color = "#fff";
+            document.getElementById("color_change_item_9").style.color = "#fff";
+            document.getElementById("svgIcon").style.color = "#fff";
+            document.getElementById("separator_line").style.backgroundColor = "#fff";
+            document.getElementById("color_change_item_10").style.backgroundColor = "#1F2937";
+            document.getElementById("live_running_updates").style.backgroundColor = "#1F2937";
+            document.getElementById("live_running_updates").style.color = "#9CA3AF";
+            document.getElementById("color_change_item_12").style.backgroundColor = "#111827";
+            document.getElementById("color_change_item_13").style.backgroundColor = "#111827";
+            document.getElementById("h_1").style.color = "#fff";
+            document.getElementById("h_2").style.boxShadow = "-4px 4px 10px rgba(0, 0, 255, 0.2)"
+            document.getElementById("h_2").style.color = "rgb(156, 163, 175, 1)"
+            document.getElementById("h_2").style.backgroundColor = "#111827"
+            document.getElementById("h_2").style.borderRadius = "0px"
+            document.getElementById("container_fb_form").style.animation = "slideIn 2s ease-in-out, changeColor 1s infinite"
         }
     });
 });
 
-// ENDS HERE
+// ENDS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// For Toggle Button on Feedback Page Minimized Screen Mode [DropDown Toggle Button]
+var toggle_count_feedback = 2;
+window.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("svgIcon_").addEventListener("click", function() {
+        if(toggle_count_feedback%2==0) {
+            toggle_count_feedback++;
+            document.getElementById("color_change_item_1").style.backgroundColor = "#fff";
+            document.getElementById("logo").style.backgroundColor = "#fff";
+            document.getElementById("color_change_item_2").style.color = "#7E22CE";
+            document.getElementById("color_change_item_3").style.color = "#000";
+            document.getElementById("color_change_item_4").style.color = "#000";
+            document.getElementById("color_change_item_5").style.color = "#000";
+            document.getElementById("color_change_item_6").style.color = "#000";
+            document.getElementById("color_change_item_7").style.color = "#000";
+            document.getElementById("color_change_item_8").style.color = "#000";
+            document.getElementById("color_change_item_9").style.color = "#000";
+            document.getElementById("svgIcon").style.color = "#9333EA";
+            document.getElementById("separator_line").style.backgroundColor = "#9CA3AF";
+            document.getElementById("color_change_item_10").style.backgroundColor = "#fff";
+            document.getElementById("live_running_updates").style.backgroundColor = "#fff";
+            document.getElementById("live_running_updates").style.color = "#000";
+            document.getElementById("color_change_item_12").style.backgroundColor = "#fff";
+            document.getElementById("color_change_item_13").style.backgroundColor = "#fff";
+            document.getElementById("h_1").style.color = "#000";
+            document.getElementById("h_2").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.4)"
+            document.getElementById("h_2").style.color = "rgba(0,0,0,0.7)"
+            document.getElementById("h_2").style.backgroundColor = "#F3F4F6"
+            document.getElementById("h_2").style.borderRadius = "10px"
+            document.getElementById("container_fb_form").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.4)"
+            document.getElementById("container_fb_form").style.animation = "slideIn 2s ease-in-out"
+        } else {
+            toggle_count_feedback++;
+            document.getElementById("color_change_item_1").style.backgroundColor = "#1F2937";
+            document.getElementById("logo").style.backgroundColor = "#1F2937";
+            document.getElementById("color_change_item_2").style.color = "#D8B4FE";
+            document.getElementById("color_change_item_3").style.color = "#fff";
+            document.getElementById("color_change_item_4").style.color = "#fff";
+            document.getElementById("color_change_item_5").style.color = "#fff";
+            document.getElementById("color_change_item_6").style.color = "#fff";
+            document.getElementById("color_change_item_7").style.color = "#fff";
+            document.getElementById("color_change_item_8").style.color = "#fff";
+            document.getElementById("color_change_item_9").style.color = "#fff";
+            document.getElementById("svgIcon").style.color = "#fff";
+            document.getElementById("separator_line").style.backgroundColor = "#fff";
+            document.getElementById("color_change_item_10").style.backgroundColor = "#1F2937";
+            document.getElementById("live_running_updates").style.backgroundColor = "#1F2937";
+            document.getElementById("live_running_updates").style.color = "#9CA3AF";
+            document.getElementById("color_change_item_12").style.backgroundColor = "#111827";
+            document.getElementById("color_change_item_13").style.backgroundColor = "#111827";
+            document.getElementById("h_1").style.color = "#fff";
+            document.getElementById("h_2").style.boxShadow = "-4px 4px 10px rgba(0, 0, 255, 0.2)"
+            document.getElementById("h_2").style.color = "rgb(156, 163, 175, 1)"
+            document.getElementById("h_2").style.backgroundColor = "#111827"
+            document.getElementById("h_2").style.borderRadius = "0px"
+            document.getElementById("container_fb_form").style.animation = "slideIn 2s ease-in-out, changeColor 1s infinite"
+        }
+    });
+});
+
+// ENDS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+var dropdownMenuToggleCount = 0;
+window.addEventListener('DOMContentLoaded', function() {
+    var menuIcon = document.getElementById("menu_3_icon");
+    var navOptions = document.getElementById("nav_options");
+
+    if (menuIcon && navOptions) {
+        menuIcon.addEventListener("click", function() {
+            dropdownMenuToggleCount ^= 1;
+            navOptions.style.display = dropdownMenuToggleCount === 1 ? "flex" : "none";
+        });
+    } else {
+        console.error("Required elements not found.");
+    }
+});
+
+// ENDS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // IF USER ON PC, REDUCED THE SCREEN WIDTH, THEN OF COURSE THE MENU ICON WILL GET VISIBLE, NOW IF USER TAPS IT SO NOW THE DROPDOWN APPEARS, AND NOW IF HE RESIZES THE SCREEEN TO AGAIN LARGER WIDTH THAN 700 PIXELS, THE DROPDOWN WILL STILL BE VISIBLE, SO THE FOLLOWING BETHOD WILL DISAPPPEAR THE DROPDOWN WHEN SCREEN-WIDTH EXCEEDS 700 PIXELS
-
 // Function to handle screen resize
 function handleResize() {
-    // Get the current width of the screen
     const screenWidth = window.innerWidth;
 
-    // Check if the screen width is at a defined pixel value
-    if (screenWidth > 700) {
-        // Do something when the screen width is 800px
+    if (screenWidth > 770) {
         document.getElementById("nav_options").style.display = "none";
-    } else {
-        // Do something else when the screen width is not 800px
-
     }
 }
 
-// Listen for the resize event on the window object
 window.addEventListener('resize', handleResize);
 
 // Initial call to handleResize to handle screen size on page load
 handleResize();
 
-// ENDS HERE
-
+// ENDS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Handling Emails
-
 function sendEmail() {
     var params = {
         from_name : document.getElementById("idname").value,
@@ -206,3 +317,5 @@ function sendEmail() {
         // alert("Succesfully Sent ! : "+res.status); // Uncomment if want to Notify On Webpage
     })
 }
+
+// ENDS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
