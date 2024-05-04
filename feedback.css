@@ -702,6 +702,7 @@ input[type="submit"]:hover {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		gap: 15vw;
 	}
 	/* Now Designing Each Sub-Part of The First Page's Left Content */
 	.division_content_page_first_left {
@@ -716,6 +717,7 @@ input[type="submit"]:hover {
 	}
 
 	.content_page_first .division_content_page_first_left .heading_and_message #h_1 {
+		margin-top: 10vw;
 		font-size: 7vw;
 	}
 	.content_page_first .division_content_page_first_left .heading_and_message #h_2 {
