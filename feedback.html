@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect with Rayyan :: Feedback</title>
+    <title>CwR > Feedback</title>
     <link rel="stylesheet" href="feedback.css">
     <script src="feedback.js"></script>
     <!-- Online CSS Properties -->
@@ -54,6 +54,10 @@
                             <button class="nav_link_buttons"><a href="#" id="color_change_item_7">Know Me</a></button>
                             <button class="nav_link_buttons"><a href="feedback.html" id="color_change_item_8">Feedback</a></button>
                             <button class="nav_link_buttons"><a href="#" id="color_change_item_9">Your Corner</a></button>
+                            <div id="signbtn" class="dropdown_login_signup_buttons">
+                                <button>Log In</button>
+                                <button>Sign Up</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,23 +76,23 @@
     <div class="content_page_first" id="color_change_item_13">
         <div class="division_content_page_first_left" id="color_change_item_12">
             <div class="heading_and_message">
-                <h1>Your <span>Feedback</span> Matters !</h1>
-                <h2>Feedback, where your idea fuels our innovation. Like code, your feedback crafts a symphony of progress. Let your keystrokes shape our shared tomorrow in this digital realm.</h2>
+                <h1 id="h_1">Your <span>Feedback</span> Matters !</h1>
+                <h2 id="h_2">Feedback, where your idea fuels our innovation. Like code, your feedback crafts a symphony of progress. Let your keystrokes shape our shared tomorrow in this digital realm.</h2>
             </div>
         </div>
         <div class="division_content_page_first_right">
-            <div class="container">
+            <div class="container" id="container_fb_form">
                 <div id="loading-overlay" style="display: none;">
                     <div class="loading-spinner"></div>
                 </div>
                 <div id="success-message" style="display: none;">Thank You For Your Feedback</div>                
                 <h2>feedback</h2>
                 <form method="post" class="form-outer" id="myform">
-                  <input type="text" name="name" id="idname" placeholder="Your Name" required>
-                  <input type="tel" name="phone" id="idphone" placeholder="Contact (Without Country Code and Spaces)" required>
-                  <input type="text" name="email" id="idemail" placeholder="Your Email" required>
-                  <textarea name="feedback" id="idmessage" placeholder="Your Feedback" required></textarea>
-                  <input type="submit" name="submitbtn" value="Send Message" onclick="sendEmail()">
+                    <input type="text" name="name" id="idname" placeholder="Your Name" required>
+                    <input type="tel" name="phone" id="idphone" placeholder="Contact (Without Country Code and Spaces)" required>
+                    <input type="text" name="email" id="idemail" placeholder="Your Email" required>
+                    <textarea name="feedback" id="idmessage" placeholder="Your Feedback" required></textarea>
+                    <input type="submit" name="submitbtn" value="Send Message" onclick="sendEmail()">
                 </form>
             </div>
         </div>
@@ -150,7 +154,6 @@
             emailjs.init('EiRTUEWhSSB8G7v3j');
         })();
     </script>
-            
             
 </body>
 </html>
