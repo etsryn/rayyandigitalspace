@@ -481,10 +481,12 @@ input[type="submit"]:hover {
 	.division_content_page_first_right {
 		width: 100%;
 		padding-top: 10px;
+		height: 60vh;
 	}
 	.division_content_page_first_left {
 		width: 100%;
-		height: 55vw;
+		height: 40vh;
+		/* background-color: red; */
 		text-align: center;
 		transition: all 0.7s ease-out;
 		display: flex;
@@ -530,7 +532,7 @@ input[type="submit"]:hover {
 	}
 	.content_page_first {
 		width: 100%;
-		height: auto;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		transition: all 0.7s ease-out;
@@ -651,36 +653,45 @@ input[type="submit"]:hover {
 		color: #d8b4fe;
 		font-size: 7vw;
 	}
-	.division_content_page_first_right {
+	.content_page_first {
 		width: 100%;
-		padding-top: 20vw;
-		/* background-color: red; */
-		height: 152.3vh;
+		height: auto; /* or lese change to 100vh*/
+		display: flex;
+		flex-direction: column;
+		transition: all 0.7s ease-out;
+		padding-top: 15vw;
+		margin: 0vw auto;
 	}
 	.division_content_page_first_left {
 		width: 100%;
-		height: 55vw;
+		height: 30%;
+		/* background-color: red; */
 		text-align: center;
 		transition: all 0.7s ease-out;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-
+	.division_content_page_first_right {
+		/* position: relative; */
+		width: 100%;
+		height: 60%;
+	}
 	.division_content_page_first_left .heading_and_message {
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
-		padding-top: 20vw;
+		gap: 30px;
 	}
 
 	.content_page_first .division_content_page_first_left .heading_and_message h1 {
-		font-size: 6vw;
+		font-size: 8vw;
+		margin-top: 15vw;
 	}
 
 	.division_content_page_first_left .heading_and_message h2 {
-		width: 70%;
-		margin: 0px auto;
+		width: 80%;
+		margin: 0vw auto 10vw auto;
 	}
 	.content_page_first .division_content_page_first_left .heading_and_message h2 {
 		font-size: 2.5vw;
@@ -704,20 +715,11 @@ input[type="submit"]:hover {
 	#nav_options #header_of_option_drop svg {
 		width: 5vw;
 	}
-	.content_page_first {
-		width: 100%;
-		height: auto;
-		display: flex;
-		flex-direction: column;
-		transition: all 0.7s ease-out;
-		padding-top: 15vw;
-		margin: 0vw auto;
-	}
 	.container {
 		position: relative;
-		max-width: 55vw;
-		margin: 3vw auto;
-		padding: 2.3vw 1vw;
+		max-width: 75vw;
+		margin: 10vw auto 15vw auto;
+		padding: 2.3vw 1vw 5vw;
 		border-radius: 10px;
 		background-color: rgb(54, 120, 123, 0.9);
 		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
@@ -734,12 +736,12 @@ input[type="submit"]:hover {
 		color: #fff;
 		letter-spacing: 0.7vw;
 		margin: 3vw auto;
-		font-size: 4.8vw;
+		font-size: 5vw;
 		text-transform: uppercase;
 		transition: all 0.1s ease-in-out;
 	}
 	input[type="text"], input[type="tel"], textarea {
-		width: 48vw;
+		width: 65vw;
 		padding: 3vw;
 		margin: 2vw 0;
 		border: 1px solid #ccc;
@@ -754,11 +756,11 @@ input[type="submit"]:hover {
 		font-size: 2vw; 
 	}
 	input[type="submit"] {
-		width: 48vw;
-		height: 7vw;
+		width: 65vw;
+		height: 10vw;
 		padding: 1vw;
 		font-weight: normal;
-		font-size: 2.5vw;
+		font-size: 3vw;
 		transition: background-color 0.3s;
 	}
 	#success-message {
