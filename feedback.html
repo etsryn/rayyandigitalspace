@@ -84,17 +84,16 @@
                 <div id="success-message" style="display: none;">Thank You For Your Feedback</div>                
                 <h2>feedback</h2>
                 <form method="post" class="form-outer" id="myform">
-                  <input type="text" name="name" placeholder="Your Name" required>
-                  <input type="tel" name="phone" placeholder="Contact (Without Country Code and Spaces)" required>
-                  <input type="text" name="email" placeholder="Your Email" required>
-                  <textarea name="feedback" placeholder="Your Feedback" required></textarea>
-                  <input type="submit" name="submitbtn" value="Send Message">
+                  <input type="text" name="name" id="idname" placeholder="Your Name" required>
+                  <input type="tel" name="phone" id="idphone" placeholder="Contact (Without Country Code and Spaces)" required>
+                  <input type="text" name="email" id="idemail" placeholder="Your Email" required>
+                  <textarea name="feedback" id="idmessage" placeholder="Your Feedback" required></textarea>
+                  <input type="submit" name="submitbtn" value="Send Message" onclick="sendEmail()">
                 </form>
             </div>
         </div>
     </div>
     <!-- Page 1 Content Ends -->
-
 
     <!-- Below JavaScript Code is to Hide Dropdown Menu when user clicks anywhere except for that menu button -->
     <script language="JavaScript">
@@ -143,7 +142,15 @@
         });
     </script>
     
-    
-    
+    <!-- Sending Email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('EiRTUEWhSSB8G7v3j');
+        })();
+    </script>
+            
+            
 </body>
 </html>
