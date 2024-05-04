@@ -190,3 +190,19 @@ window.addEventListener('resize', handleResize);
 handleResize();
 
 // ENDS HERE
+
+
+// Handling Emails
+
+function sendEmail() {
+    var params = {
+        from_name : document.getElementById("idname").value,
+        from_name_body : document.getElementById("idname").value,
+        email : document.getElementById("idemail").value,
+        phone : document.getElementById("idphone").value,
+        message : document.getElementById("idmessage").value
+    }
+    emailjs.send("service_mp4nbme", "template_zrog5pr", params).then(function(res) {
+        // alert("Succesfully Sent ! : "+res.status); // Uncomment if want to Notify On Webpage
+    })
+}
