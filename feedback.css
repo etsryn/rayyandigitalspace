@@ -200,7 +200,7 @@ header .container_main_for_header {
 /* Drop-Down */
 #nav_options {
 	position: absolute;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	width: 15vw;
 	height: auto;
