@@ -166,7 +166,7 @@ header .container_main_for_header {
 .division_content_page_first_right {
 	width: 45%;
 	height: 100%;
-	background-color: #111827;
+	/* background-color: #111827; */
 }
 
 .content_page_first .division_content_page_first_left .heading_and_message h1 {
@@ -632,17 +632,19 @@ input[type="submit"]:hover {
 	.dropdown_login_signup_buttons {
 		display: flex;
 		flex-direction: column;
-		gap: 1vw;
+		gap: 2vw;
 		margin-top: 1vw;
+		margin-bottom: 1vw;
+		margin-right: 1vw;
 	}
 	.dropdown_login_signup_buttons button {
-		padding: 1vw 1.5vw;
+		padding: 1.8vw 2.2vw;
 		background-color: #c084fc;
 		border: none;
 		border-radius: 5px;
 		margin-left: 1.1vw;
-		font-size: 1.6vw;
-		font-family: cursive;
+		font-size: 3.5vw;
+		font-family: 'Times New Roman', Times, serif;
 		text-align: center;
 		justify-content: center;
 		color: white;
@@ -689,33 +691,6 @@ input[type="submit"]:hover {
 		margin: 1vw;
 		font-family: 'Times New Roman', Times, serif;
 	}
-	.dropdown_login_signup_buttons {
-		display: flex;
-		flex-direction: column;
-		gap: 2vw;
-		margin-top: 1vw;
-		margin-bottom: 1vw;
-		margin-right: 1vw;
-	}
-	.dropdown_login_signup_buttons button {
-		padding: 1.8vw 2.2vw;
-		background-color: #c084fc;
-		border: none;
-		border-radius: 5px;
-		margin-left: 1.1vw;
-		font-size: 3.5vw;
-		font-family: 'Times New Roman', Times, serif;
-		text-align: center;
-		justify-content: center;
-		color: white;
-		cursor: pointer;
-		transition: 0.3s ease;
-	}
-	.dropdown_login_signup_buttons button:hover {
-		background-color: #a56cfd;
-		transform: translateY(-2px);
-		box-shadow: -4 -4px 5px rgba(0, 0, 0, 1);
-	}
 	/* x */
 	.container_main_for_header .container_top_for_header {
 		padding-top: 1vw;
@@ -727,6 +702,12 @@ input[type="submit"]:hover {
 	#separator_line {
 		height: 0.13vh;
 	}
+	/* Making Updates (Marquee) Size Bigger */
+	#live_running_updates {
+        font-size: 2.5vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
 	/* Now Changing the Structure From Row to Column */
 	.content_page_first {
 		width: 100%;
@@ -751,7 +732,7 @@ input[type="submit"]:hover {
 		font-size: 7vw;
 	}
 	.content_page_first .division_content_page_first_left .heading_and_message #h_2 {
-		width: 70vw;
+		width: 80vw;
 		margin: 12vw auto;
 		font-size: 2.5vw;
 		text-align: center;
@@ -763,10 +744,10 @@ input[type="submit"]:hover {
 	}
 	.content_page_first .division_content_page_first_right .container {
 		width: 70vw;
-		height: 80vw;
+		height: 93vw;
 	}
 	.content_page_first .division_content_page_first_right .container h2 {
-		font-size: 4vw;
+		font-size: 4.2vw;
 		padding-top: 2vw;
 		padding-bottom: 2vw;
 		letter-spacing: 1.2vw;
@@ -777,7 +758,7 @@ input[type="submit"]:hover {
 		width: 90%;
 		height: 10vw;
 		padding: 3vw;
-		margin: 0.8vw 0;
+		margin: 2vw 0;
 		border: 1px solid #ccc;
 		border-radius: 5px;
 		background-color: #fff;
@@ -800,7 +781,7 @@ input[type="submit"]:hover {
 
 	input[type="submit"] {
 		width: 90%;
-
+		margin: 2vw 0;
 		padding: 3vw;
 		border: none;
 		border-radius: 5px;
