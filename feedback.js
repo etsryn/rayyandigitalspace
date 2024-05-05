@@ -171,6 +171,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("live_running_updates").style.color = "#000";
             document.getElementById("color_change_item_12").style.backgroundColor = "#fff";
             document.getElementById("color_change_item_13").style.backgroundColor = "#fff";
+            document.getElementById("color_change_item_14").style.backgroundColor = "#fff";
             document.getElementById("h_1").style.color = "#000";
             document.getElementById("h_2").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.4)"
             document.getElementById("h_2").style.color = "rgba(0,0,0,0.7)"
@@ -197,6 +198,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("live_running_updates").style.color = "#9CA3AF";
             document.getElementById("color_change_item_12").style.backgroundColor = "#111827";
             document.getElementById("color_change_item_13").style.backgroundColor = "#111827";
+            document.getElementById("color_change_item_14").style.backgroundColor = "#111827";
             document.getElementById("h_1").style.color = "#fff";
             document.getElementById("h_2").style.boxShadow = "-4px 4px 10px rgba(0, 0, 255, 0.2)"
             document.getElementById("h_2").style.color = "rgb(156, 163, 175, 1)"
@@ -232,6 +234,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("live_running_updates").style.color = "#000";
             document.getElementById("color_change_item_12").style.backgroundColor = "#fff";
             document.getElementById("color_change_item_13").style.backgroundColor = "#fff";
+            document.getElementById("color_change_item_14").style.backgroundColor = "#fff";
             document.getElementById("h_1").style.color = "#000";
             document.getElementById("h_2").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.4)"
             document.getElementById("h_2").style.color = "rgba(0,0,0,0.7)"
@@ -258,6 +261,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("live_running_updates").style.color = "#9CA3AF";
             document.getElementById("color_change_item_12").style.backgroundColor = "#111827";
             document.getElementById("color_change_item_13").style.backgroundColor = "#111827";
+            document.getElementById("color_change_item_14").style.backgroundColor = "#111827";
             document.getElementById("h_1").style.color = "#fff";
             document.getElementById("h_2").style.boxShadow = "-4px 4px 10px rgba(0, 0, 255, 0.2)"
             document.getElementById("h_2").style.color = "rgb(156, 163, 175, 1)"
