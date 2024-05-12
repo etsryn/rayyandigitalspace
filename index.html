@@ -280,48 +280,48 @@
     <!-- Page 5 Content Ends -->
 
     <!-- Page 6 Content Starts -->
-    <div class="content_page_sixth" id="fifth_page">
+    <div class="content_page_sixth" id="sixth_page">
         <div class="heading_as_separator reveal">
             <h1 id="h_1">Ending Scroll With The Thought</h1>
         </div>
 
         <div id="scroll_end_thought" class="reveal">
             <div id="thought">
-                <p>In challenging times, it's crucial to remember that initial impressions may not reveal the full picture. Take a step back and analyze the entirety of the situation, as there may be positive aspects you're overlooking. Keep the courage to start a new whenever needed; the first step isn't limited to a single attempt but can be taken each time you choose to rise. In every adversity, there are opportunities for growth, and every situation offers multiple paths — it's up to you to decide whether to restart or remain stagnant.</p>
-                <h2>~ Rayyan Ashraf</h2>
+                <p id="p_thought">In challenging times, it's crucial to remember that initial impressions may not reveal the full picture. Take a step back and analyze the entirety of the situation, as there may be positive aspects you're overlooking. Keep the courage to start a new whenever needed; the first step isn't limited to a single attempt but can be taken each time you choose to rise. In every adversity, there are opportunities for growth, and every situation offers multiple paths — it's up to you to decide whether to restart or remain stagnant.</p>
+                <h2 id="h2_auth">~ Rayyan Ashraf</h2>
             </div>
         </div>
     </div>
     <!-- Page 6 Content Ends -->
 
     <!-- Page 7 Footers Starts -->
-    <div class="footer_page_seventh eveal" id="seventh_page">
+    <div class="footer_page_seventh" id="seventh_page">
         <div id="back_to_top">
-            <h2>Back To Top &#9650;</h2>
+            <h2 id="h2_back_to_top">Back To Top &#9650;</h2>
         </div>
         <div id="overall_container"> <!--Col-->
             <div id="icon_name">
                 <img src="./Images_Index/favicon.ico" alt=""/>
-                <h2>Rayyan Ashraf</h2>
+                <h2 id="cr_name">Rayyan Ashraf</h2>
                 <div id="copyright">
-                    Copyright &copy; 2024<br /><br /><span id="copyright_link">etsryn.github.io.rayyandigitalspace</span>
+                    <span id="cr_year">Copyright &copy; 2024</span><br /><br /><span id="copyright_link">etsryn.github.io.rayyandigitalspace</span>
                 </div>
             </div>
             <div id="vertical_divider"></div>
             <div id="columns">
                 <div id="column_1">
-                    <li>GitHub : <span class="link_footer" id="github_link">etsryn</span></li><!--https://github.com/etsryn-->
-                    <li>LinkedIn : <span class="link_footer" id="linkedin_link">RayyanAshraf</span></li><!--www.linkedin.com/in/rayyan-ashraf-->
-                    <li>Leetcode : <span class="link_footer" id="leetcode_link">RayyanAshraf</span></li><!--https://leetcode.com/u/RayyanAshraf/-->
-                    <li>Twitter : <span class="link_footer" id="twitter_link">RayyanAshr90787</span></li><!--https://twitter.com/RayyanAshr90787-->
-                    <li>Google Scholar : <span class="" id="google_scholar_link">RayyanAshraf</span></li> <!---->
+                    <li><span id="footer_li_1">GitHub : </span><span class="link_footer" id="github_link">etsryn</span></li>
+                    <li><span id="footer_li_2">LinkedIn : </span><span class="link_footer" id="linkedin_link">RayyanAshraf</span></li>
+                    <li><span id="footer_li_3">Leetcode : </span><span class="link_footer" id="leetcode_link">RayyanAshraf</span></li>
+                    <li><span id="footer_li_4">Twitter : </span><span class="link_footer" id="twitter_link">RayyanAshr90787</span></li>
+                    <li><span id="footer_li_5">Google Scholar : <span class="" id="google_scholar_link">RayyanAshraf</span></span></li>
                 </div>
                 <div id="column_2">
-                    <li>Instagram : <span class="link_footer" id="instagram_link">etsrayy</span></li><!--https://www.instagram.com/etsrayy/-->
-                    <li>Contact Number 1 : +91-888-2041-932</li>
-                    <li>Alternate Contact 2 : +91-752-0269-830</li>
-                    <li>Email (Commercial Use) : ryshashraf@gmail.com</li>
-                    <li>Email (Personal Use) : rayyan.connects@gmail.com</li>
+                    <li><span id="footer_li_6">Instagram : </span><span class="link_footer" id="instagram_link">etsrayy</span></li>
+                    <li><span id="footer_li_7">Contact Number 1 : +91-888-2041-932</span></li>
+                    <li><span id="footer_li_8">Alternate Contact 2 : +91-752-0269-830</span></li>
+                    <li><span id="footer_li_9">Email (Commercial Use) : </span><span class="link_footer" id="mailto_rysh">ryshashraf@gmail.com</span></li>
+                    <li><span id="footer_li_10">Email (Personal Use) : </span><span class="link_footer" id="mailto_rc">rayyan.connects@gmail.com</span></li>
                 </div>
             </div>
         </div>
@@ -477,7 +477,18 @@
             });
         });
       </script>
+    <!--  -->
+    <script>
+        document.getElementById('mailto_rysh').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action of the link
+            window.open('mailto:ryshashraf@gmail.com', '_blank');
+        });
 
+        document.getElementById('mailto_rc').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action of the link
+            window.open('mailto:rayyan.connects@gmail.com', '_blank');
+        });
+    </script>
     <!-- TO STOP RIGHT CLICK (PREVENT FROM INSPECTING) -->
     <script>
         document.addEventListener('contextmenu', function(e) {
