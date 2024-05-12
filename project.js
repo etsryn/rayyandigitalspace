@@ -46,6 +46,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_1").style.backgroundColor = "transparent";
             document.getElementById("project_id_1").style.color = "#000";
             document.getElementById("paragraph_id_1").style.color = "#000";
+            document.getElementById("repo_download_mtrs_temp").style.color = "#000";
+            document.getElementById("repo_download_mtrs").style.color = "#000";
             document.getElementById("mtrs_repo").style.color = "#000";
             document.getElementById("mtrs_project").style.color = "#000";
 
@@ -56,6 +58,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_2").style.backgroundColor = "transparent";
             document.getElementById("project_id_2").style.color = "#000";
             document.getElementById("paragraph_id_2").style.color = "#000";
+            document.getElementById("repo_download_tdtm_temp").style.color = "#000";
+            document.getElementById("repo_download_tdtm").style.color = "#000";
             document.getElementById("tdtm_repo").style.color = "#000";
             document.getElementById("tdtm_project").style.color = "#000";
 
@@ -66,6 +70,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_3").style.backgroundColor = "transparent";
             document.getElementById("project_id_3").style.color = "#000";
             document.getElementById("paragraph_id_3").style.color = "#000";
+            document.getElementById("repo_download_ytc_temp").style.color = "#000";
+            document.getElementById("repo_download_ytc").style.color = "#000";
             document.getElementById("ytc_repo").style.color = "#000";
             document.getElementById("ytc_project").style.color = "#000";
             document.getElementById("ytc_web").style.color = "#000";
@@ -77,6 +83,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_4").style.backgroundColor = "transparent";
             document.getElementById("project_id_4").style.color = "#000";
             document.getElementById("paragraph_id_4").style.color = "#000";
+            document.getElementById("repo_download_rdfc_temp").style.color = "#000";
+            document.getElementById("repo_download_rdfc").style.color = "#000";
             document.getElementById("rdfc_repo").style.color = "#000";
             document.getElementById("rdfc_project").style.color = "#000";
 
@@ -87,6 +95,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_5").style.backgroundColor = "transparent";
             document.getElementById("project_id_5").style.color = "#000";
             document.getElementById("paragraph_id_5").style.color = "#000";
+            document.getElementById("repo_download_rds_temp").style.color = "#000";
+            document.getElementById("repo_download_rds").style.color = "#000";
             document.getElementById("rds_repo").style.color = "#000";
             document.getElementById("rds_project").style.color = "#000";
             document.getElementById("rds_web").style.color = "#000";
@@ -118,6 +128,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_1").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_1').style.removeProperty('color');
             document.getElementById('paragraph_id_1').style.removeProperty('color');
+            document.getElementById("repo_download_mtrs_temp").style.color = "#fff";
+            document.getElementById("repo_download_mtrs").style.color = "#fff";
             document.getElementById("mtrs_repo").style.color = "#fff";
             document.getElementById("mtrs_project").style.color = "#fff";
 
@@ -128,6 +140,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_2").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_2').style.removeProperty('color');
             document.getElementById('paragraph_id_2').style.removeProperty('color');
+            document.getElementById("repo_download_tdtm_temp").style.color = "#fff";
+            document.getElementById("repo_download_tdtm").style.color = "#fff";
             document.getElementById("tdtm_repo").style.color = "#fff";
             document.getElementById("tdtm_project").style.color = "#fff";
 
@@ -138,6 +152,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_3").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_3').style.removeProperty('color');
             document.getElementById('paragraph_id_3').style.removeProperty('color');
+            document.getElementById("repo_download_ytc_temp").style.color = "#fff";
+            document.getElementById("repo_download_ytc").style.color = "#fff";
             document.getElementById("ytc_repo").style.color = "#fff";
             document.getElementById("ytc_project").style.color = "#fff";
             document.getElementById("ytc_web").style.color = "#fff";
@@ -149,6 +165,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_4").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_4').style.removeProperty('color');
             document.getElementById('paragraph_id_4').style.removeProperty('color');
+            document.getElementById("repo_download_rdfc_temp").style.color = "#fff";
+            document.getElementById("repo_download_rdfc").style.color = "#fff";
             document.getElementById("rdfc_repo").style.color = "#fff";
             document.getElementById("rdfc_project").style.color = "#fff";
 
@@ -159,6 +177,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_5").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_5').style.removeProperty('color');
             document.getElementById('paragraph_id_5').style.removeProperty('color');
+            document.getElementById("repo_download_rds_temp").style.color = "#fff";
+            document.getElementById("repo_download_rds").style.color = "#fff";
             document.getElementById("rds_repo").style.color = "#fff";
             document.getElementById("rds_project").style.color = "#fff";
             document.getElementById("rds_web").style.color = "#fff";
@@ -198,6 +218,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_1").style.backgroundColor = "transparent";
             document.getElementById("project_id_1").style.color = "#000";
             document.getElementById("paragraph_id_1").style.color = "#000";
+            document.getElementById("repo_download_mtrs_temp").style.color = "#000";
+            document.getElementById("repo_download_mtrs").style.color = "#000";
             document.getElementById("mtrs_repo").style.color = "#000";
             document.getElementById("mtrs_project").style.color = "#000";
 
@@ -208,6 +230,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_2").style.backgroundColor = "transparent";
             document.getElementById("project_id_2").style.color = "#000";
             document.getElementById("paragraph_id_2").style.color = "#000";
+            document.getElementById("repo_download_tdtm_temp").style.color = "#000";
+            document.getElementById("repo_download_tdtm").style.color = "#000";
             document.getElementById("tdtm_repo").style.color = "#000";
             document.getElementById("tdtm_project").style.color = "#000";
 
@@ -218,6 +242,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_3").style.backgroundColor = "transparent";
             document.getElementById("project_id_3").style.color = "#000";
             document.getElementById("paragraph_id_3").style.color = "#000";
+            document.getElementById("repo_download_ytc_temp").style.color = "#000";
+            document.getElementById("repo_download_ytc").style.color = "#000";
             document.getElementById("ytc_repo").style.color = "#000";
             document.getElementById("ytc_project").style.color = "#000";
             document.getElementById("ytc_web").style.color = "#000";
@@ -229,6 +255,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_4").style.backgroundColor = "transparent";
             document.getElementById("project_id_4").style.color = "#000";
             document.getElementById("paragraph_id_4").style.color = "#000";
+            document.getElementById("repo_download_rdfc_temp").style.color = "#000";
+            document.getElementById("repo_download_rdfc").style.color = "#000";
             document.getElementById("rdfc_repo").style.color = "#000";
             document.getElementById("rdfc_project").style.color = "#000";
 
@@ -239,6 +267,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_5").style.backgroundColor = "transparent";
             document.getElementById("project_id_5").style.color = "#000";
             document.getElementById("paragraph_id_5").style.color = "#000";
+            document.getElementById("repo_download_rds_temp").style.color = "#000";
+            document.getElementById("repo_download_rds").style.color = "#000";
             document.getElementById("rds_repo").style.color = "#000";
             document.getElementById("rds_project").style.color = "#000";
             document.getElementById("rds_web").style.color = "#000";
@@ -271,6 +301,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_1").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_1').style.removeProperty('color');
             document.getElementById('paragraph_id_1').style.removeProperty('color');
+            document.getElementById("repo_download_mtrs_temp").style.color = "#fff";
+            document.getElementById("repo_download_mtrs").style.color = "#fff";
             document.getElementById("mtrs_repo").style.color = "#fff";
             document.getElementById("mtrs_project").style.color = "#fff";
 
@@ -281,6 +313,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_2").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_2').style.removeProperty('color');
             document.getElementById('paragraph_id_2').style.removeProperty('color');
+            document.getElementById("repo_download_tdtm_temp").style.color = "#fff";
+            document.getElementById("repo_download_tdtm").style.color = "#fff";
             document.getElementById("tdtm_repo").style.color = "#fff";
             document.getElementById("tdtm_project").style.color = "#fff";
 
@@ -291,6 +325,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_3").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_3').style.removeProperty('color');
             document.getElementById('paragraph_id_3').style.removeProperty('color');
+            document.getElementById("repo_download_ytc_temp").style.color = "#fff";
+            document.getElementById("repo_download_ytc").style.color = "#fff";
             document.getElementById("ytc_repo").style.color = "#fff";
             document.getElementById("ytc_project").style.color = "#fff";
             document.getElementById("ytc_web").style.color = "#fff";
@@ -302,6 +338,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_4").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_4').style.removeProperty('color');
             document.getElementById('paragraph_id_4').style.removeProperty('color');
+            document.getElementById("repo_download_rdfc_temp").style.color = "#fff";
+            document.getElementById("repo_download_rdfc").style.color = "#fff";
             document.getElementById("rdfc_repo").style.color = "#fff";
             document.getElementById("rdfc_project").style.color = "#fff";
 
@@ -312,6 +350,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("id_bottom_full_no_division_5").style.backgroundColor = "rgba(0,0,0,0.3)";
             document.getElementById('project_id_5').style.removeProperty('color');
             document.getElementById('paragraph_id_5').style.removeProperty('color');
+            document.getElementById("repo_download_rds_temp").style.color = "#fff";
+            document.getElementById("repo_download_rds").style.color = "#fff";
             document.getElementById("rds_repo").style.color = "#fff";
             document.getElementById("rds_project").style.color = "#fff";
             document.getElementById("rds_web").style.color = "#fff";
