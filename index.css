@@ -409,6 +409,7 @@ header .container_main_for_header {
     width: 40vw;
     height: auto;
     background-color: transparent;
+    border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -528,6 +529,7 @@ header .container_main_for_header {
     /* border: 1px solid blue; */
     padding: 3vw 2vw;
     width: 25vw;
+    height: 32vw;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     border-radius: 10px;
@@ -579,38 +581,6 @@ header .container_main_for_header {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 4th Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/*
- <div class="content_page_fifth" id="fifth_page">
-        <div class="heading_as_separator reveal">
-            <h1 id="h_1">Reach Through Sources</h1>
-        </div>
-
-        <div id="group_connectivities" class="reveal"> <!-- Webiste Taps LinkedIn Social Network-->
-            <div class="individual_connectivity" id="website_taps">
-                <div class="magnitude" id="count_website_taps">
-                    <p id="run1">250</p>+
-                </div>
-                <div class="base_heading">
-                    <p id="wt">Website Taps</p>
-                </div>
-            </div>
-            <div class="individual_connectivity" id="linkedin_connections">
-                <div class="magnitude" id="count_linkedin_connections">
-                    <p id="run2">335</p>+
-                </div>
-                <div class="base_heading">
-                    <p id="lc">LinkedIn Connections</p>
-                </div>
-            </div>
-            <div class="individual_connectivity" id="personal_network">
-                <div class="magnitude" id="count_personal_network">
-                    <p id="run3">500+</p>+
-                </div>
-                <div class="base_heading">
-                    <p id="pn">Personal Network</p>
-                </div>
-*/
 .content_page_fifth {
     background-color: #111827;
     height: auto;
@@ -627,7 +597,9 @@ header .container_main_for_header {
     justify-content: center;
     text-align: center;
     gap: 2vw;
+    border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background: blur(50px);
     width: 90vw;
     margin: 0 auto;
 }
@@ -638,10 +610,10 @@ header .container_main_for_header {
     height: auto;
     text-align: center;
     justify-content: center;
+    border-radius: 20px;
     padding-top: 3.5vw;
     line-height: 100px;
     background-color: transparent;
-    
     cursor: pointer;
 }
 .content_page_fifth #group_connectivities .individual_connectivity:hover {
@@ -684,6 +656,7 @@ header .container_main_for_header {
     cursor: pointer;
     margin: 0 auto;
     padding: 1vw 1vw;
+    border-radius: 10px;
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
 }
@@ -1031,6 +1004,7 @@ header .container_main_for_header {
         /* border: 1px solid blue; */
         padding: 3vw 2vw;
         width: 32vw;
+        height: 32vw;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
         cursor: pointer;
     }
@@ -1442,6 +1416,7 @@ header .container_main_for_header {
         /* border: 1px solid blue; */
         padding: 3vw 2vw;
         width: 80vw;
+        height: auto;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         cursor: pointer;
     }
