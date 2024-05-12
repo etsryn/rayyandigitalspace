@@ -6,6 +6,7 @@
     <title>Connect with Rayyan</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Online CSS Properties -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"/>
 
@@ -93,13 +94,13 @@
             <h1 id="h_1">Recommendations</h1>
         </div>
         <div id="recommendation_cards">
-            <div class="recommendation_card reveal", id="color_change_item_14">
+            <div class="recommendation_card", id="color_change_item_14">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-3 h-3 text-gray-400 mb-4" viewBox="0 0 975.036 975.036"><path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path></svg>
                 <p>Highly recommend Rayyan for his exceptional dedication, creativity, and professionalism in every task that he undertake. He is very hardworking and responsible towards his duties.</p>
                 <h3 class="recommender_name" id="color_change_item_15">Kanishk Tyagi</h3>
                 <h4 class="recommender_post">Computer Science Student</h4>
             </div>
-            <div class="recommendation_card reveal" id="recommendation_card_second_child">
+            <div class="recommendation_card" id="recommendation_card_second_child">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-3 h-3 text-gray-400 mb-4" viewBox="0 0 975.036 975.036"><path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path></svg>
                 <p>Highly recommend Rayyan for his exceptional dedication, creativity, and professionalism in every task that he undertake. He is very hardworking and responsible towards his duties. lorem500</p>
                 <h3 class="recommender_name" id="color_change_item_16">Kanishk Tyagi</h3>
@@ -108,6 +109,223 @@
         </div>
     </div>
     <!-- Page 2 Content Ends -->
+
+    <!-- Page 3 Content Starts -->
+    <div class="content_page_third" id="third_page">
+        <div class="heading_as_separator reveal">
+            <h1 id="h_1">Currently Dealing With</h1>
+        </div>
+
+        <div id="group_skills" class="reveal">
+            <div class="individual_skill" id="ind_skil1">
+                <h2 class="skill_heading" id="skill_h1"><img src="./Images_Index/python-logo.png" style="width: 2vw; display: inline-block; vertical-align: middle;"/>&nbsp;&nbsp;&nbsp;Python Development</h2>
+                <div class="base_container">
+                    <div id="actual_coverage1" class="animate-on-visible"></div>
+                </div>
+            </div>
+            <div class="individual_skill" id="ind_skil2">
+                <h2 class="skill_heading" id="skill_h2"><img src="./Images_Index/machine-learning-logo.png" style="width: 3vw; display: inline-block; vertical-align: middle;"/>&nbsp;&nbsp;Machine Learning</h2>
+                <div class="base_container">
+                    <div id="actual_coverage2" class=""></div>
+                </div>
+            </div>
+            <div class="individual_skill" id="ind_skil3">
+                <h2 class="skill_heading" id="skill_h3"><img src="./Images_Index/java-logo.png" style="width: 2vw; display: inline-block; vertical-align: middle;"/>&nbsp;&nbsp;Java Development</h2>
+                <div class="base_container">
+                    <div id="actual_coverage3" class=""></div>
+                </div>
+            </div>
+            <div class="individual_skill" id="ind_skil4">
+                <h2 class="skill_heading" id="skill_h4"><img src="./Images_Index/data-science-logo.png" style="width: 3vw; display: inline-block; vertical-align: middle;"/>&nbsp;&nbsp;Data Science</h2>
+                <div class="base_container">
+                    <div id="actual_coverage4" class=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page 3 Content Ends -->
+
+    <!-- Page 4 Content Starts -->
+    <div class="content_page_fourth" id="fourth_page">
+        <div class="heading_as_separator reveal">
+            <h1 id="h_1">Softwares Working On</h1>
+        </div>
+
+        <div id="group_softwares" class="reveal">
+            <div id="section_top">
+                <div class="software_common_design" id="redirect_vscode">
+                    <div class="software_image">
+                        <img src="./Images_Index/vscode.png" alt="" style="width: 10vw;">
+                    </div>
+                    <div class="software_name">
+                        <h1>Visual Studio Code</h1>
+                    </div>
+                    <div class="software_description">
+                        <p><b>Version:</b> 1.89.1</p>
+                        <p><b>Windows Model:</b> <span id="windows_1" class="description_links">x64</span>, <span id="windows_2" class="description_links">Arm64</span></p>
+                        <p><b>Mac Model:</b> <span id="mac_1" class="description_links">Universal</span>, <span id="mac_2" class="description_links">Intel</span>, <span id="mac_3" class="description_links">Silicon</span></p>
+                        <p><b>Linux Model:</b>  <span id="linux_1" class="description_links">deb</span>, <span id="linux_2" class="description_links">rpm</span>, <span id="linux_3" class="description_links">tarball</span>, <span id="linux_4" class="description_links">Arm</span>, <span id="linux_5" class="description_links">snap</span></p>
+                    </div>
+                </div>
+                <div class="software_common_design" id="redirect_android_studio">
+                    <div class="software_image">
+                        <img src="./Images_Index/android-studio.png" alt="" style="width: 10vw;">
+                    </div>
+                    <div class="software_name">
+                        <h1>Android Studio</h1>
+                    </div>
+                    <div class="software_description">
+                        <p><b>Version:</b> 2022.3</p>
+                        <p><b>Patch:</b> 1</p>
+                        <p><b>Version Name:</b> Giraffe</p>
+                        <p><b>Used For:</b> Android App Development</p>
+                    </div>
+                </div>
+                <div class="software_common_design" id="redirect_pieces">
+                    <div class="software_image">
+                        <img src="./Images_Index/pieces_logo.png" alt="" style="width: 11vw; margin-top: -1.1vw;">
+                    </div>
+                    <div class="software_name">
+                        <h1>Pieces</h1>
+                    </div>
+                    <div class="software_description">
+                        <p><b>Pieces OS Version:</b> 9.0.2</p>
+                        <p><b>Pieces for Developers Version:</b> 2.12.1</p>
+                        <p><b>Requirements:</b> P-Developers requires P-OS</p>
+                        <p><b>Used For:</b> Code snippet and online sharing</p>
+                    </div>
+                </div>
+            </div>
+            <div id="section_bottom" class="reveal">
+                <div class="software_common_design" id="redirect_mysql_wb">
+                    <div class="software_image">
+                        <img src="./Images_Index/mysql_workbench_logo.png" alt="" style="width: 10vw;">
+                    </div>
+                    <div class="software_name">
+                        <h1>MySQL Workbench</h1>
+                    </div>
+                    <div class="software_description">
+                        <p><b>Version:</b> 8.0.34</p>
+                        <p><b>Build:</b> CE 64 bits</p>
+                        <p><b>Type:</b> Community</p>
+                        <p><b>Used For:</b> MySQL Database</p>
+                    </div>
+                </div>
+                <div class="software_common_design" id="redirect_arduino_ide">
+                    <div class="software_image">
+                        <img src="./Images_Index/arduino_ide_logo.png" alt="" style="width: 10vw;">
+                    </div>
+                    <div class="software_name">
+                        <h1>Arduino IDE</h1>
+                    </div>
+                    <div class="software_description">
+                        <p><b>Version:</b> 2.2.1</p>
+                        <p><b>CLI Version:</b> 0.34.0</p>
+                        <p><b>Copyright &copy; 2024:</b> Arduino SA</p>
+                        <p><b>Used For:</b> Development</p>
+                    </div>
+                </div>
+                <div class="software_common_design" id="redirect_jupyter">
+                    <div class="software_image">
+                        <img src="./Images_Index/jupyter_logo.png" alt="" style="width: 10vw; border-radius: 10vw;">
+                    </div>
+                    <div class="software_name">
+                        <h1>Jupyter</h1>
+                    </div>
+                    <div class="software_description">
+                        <p><b>Version:</b> 20.36.4</p>
+                        <p><b>Patch:</b> Patch 01</p>
+                        <p><b>Version Name:</b> Flamingo</p>
+                        <p><b>Used For:</b> Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page 4 Content Ends -->
+
+    <!-- Page 5 Content Starts -->
+    <div class="content_page_fifth" id="fifth_page">
+        <div class="heading_as_separator reveal">
+            <h1 id="h_1">Reach Through Sources</h1>
+        </div>
+
+        <div id="group_connectivities" class="reveal"> <!-- Webiste Taps LinkedIn Social Network-->
+            <div class="individual_connectivity" id="website_taps">
+                <div class="magnitude classrun1" id="count_website_taps">
+                    <p id="run1"> +</p>
+                </div>
+                <div class="base_heading">
+                    <p id="wt">Website Taps</p>
+                </div>
+            </div>
+            <div class="individual_connectivity" id="linkedin_connections">
+                <div class="magnitude classrun2" id="count_linkedin_connections">
+                    <p id="run2">0 +</p>
+                </div>
+                <div class="base_heading">
+                    <p id="lc">LinkedIn Connections</p>
+                </div>
+            </div>
+            <div class="individual_connectivity" id="personal_network">
+                <div class="magnitude classrun3" id="count_personal_network">
+                    <p id="run3">0 +</p>
+                </div>
+                <div class="base_heading">
+                    <p id="pn">Personal Network</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page 5 Content Ends -->
+
+    <!-- Page 6 Content Starts -->
+    <div class="content_page_sixth" id="fifth_page">
+        <div class="heading_as_separator reveal">
+            <h1 id="h_1">Ending Scroll With The Thought</h1>
+        </div>
+
+        <div id="scroll_end_thought" class="reveal">
+            <div id="thought">
+                <p>In challenging times, it's crucial to remember that initial impressions may not reveal the full picture. Take a step back and analyze the entirety of the situation, as there may be positive aspects you're overlooking. Keep the courage to start a new whenever needed; the first step isn't limited to a single attempt but can be taken each time you choose to rise. In every adversity, there are opportunities for growth, and every situation offers multiple paths — it's up to you to decide whether to restart or remain stagnant.</p>
+                <h2>~ Rayyan Ashraf</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Page 6 Content Ends -->
+
+    <!-- Page 7 Footers Starts -->
+    <div class="footer_page_seventh eveal" id="seventh_page">
+        <div id="back_to_top">
+            <h2>Back To Top &#9650;</h2>
+        </div>
+        <div id="overall_container"> <!--Col-->
+            <div id="icon_name">
+                <img src="./Images_Index/favicon.ico" alt=""/>
+                <h2>Rayyan Ashraf</h2>
+                <div id="copyright">
+                    Copyright &copy; 2024<br /><br /><span id="copyright_link">etsryn.github.io.rayyandigitalspace</span>
+                </div>
+            </div>
+            <div id="vertical_divider"></div>
+            <div id="columns">
+                <div id="column_1">
+                    <li>GitHub : <span class="link_footer" id="github_link">etsryn</span></li><!--https://github.com/etsryn-->
+                    <li>LinkedIn : <span class="link_footer" id="linkedin_link">RayyanAshraf</span></li><!--www.linkedin.com/in/rayyan-ashraf-->
+                    <li>Leetcode : <span class="link_footer" id="leetcode_link">RayyanAshraf</span></li><!--https://leetcode.com/u/RayyanAshraf/-->
+                    <li>Twitter : <span class="link_footer" id="twitter_link">RayyanAshr90787</span></li><!--https://twitter.com/RayyanAshr90787-->
+                    <li>Google Scholar : <span class="" id="google_scholar_link">RayyanAshraf</span></li> <!---->
+                </div>
+                <div id="column_2">
+                    <li>Instagram : <span class="link_footer" id="instagram_link">etsrayy</span></li><!--https://www.instagram.com/etsrayy/-->
+                    <li>Contact Number 1 : +91-888-2041-932</li>
+                    <li>Alternate Contact 2 : +91-752-0269-830</li>
+                    <li>Email (Commercial Use) : ryshashraf@gmail.com</li>
+                    <li>Email (Personal Use) : rayyan.connects@gmail.com</li>
+                </div>
+            </div>
+        </div>
+    <!-- Page 7 Footers Ends -->
 
     <!-- Below JavaScript Code is to Hide Dropdown Menu when user clicks anywhere except for that menu button -->
     <script language="JavaScript">
@@ -120,6 +338,151 @@
             }
         }
     </script>
+    <!-- Below JavaScript Code is to animate percentage fill of skill covered (but when screen on scroll gets visible) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function isInViewport(element) {
+                var rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+            function handleScroll(animatedElementId, animationName) {
+                var animatedElement = document.getElementById(animatedElementId);
+                if (isInViewport(animatedElement)) {
+                    animatedElement.style.animation = animationName + " 2s ease-in-out";
+                }
+            }
+
+            window.addEventListener("scroll", function() {
+                handleScroll("actual_coverage1", "indicatePercentage1");
+                handleScroll("actual_coverage2", "indicatePercentage2");
+                handleScroll("actual_coverage3", "indicatePercentage3");
+                handleScroll("actual_coverage4", "indicatePercentage4");
+            });
     
+            handleScroll("actual_coverage1", "indicatePercentage1");
+            handleScroll("actual_coverage2", "indicatePercentage2");
+            handleScroll("actual_coverage3", "indicatePercentage3");
+            handleScroll("actual_coverage4", "indicatePercentage4");
+        });
+    </script>
+    <script>
+        document.getElementById('redirect_vscode').addEventListener('click', () => {
+            window.open('https://code.visualstudio.com/', '_blank');
+        });
+        document.getElementById('redirect_android_studio').addEventListener('click', () => {
+            window.open('https://developer.android.com/', '_blank');
+        });
+        document.getElementById('redirect_pieces').addEventListener('click', () => {
+            window.open('https://pieces.app/', '_blank');
+        });
+        document.getElementById('redirect_mysql_wb').addEventListener('click', () => {
+            window.open('https://www.mysql.com/', '_blank');
+        });
+        document.getElementById('redirect_arduino_ide').addEventListener('click', () => {
+            window.open('https://www.arduino.cc/', '_blank');
+        });
+        document.getElementById('redirect_jupyter').addEventListener('click', () => {
+            window.open('https://jupyter.org/', '_blank');
+        });
+        document.getElementById('windows_1').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/win32-x64-user/stable', '_blank');
+        });
+        document.getElementById('windows_2').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/win32-arm64-user/stable', '_blank');
+        });
+        document.getElementById('mac_1').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/darwin-universal/stable', '_blank');
+        });
+        document.getElementById('mac_2').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/darwin/stable', '_blank');
+        });
+        document.getElementById('mac_3').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/darwin-arm64/stable', '_blank');
+        });
+        document.getElementById('linux_1').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/linux-deb-x64/stable', '_blank');
+        });
+        document.getElementById('linux_2').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/linux-rpm-x64/stable', '_blank');
+        });
+        document.getElementById('linux_3').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/linux-x64/stable', '_blank');
+        });
+        document.getElementById('linux_4').addEventListener('click', () => {
+            window.open('https://code.visualstudio.com/docs/supporting/faq#_previous-release-versions', '_blank');
+        });
+        document.getElementById('linux_5').addEventListener('click', () => {
+            window.open('https://update.code.visualstudio.com/1.89.1/linux-snap-x64/stable', '_blank');
+        });
+        document.getElementById('instagram_link').addEventListener('click', () => {
+            window.open('https://www.instagram.com/etsrayy', '_blank');
+        });
+        document.getElementById('github_link').addEventListener('click', () => {
+            window.open('https://github.com/etsryn', '_blank');
+        });
+        document.getElementById('linkedin_link').addEventListener('click', () => {
+            window.open('https://www.linkedin.com/in/rayyan-ashraf/', '_blank');
+        });
+        document.getElementById('leetcode_link').addEventListener('click', () => {
+            window.open('https://leetcode.com/u/RayyanAshraf', '_blank');
+        });
+        document.getElementById('twitter_link').addEventListener('click', () => {
+            window.open('https://twitter.com/RayyanAshr90787', '_blank');
+        });
+    </script>
+    <!-- ~~~~~~~~~~~~~~~~ Incrementor ~~~~~~~~~~~~~~~~~~~ -->
+    <script>
+        $(document).ready(function(){
+            // Function to animate the counter
+            function animateCounter(selector, target) {
+                $({countNum: $(selector).text()}).animate({countNum: target}, {
+                    duration: 2000,
+                    easing: 'linear',
+                    step: function() {
+                        $(selector).text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $(selector).text(target);
+                    }
+                });
+            }
+            animateCounter('#run1', 250);
+            animateCounter('#run2', 336);
+            animateCounter('#run3', 500);
+        });
+    </script>
+    <!-- ~~~~~~~~~~~~~~~~ Back To Top ~~~~~~~~~~~~~~~~ -->
+    <script>
+        var backToTopButton = document.getElementById("back_to_top");
+  
+        backToTopButton.addEventListener("click", function() {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        });
+    </script>
+    <script>
+        var backToTopButton = document.getElementById("copyright_link");
+  
+        backToTopButton.addEventListener("click", function() {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        });
+      </script>
+
+    <!-- TO STOP RIGHT CLICK (PREVENT FROM INSPECTING) -->
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
