@@ -123,12 +123,25 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("lc").style.color = "#000";
             document.getElementById("pn").style.color = "#000";
             
-            // document.getElementById("redirect_vscode").style.backgroundColor = "rgba(0, 132, 208, 0.5)";
-            // document.getElementById("redirect_android_studio").style.backgroundColor = "rgba(61, 220, 132, 0.8)";
-            // document.getElementById("redirect_pieces").style.backgroundColor = "rgba(0, 0, 0, 0.8)"; // rgb(17,20,16)
-            // document.getElementById("redirect_mysql_wb").style.backgroundColor = "rgba(38, 85, 124, 0.8)";
-            // document.getElementById("redirect_arduino_ide").style.backgroundColor = "rgba(0, 133, 138, 0.8)";
-            // document.getElementById("redirect_jupyter").style.backgroundColor = "rgba(227, 110, 46, 0.8)";
+            document.getElementById("sixth_page").style.backgroundColor = "#fff";
+            document.getElementById("p_thought").style.color = "#000";
+            document.getElementById("h2_auth").style.color = "#000";
+            
+            document.getElementById("seventh_page").style.backgroundColor = "#fff";
+            document.getElementById("h2_back_to_top").style.color = "#000";
+            document.getElementById("cr_name").style.color = "#000";
+            document.getElementById("cr_year").style.color = "#000";
+            document.getElementById("footer_li_1").style.color = "#000";
+            document.getElementById("footer_li_2").style.color = "#000";
+            document.getElementById("footer_li_3").style.color = "#000";
+            document.getElementById("footer_li_4").style.color = "#000";
+            document.getElementById("footer_li_5").style.color = "#000";
+            document.getElementById("footer_li_6").style.color = "#000";
+            document.getElementById("footer_li_7").style.color = "#000";
+            document.getElementById("footer_li_8").style.color = "#000";
+            document.getElementById("footer_li_9").style.color = "#000";
+            document.getElementById("footer_li_10").style.color = "#000";
+
         } else {
             toggle_count++;
             document.getElementById("color_change_item_1").style.backgroundColor = "#1F2937";
@@ -183,6 +196,24 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("lc").style.color = "#fff";
             document.getElementById("pn").style.color = "#fff";
 
+            document.getElementById("sixth_page").style.backgroundColor = "#111827";
+            document.getElementById("p_thought").style.color = "#fff";
+            document.getElementById("h2_auth").style.color = "#fff";
+
+            document.getElementById("seventh_page").style.backgroundColor = "#1F2937";
+            document.getElementById("h2_back_to_top").style.removeProperty('color');
+            document.getElementById("cr_name").style.color = "#fff";
+            document.getElementById("cr_year").style.color = "#fff";
+            document.getElementById("footer_li_1").style.color = "#fff";
+            document.getElementById("footer_li_2").style.color = "#fff";
+            document.getElementById("footer_li_3").style.color = "#fff";
+            document.getElementById("footer_li_4").style.color = "#fff";
+            document.getElementById("footer_li_5").style.color = "#fff";
+            document.getElementById("footer_li_6").style.color = "#fff";
+            document.getElementById("footer_li_7").style.color = "#fff";
+            document.getElementById("footer_li_8").style.color = "#fff";
+            document.getElementById("footer_li_9").style.color = "#fff";
+            document.getElementById("footer_li_10").style.color = "#fff";
         }
     });
 });
@@ -231,6 +262,42 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("ind_skil2").style.backgroundColor = "#f3f4f6";
             document.getElementById("ind_skil3").style.backgroundColor = "#f3f4f6";
             document.getElementById("ind_skil4").style.backgroundColor = "#f3f4f6";
+
+            document.getElementById("fourth_page").style.backgroundColor = "#fff";
+            document.getElementById("redirect_vscode").style.backgroundColor = "rgba(0, 132, 208, 0.7)";
+            document.getElementById("redirect_android_studio").style.backgroundColor = "#3DDC84";
+            document.getElementById("redirect_pieces").style.backgroundColor = "#000";
+            document.getElementById("redirect_mysql_wb").style.backgroundColor = "#26557C";
+            document.getElementById("redirect_arduino_ide").style.backgroundColor = "#00858A";
+            document.getElementById("redirect_jupyter").style.backgroundColor = "#E36E2E";
+
+            document.getElementById("fifth_page").style.backgroundColor = "#fff";
+            document.getElementById("run1").style.color = "#000";
+            document.getElementById("run2").style.color = "#000";
+            document.getElementById("run3").style.color = "#000";
+            document.getElementById("wt").style.color = "#000";
+            document.getElementById("lc").style.color = "#000";
+            document.getElementById("pn").style.color = "#000";
+            
+            
+            document.getElementById("sixth_page").style.backgroundColor = "#fff";
+            document.getElementById("p_thought").style.color = "#000";
+            document.getElementById("h2_auth").style.color = "#000";
+
+            document.getElementById("seventh_page").style.backgroundColor = "#fff";
+            document.getElementById("h2_back_to_top").style.color = "#000";
+            document.getElementById("cr_name").style.color = "#000";
+            document.getElementById("cr_year").style.color = "#000";
+            document.getElementById("footer_li_1").style.color = "#000";
+            document.getElementById("footer_li_2").style.color = "#000";
+            document.getElementById("footer_li_3").style.color = "#000";
+            document.getElementById("footer_li_4").style.color = "#000";
+            document.getElementById("footer_li_5").style.color = "#000";
+            document.getElementById("footer_li_6").style.color = "#000";
+            document.getElementById("footer_li_7").style.color = "#000";
+            document.getElementById("footer_li_8").style.color = "#000";
+            document.getElementById("footer_li_9").style.color = "#000";
+            document.getElementById("footer_li_10").style.color = "#000";
         } else {
             toggle_count++;
             document.getElementById("color_change_item_1").style.backgroundColor = "#1F2937";
@@ -269,6 +336,40 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("ind_skil3").style.backgroundColor = "transparent";
             document.getElementById("ind_skil4").style.backgroundColor = "transparent";
 
+            document.getElementById("fourth_page").style.backgroundColor = "#111827";
+            document.getElementById("redirect_vscode").style.backgroundColor = "transparent";
+            document.getElementById("redirect_android_studio").style.backgroundColor = "transparent";
+            document.getElementById("redirect_pieces").style.backgroundColor = "transparent";
+            document.getElementById("redirect_mysql_wb").style.backgroundColor = "transparent";
+            document.getElementById("redirect_arduino_ide").style.backgroundColor = "transparent";
+            document.getElementById("redirect_jupyter").style.backgroundColor = "transparent";
+
+            document.getElementById("fifth_page").style.backgroundColor = "#111827";
+            document.getElementById("run1").style.color = "#fff";
+            document.getElementById("run2").style.color = "#fff";
+            document.getElementById("run3").style.color = "#fff";
+            document.getElementById("wt").style.color = "#fff";
+            document.getElementById("lc").style.color = "#fff";
+            document.getElementById("pn").style.color = "#fff";
+
+            document.getElementById("sixth_page").style.backgroundColor = "#111827";
+            document.getElementById("p_thought").style.color = "#fff";
+            document.getElementById("h2_auth").style.color = "#fff";
+
+            document.getElementById("seventh_page").style.backgroundColor = "#1F2937";
+            document.getElementById("h2_back_to_top").style.removeProperty('color');
+            document.getElementById("cr_name").style.color = "#fff";
+            document.getElementById("cr_year").style.color = "#fff";
+            document.getElementById("footer_li_1").style.color = "#fff";
+            document.getElementById("footer_li_2").style.color = "#fff";
+            document.getElementById("footer_li_3").style.color = "#fff";
+            document.getElementById("footer_li_4").style.color = "#fff";
+            document.getElementById("footer_li_5").style.color = "#fff";
+            document.getElementById("footer_li_6").style.color = "#fff";
+            document.getElementById("footer_li_7").style.color = "#fff";
+            document.getElementById("footer_li_8").style.color = "#fff";
+            document.getElementById("footer_li_9").style.color = "#fff";
+            document.getElementById("footer_li_10").style.color = "#fff";
         }
     });
 });
