@@ -98,14 +98,11 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("color_change_item_15").style.color = "#000";
             document.getElementById("color_change_item_16").style.color = "#000";
             document.getElementById("third_page").style.backgroundColor = "#fff";
-            document.getElementById("skill_h1").style.color = "#000";
-            document.getElementById("skill_h2").style.color = "#000";
-            document.getElementById("skill_h3").style.color = "#000";
-            document.getElementById("skill_h4").style.color = "#000";
-            document.getElementById("ind_skil1").style.backgroundColor = "#f3f4f6";
-            document.getElementById("ind_skil2").style.backgroundColor = "#f3f4f6";
-            document.getElementById("ind_skil3").style.backgroundColor = "#f3f4f6";
-            document.getElementById("ind_skil4").style.backgroundColor = "#f3f4f6";
+            
+            document.getElementById("ind_skil1").style.background = "rgba(31, 41, 55, 0.9)";
+            document.getElementById("ind_skil2").style.background = "rgba(31, 41, 55, 0.9)";
+            document.getElementById("ind_skil3").style.background = "rgba(31, 41, 55, 0.9)";
+            document.getElementById("ind_skil4").style.background = "rgba(31, 41, 55, 0.9)";
             
             document.getElementById("fourth_page").style.backgroundColor = "#fff";
             document.getElementById("redirect_vscode").style.backgroundColor = "rgba(0, 132, 208, 0.7)";
@@ -116,6 +113,8 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("redirect_jupyter").style.backgroundColor = "#E36E2E";
 
             document.getElementById("fifth_page").style.backgroundColor = "#fff";
+            document.getElementById("group_connectivities").style.backgroundImage = "url(./Images_Index/wipped_wall_putty.jpg)";
+            document.getElementById("group_connectivities").style.backgroundRepeat = "contain";
             document.getElementById("run1").style.color = "#000";
             document.getElementById("run2").style.color = "#000";
             document.getElementById("run3").style.color = "#000";
@@ -123,14 +122,15 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("lc").style.color = "#000";
             document.getElementById("pn").style.color = "#000";
             
+            document.getElementById("scroll_end_thought").style.backgroundImage = "url(./Images_Index/thought_Background.jpg)";
             document.getElementById("sixth_page").style.backgroundColor = "#fff";
-            document.getElementById("p_thought").style.color = "#000";
-            document.getElementById("h2_auth").style.color = "#000";
+            document.getElementById("h2_auth").style.color = "#fff";
             
             document.getElementById("seventh_page").style.backgroundColor = "#fff";
             document.getElementById("h2_back_to_top").style.color = "#000";
             document.getElementById("cr_name").style.color = "#000";
             document.getElementById("cr_year").style.color = "#000";
+            document.getElementById("vertical_divider").style.backgroundColor = "#000";
             document.getElementById("footer_li_1").style.color = "#000";
             document.getElementById("footer_li_2").style.color = "#000";
             document.getElementById("footer_li_3").style.color = "#000";
@@ -189,6 +189,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("redirect_jupyter").style.backgroundColor = "transparent";
 
             document.getElementById("fifth_page").style.backgroundColor = "#111827";
+            document.getElementById("group_connectivities").style.backgroundImage = "";
             document.getElementById("run1").style.color = "#fff";
             document.getElementById("run2").style.color = "#fff";
             document.getElementById("run3").style.color = "#fff";
@@ -197,13 +198,14 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("pn").style.color = "#fff";
 
             document.getElementById("sixth_page").style.backgroundColor = "#111827";
-            document.getElementById("p_thought").style.color = "#fff";
+            document.getElementById("scroll_end_thought").style.backgroundImage = "";
             document.getElementById("h2_auth").style.color = "#fff";
 
             document.getElementById("seventh_page").style.backgroundColor = "#1F2937";
             document.getElementById("h2_back_to_top").style.removeProperty('color');
             document.getElementById("cr_name").style.color = "#fff";
             document.getElementById("cr_year").style.color = "#fff";
+            document.getElementById("vertical_divider").style.backgroundColor = "#fff";
             document.getElementById("footer_li_1").style.color = "#fff";
             document.getElementById("footer_li_2").style.color = "#fff";
             document.getElementById("footer_li_3").style.color = "#fff";
@@ -254,14 +256,11 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("color_change_item_15").style.color = "#000";
             document.getElementById("color_change_item_16").style.color = "#000";
             document.getElementById("third_page").style.backgroundColor = "#fff";
-            document.getElementById("skill_h1").style.color = "#000";
-            document.getElementById("skill_h2").style.color = "#000";
-            document.getElementById("skill_h3").style.color = "#000";
-            document.getElementById("skill_h4").style.color = "#000";
-            document.getElementById("ind_skil1").style.backgroundColor = "#f3f4f6";
-            document.getElementById("ind_skil2").style.backgroundColor = "#f3f4f6";
-            document.getElementById("ind_skil3").style.backgroundColor = "#f3f4f6";
-            document.getElementById("ind_skil4").style.backgroundColor = "#f3f4f6";
+            
+            document.getElementById("ind_skil1").style.background = "rgba(31, 41, 55, 0.9)";
+            document.getElementById("ind_skil2").style.background = "rgba(31, 41, 55, 0.9)";
+            document.getElementById("ind_skil3").style.background = "rgba(31, 41, 55, 0.9)";
+            document.getElementById("ind_skil4").style.background = "rgba(31, 41, 55, 0.9)";
 
             document.getElementById("fourth_page").style.backgroundColor = "#fff";
             document.getElementById("redirect_vscode").style.backgroundColor = "rgba(0, 132, 208, 0.7)";
@@ -272,6 +271,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("redirect_jupyter").style.backgroundColor = "#E36E2E";
 
             document.getElementById("fifth_page").style.backgroundColor = "#fff";
+            document.getElementById("group_connectivities").style.backgroundImage = "url(./Images_Index/wipped_wall_putty.jpg)";
             document.getElementById("run1").style.color = "#000";
             document.getElementById("run2").style.color = "#000";
             document.getElementById("run3").style.color = "#000";
@@ -279,15 +279,15 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("lc").style.color = "#000";
             document.getElementById("pn").style.color = "#000";
             
-            
             document.getElementById("sixth_page").style.backgroundColor = "#fff";
-            document.getElementById("p_thought").style.color = "#000";
-            document.getElementById("h2_auth").style.color = "#000";
+            document.getElementById("scroll_end_thought").style.backgroundImage = "url(./Images_Index/thought_Background.jpg)";
+            document.getElementById("h2_auth").style.color = "#fff";
 
             document.getElementById("seventh_page").style.backgroundColor = "#fff";
             document.getElementById("h2_back_to_top").style.color = "#000";
             document.getElementById("cr_name").style.color = "#000";
             document.getElementById("cr_year").style.color = "#000";
+            document.getElementById("vertical_divider").style.backgroundColor = "#000";
             document.getElementById("footer_li_1").style.color = "#000";
             document.getElementById("footer_li_2").style.color = "#000";
             document.getElementById("footer_li_3").style.color = "#000";
@@ -345,6 +345,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("redirect_jupyter").style.backgroundColor = "transparent";
 
             document.getElementById("fifth_page").style.backgroundColor = "#111827";
+            document.getElementById("group_connectivities").style.backgroundImage = "";
             document.getElementById("run1").style.color = "#fff";
             document.getElementById("run2").style.color = "#fff";
             document.getElementById("run3").style.color = "#fff";
@@ -353,13 +354,14 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("pn").style.color = "#fff";
 
             document.getElementById("sixth_page").style.backgroundColor = "#111827";
-            document.getElementById("p_thought").style.color = "#fff";
+            document.getElementById("scroll_end_thought").style.backgroundImage = "";
             document.getElementById("h2_auth").style.color = "#fff";
 
             document.getElementById("seventh_page").style.backgroundColor = "#1F2937";
             document.getElementById("h2_back_to_top").style.removeProperty('color');
             document.getElementById("cr_name").style.color = "#fff";
             document.getElementById("cr_year").style.color = "#fff";
+            document.getElementById("vertical_divider").style.backgroundColor = "#fff";
             document.getElementById("footer_li_1").style.color = "#fff";
             document.getElementById("footer_li_2").style.color = "#fff";
             document.getElementById("footer_li_3").style.color = "#fff";
