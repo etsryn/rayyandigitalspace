@@ -7,12 +7,61 @@ function reveal() {
         var revealpoint = 70;
         if(revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('active');
+            initCounter(reveals[i]);
         } else {
             // reveals[i].classList.remove('active'); // Enable if want to remove elements on up-scroll
         }
     }
 }
+// END
 
+// ~~~~~~~~~ Incrementor ~~~~~~~~~~~~~~~~~~~
+function initCounter(element) {
+    if (element.classList.contains('counter-initialized')) {
+        return;
+    }
+
+    var counterElement = element.querySelector('.classrun1 p');
+    if (counterElement) {
+
+        var targetValue = parseInt(counterElement.textContent.trim());
+
+        animateCounter(counterElement, targetValue);
+
+        element.classList.add('counter-initialized');
+    }
+    var counterElement = element.querySelector('.classrun2 p');
+    if (counterElement) {
+
+        var targetValue = parseInt(counterElement.textContent.trim());
+
+        animateCounter(counterElement, targetValue);
+
+        element.classList.add('counter-initialized');
+    }
+    var counterElement = element.querySelector('.classrun3 p');
+    if (counterElement) {
+
+        var targetValue = parseInt(counterElement.textContent.trim());
+
+        animateCounter(counterElement, targetValue);
+
+        element.classList.add('counter-initialized');
+    }
+}
+
+function animateCounter(element, target) {
+    $({countNum: 0}).animate({countNum: target}, {
+        duration: 2000,
+        easing: 'linear',
+        step: function() {
+            element.textContent = Math.floor(this.countNum);
+        },
+        complete: function() {
+            element.textContent = target + ' +';
+        }
+    });
+}
 // ENDS HERE
 
 
@@ -48,6 +97,38 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("recommendation_card_second_child").style.color = "#3E4856";
             document.getElementById("color_change_item_15").style.color = "#000";
             document.getElementById("color_change_item_16").style.color = "#000";
+            document.getElementById("third_page").style.backgroundColor = "#fff";
+            document.getElementById("skill_h1").style.color = "#000";
+            document.getElementById("skill_h2").style.color = "#000";
+            document.getElementById("skill_h3").style.color = "#000";
+            document.getElementById("skill_h4").style.color = "#000";
+            document.getElementById("ind_skil1").style.backgroundColor = "#f3f4f6";
+            document.getElementById("ind_skil2").style.backgroundColor = "#f3f4f6";
+            document.getElementById("ind_skil3").style.backgroundColor = "#f3f4f6";
+            document.getElementById("ind_skil4").style.backgroundColor = "#f3f4f6";
+            
+            document.getElementById("fourth_page").style.backgroundColor = "#fff";
+            document.getElementById("redirect_vscode").style.backgroundColor = "rgba(0, 132, 208, 0.7)";
+            document.getElementById("redirect_android_studio").style.backgroundColor = "#3DDC84";
+            document.getElementById("redirect_pieces").style.backgroundColor = "#000";
+            document.getElementById("redirect_mysql_wb").style.backgroundColor = "#26557C";
+            document.getElementById("redirect_arduino_ide").style.backgroundColor = "#00858A";
+            document.getElementById("redirect_jupyter").style.backgroundColor = "#E36E2E";
+
+            document.getElementById("fifth_page").style.backgroundColor = "#fff";
+            document.getElementById("run1").style.color = "#000";
+            document.getElementById("run2").style.color = "#000";
+            document.getElementById("run3").style.color = "#000";
+            document.getElementById("wt").style.color = "#000";
+            document.getElementById("lc").style.color = "#000";
+            document.getElementById("pn").style.color = "#000";
+            
+            // document.getElementById("redirect_vscode").style.backgroundColor = "rgba(0, 132, 208, 0.5)";
+            // document.getElementById("redirect_android_studio").style.backgroundColor = "rgba(61, 220, 132, 0.8)";
+            // document.getElementById("redirect_pieces").style.backgroundColor = "rgba(0, 0, 0, 0.8)"; // rgb(17,20,16)
+            // document.getElementById("redirect_mysql_wb").style.backgroundColor = "rgba(38, 85, 124, 0.8)";
+            // document.getElementById("redirect_arduino_ide").style.backgroundColor = "rgba(0, 133, 138, 0.8)";
+            // document.getElementById("redirect_jupyter").style.backgroundColor = "rgba(227, 110, 46, 0.8)";
         } else {
             toggle_count++;
             document.getElementById("color_change_item_1").style.backgroundColor = "#1F2937";
@@ -76,6 +157,31 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("recommendation_card_second_child").style.color = "#9CA3AF";
             document.getElementById("color_change_item_15").style.color = "#fff";
             document.getElementById("color_change_item_16").style.color = "#fff";
+            document.getElementById("third_page").style.backgroundColor = "#111827";
+            document.getElementById("skill_h1").style.color = "#fff";
+            document.getElementById("skill_h2").style.color = "#fff";
+            document.getElementById("skill_h3").style.color = "#fff";
+            document.getElementById("skill_h4").style.color = "#fff";
+            document.getElementById("ind_skil1").style.backgroundColor = "transparent";
+            document.getElementById("ind_skil2").style.backgroundColor = "transparent";
+            document.getElementById("ind_skil3").style.backgroundColor = "transparent";
+            document.getElementById("ind_skil4").style.backgroundColor = "transparent";
+
+            document.getElementById("fourth_page").style.backgroundColor = "#111827";
+            document.getElementById("redirect_vscode").style.backgroundColor = "transparent";
+            document.getElementById("redirect_android_studio").style.backgroundColor = "transparent";
+            document.getElementById("redirect_pieces").style.backgroundColor = "transparent";
+            document.getElementById("redirect_mysql_wb").style.backgroundColor = "transparent";
+            document.getElementById("redirect_arduino_ide").style.backgroundColor = "transparent";
+            document.getElementById("redirect_jupyter").style.backgroundColor = "transparent";
+
+            document.getElementById("fifth_page").style.backgroundColor = "#111827";
+            document.getElementById("run1").style.color = "#fff";
+            document.getElementById("run2").style.color = "#fff";
+            document.getElementById("run3").style.color = "#fff";
+            document.getElementById("wt").style.color = "#fff";
+            document.getElementById("lc").style.color = "#fff";
+            document.getElementById("pn").style.color = "#fff";
 
         }
     });
@@ -116,6 +222,15 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("recommendation_card_second_child").style.color = "#3E4856";
             document.getElementById("color_change_item_15").style.color = "#000";
             document.getElementById("color_change_item_16").style.color = "#000";
+            document.getElementById("third_page").style.backgroundColor = "#fff";
+            document.getElementById("skill_h1").style.color = "#000";
+            document.getElementById("skill_h2").style.color = "#000";
+            document.getElementById("skill_h3").style.color = "#000";
+            document.getElementById("skill_h4").style.color = "#000";
+            document.getElementById("ind_skil1").style.backgroundColor = "#f3f4f6";
+            document.getElementById("ind_skil2").style.backgroundColor = "#f3f4f6";
+            document.getElementById("ind_skil3").style.backgroundColor = "#f3f4f6";
+            document.getElementById("ind_skil4").style.backgroundColor = "#f3f4f6";
         } else {
             toggle_count++;
             document.getElementById("color_change_item_1").style.backgroundColor = "#1F2937";
@@ -144,6 +259,15 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("recommendation_card_second_child").style.color = "#9CA3AF";
             document.getElementById("color_change_item_15").style.color = "#fff";
             document.getElementById("color_change_item_16").style.color = "#fff";
+            document.getElementById("third_page").style.backgroundColor = "#111827";
+            document.getElementById("skill_h1").style.color = "#fff";
+            document.getElementById("skill_h2").style.color = "#fff";
+            document.getElementById("skill_h3").style.color = "#fff";
+            document.getElementById("skill_h4").style.color = "#fff";
+            document.getElementById("ind_skil1").style.backgroundColor = "transparent";
+            document.getElementById("ind_skil2").style.backgroundColor = "transparent";
+            document.getElementById("ind_skil3").style.backgroundColor = "transparent";
+            document.getElementById("ind_skil4").style.backgroundColor = "transparent";
 
         }
     });
