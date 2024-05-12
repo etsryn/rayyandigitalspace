@@ -10,28 +10,12 @@
     transform: translateY(0px);
     opacity: 1;
 }
-/* ------------------- */
-/* Apply custom styles to the scrollbar */
+
+/* ------------------------------------------- */
 body::-webkit-scrollbar {
-    width: 0px; /* Removed Vertical Scrollbar */
-    background-color: #f1f1f1;
-    border-radius: 5px;
+    width: 0px;
 }
-
-/* Style the scrollbar thumb */
-body::-webkit-scrollbar-thumb {
-    background-color: #555;
-    border-radius: 5px;
-    border: 2px solid #f1f1f1;
-}
-
-/* Style the scrollbar track */
-body::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.1); /* Add shadow effect to the track */
-}
-
+/* ------------------------------------------- */
 
 * {
 	margin: 0;
@@ -338,15 +322,13 @@ header .container_main_for_header {
 	font-size: 1.2vw;
 	font-weight: bolder;
 	line-height: 3vw;
-	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	/* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: 4px 4px 10px rgb(255, 255, 255, 0.6);
+
 	transition: 0.5s ease;
 }
 .content_page_first .project_list_common_design .top_container .top_right_division button:hover {
-    width: 10vw;
-    height: 19vw;
-    background-color: rgba(255,255,255,0.1);
-	color: #fff;
-	font-size: 1.5vw;
+	box-shadow: -4px 4px 10px rgb(255, 255, 255, 0.8);
 }
 
 .content_page_first .project_list_common_design .bottom_full_no_division {
@@ -752,7 +734,7 @@ header .container_main_for_header {
 		margin-bottom: 40px;
 	}
 	.content_page_first .project_list_common_design .top_container .top_left_division #project_card_heading_container h1 {
-		font-size: 32px;
+		font-size: 30px;
 		color: rgba(255, 255, 255, 0.5);
 		font-weight: bolder;
 		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -775,7 +757,7 @@ header .container_main_for_header {
 		color: rgba(255, 255, 255, 0.5);
 		font-weight: bolder;
 		letter-spacing: 0vw;
-		line-height: 3vh;
+		line-height: 4vh;
 		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 		text-align: center;
 		justify-content: center;
@@ -798,37 +780,73 @@ header .container_main_for_header {
 
 /* 0 -> 360 for Mobile Look + 360 to 483 Tablet Look COMBINED */
 @media (max-width: 483px) {
-	/* Hiding The Navigators */
-	.navigators {
-		display: none;
-	}
-
-	/* Hiding The Sign-In Buttons */
-	.login_signup_buttons {
-		display: none;
-	}
-
-	/* Showing The Menu Button */
-	#menu_icon {
-		display: block;
-		cursor: pointer;
-		font-size: 3vh;
+	html, body {
+        width: auto;
+        height: 100%;
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove default padding */
+        /* overflow-x: hidden; Optional: hide horizontal scrollbar */
+    }
+    .navigators {
+        display: none;
+    }
+    
+    .login_signup_buttons {
+        display: none;
+    }
+    #menu_icon {
+        display: block;
+        cursor: pointer;
+        font-size: 3vh;
+    }
+    .container_main_for_header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        justify-content: center;
+    }
+    .container_bottom_for_header {
+        background-color: #1F2937;
+        height: 5.5vw;
+        text-align: center;
+        padding-top: 1.5vw;
+    }
+    .container_top_for_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1F2937;
+        height: 15vw;
+        padding: 0 20px;
+    }
+    #live_running_updates {
+        font-size: 2.5vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    #logo p {
+        color: #D8B4FE;
+        font-size: 7vw;
+    }
+    #separator_line {
+		height: 0.13vh;
 	}
 	/* Designing SignUp/SugnIn Buttons */
 	.dropdown_login_signup_buttons {
 		display: flex;
 		flex-direction: column;
-		gap: 1vw;
+		gap: 2vw;
 		margin-top: 1vw;
+		margin-bottom: 1vw;
+		margin-right: 1vw;
 	}
 	.dropdown_login_signup_buttons button {
-		padding: 1vw 1.5vw;
+		padding: 1.8vw 2.2vw;
 		background-color: #c084fc;
 		border: none;
 		border-radius: 5px;
 		margin-left: 1.1vw;
-		font-size: 1.6vw;
-		font-family: cursive;
+		font-size: 3.5vw;
+		font-family: 'Times New Roman', Times, serif;
 		text-align: center;
 		justify-content: center;
 		color: white;
@@ -845,7 +863,7 @@ header .container_main_for_header {
 		position: absolute;
 		display: none;
 		flex-direction: column;
-		width: 34vw;
+		width: 55vw;
 		height: auto;
 		padding: 1vw;
 		background-color: #111827;
@@ -864,71 +882,24 @@ header .container_main_for_header {
 		font-family: cursive;
 	}
 	#nav_options #header_of_option_drop p {
-		font-size: 1.5vw;
+		font-size: 2.5vw;
 	}
 	#nav_options #header_of_option_drop svg {
-		width: 3vw;
+		width: 6vw;
 	}
 	#nav_options .nav_link_buttons a {
-		font-size: 2vw;
-		font-family: cursive;
+		font-size: 4vw;
+		padding: 2vw 0vw;
+		margin: 1vw;
+		font-family: 'Times New Roman', Times, serif;
 	}
 	/* Now Changing the Structure From Row to Column */
 	.content_page_first {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		/* gap: 1vw; */
+		padding-top: 30vw;
 	}
-	/* Now Designing Each Sub-Part of The First Page's Right Content [The Feedback Form Content] */
-	input[type="text"], input[type="tel"], textarea {
-		width: 90%;
-		height: 10vw;
-		padding: 3vw;
-		margin: 0.8vw 0;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-		background-color: #fff;
-		color: #333;
-		transition: border-color 0.3s;
-		font-size: 2.2vw;
-	}
-	textarea {
-		height: 20vw;
-	}
-	input[type="text"]:hover, input[type="tel"]:hover, textarea:hover {
-		border-color: #666;
-	}
-
-	input[type="text"]:focus::placeholder, input[type="tel"]:focus::placeholder, textarea:focus::placeholder {
-		opacity: 0.5;
-		transform: translateY(-100%);
-		transition: all 0.3s ease-out;
-	}
-
-	input[type="submit"] {
-		width: 90%;
-
-		padding: 3vw;
-		border: none;
-		border-radius: 5px;
-		background-color: #4caf50;
-		color: #ffffff;
-		font-weight: bold;
-		font-size: 2.5vw;
-		cursor: pointer;
-		transition: background-color 0.3s;
-	}
-
-	input[type="submit"]:hover {
-		background-color: #45a049;
-	}
-
-
-
-
-
-
 	.content_page_first .project_list_common_design {
 		width: 100%;
 		height: 20%;
@@ -1107,9 +1078,4 @@ header .container_main_for_header {
 	.content_page_first .project_list_common_design .top_container .top_left_division .description_container_common_design p:hover {
 		color: rgba(255, 255, 255, 1);
 	}
-	
-	
-
-
-
 }
