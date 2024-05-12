@@ -612,21 +612,55 @@ input[type="submit"]:hover {
 
 /* 0 -> 360 for Mobile Look + 360 to 483 Tablet Look COMBINED */
 @media (max-width: 483px) {
-	/* Hiding The Navigators */
-	.navigators {
-		display: none;
-	}
-
-	/* Hiding The Sign-In Buttons */
-	.login_signup_buttons {
-		display: none;
-	}
-
-	/* Showing The Menu Button */
-	#menu_icon {
-		display: block;
-		cursor: pointer;
-		font-size: 3vh;
+	html, body {
+        width: auto;
+        height: 100%;
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove default padding */
+        /* overflow-x: hidden; Optional: hide horizontal scrollbar */
+    }
+    .navigators {
+        display: none;
+    }
+    
+    .login_signup_buttons {
+        display: none;
+    }
+    #menu_icon {
+        display: block;
+        cursor: pointer;
+        font-size: 3vh;
+    }
+    .container_main_for_header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        justify-content: center;
+    }
+    .container_bottom_for_header {
+        background-color: #1F2937;
+        height: 5.5vw;
+        text-align: center;
+        padding-top: 1.5vw;
+    }
+    .container_top_for_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1F2937;
+        height: 15vw;
+        padding: 0 20px;
+    }
+    #live_running_updates {
+        font-size: 2.5vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    #logo p {
+        color: #D8B4FE;
+        font-size: 7vw;
+    }
+    #separator_line {
+		height: 0.13vh;
 	}
 	/* Designing SignUp/SugnIn Buttons */
 	.dropdown_login_signup_buttons {
@@ -691,23 +725,6 @@ input[type="submit"]:hover {
 		margin: 1vw;
 		font-family: 'Times New Roman', Times, serif;
 	}
-	/* x */
-	.container_main_for_header .container_top_for_header {
-		padding-top: 1vw;
-		height: 12vw;
-	}
-	.container_main_for_header .container_top_for_header #logo a p {
-		font-size: 8vw;
-	}
-	#separator_line {
-		height: 0.13vh;
-	}
-	/* Making Updates (Marquee) Size Bigger */
-	#live_running_updates {
-        font-size: 2.5vw;
-        font-weight: 500;
-        letter-spacing: 2px;
-    }
 	/* Now Changing the Structure From Row to Column */
 	.content_page_first {
 		width: 100%;
@@ -778,7 +795,6 @@ input[type="submit"]:hover {
 		transform: translateY(-100%);
 		transition: all 0.3s ease-out;
 	}
-
 	input[type="submit"] {
 		width: 90%;
 		margin: 2vw 0;
