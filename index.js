@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("color_change_item_6").style.color = "#000";
             document.getElementById("color_change_item_7").style.color = "#000";
             document.getElementById("color_change_item_8").style.color = "#000";
-            document.getElementById("color_change_item_9").style.color = "#000";
+            // document.getElementById("color_change_item_9").style.color = "#000";
             document.getElementById("svgIcon").style.color = "#9333EA";
             document.getElementById("separator_line").style.backgroundColor = "#9CA3AF";
             document.getElementById("color_change_item_10").style.backgroundColor = "#fff";
@@ -153,7 +153,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("color_change_item_6").style.color = "#fff";
             document.getElementById("color_change_item_7").style.color = "#fff";
             document.getElementById("color_change_item_8").style.color = "#fff";
-            document.getElementById("color_change_item_9").style.color = "#fff";
+            // document.getElementById("color_change_item_9").style.color = "#fff";
             document.getElementById("svgIcon").style.color = "#fff";
             document.getElementById("separator_line").style.backgroundColor = "#fff";
             document.getElementById("color_change_item_10").style.backgroundColor = "#1F2937";
