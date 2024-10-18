@@ -920,6 +920,8 @@ header .container_main_for_header {
     }
 #recommendation_cards #recommendation_card_second_child p {
         overflow-y: scroll;
+	width: auto;
+	max-height: 10vw;
     }
 
 
