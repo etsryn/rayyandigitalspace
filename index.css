@@ -279,9 +279,6 @@ header .container_main_for_header {
 .recommender_name {
     cursor: pointer;
 }
-.recommender_name:hover {
-    color: #000;
-}
 #recommendation_cards .recommendation_card p {
     margin-top: 1vw;
     margin-bottom: 2vw;
