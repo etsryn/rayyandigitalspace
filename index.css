@@ -276,9 +276,6 @@ header .container_main_for_header {
     border-radius: 5px;
     margin: 3vw 2vw;
 }
-.recommender_name {
-    cursor: pointer;
-}
 #recommendation_cards .recommendation_card p {
     margin-top: 1vw;
     margin-bottom: 2vw;
