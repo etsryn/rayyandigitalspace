@@ -914,7 +914,7 @@ header .container_main_for_header {
         width: 60vw;
         margin: 3vw 2vw;
 	overflow-y: scroll;
-	height: 30vw;
+	max-height: 30vw;
     }  
     #recommendation_cards #recommendation_card_second_child {
         margin-left: 2vw;
