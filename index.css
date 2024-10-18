@@ -916,7 +916,7 @@ header .container_main_for_header {
     }  
     #recommendation_cards #recommendation_card_second_child {
         margin-left: 2vw;
-	overflow-y: auto;
+	overflow-y: scroll;
     }
     .heading_as_separator #h_1 {
         width: 100%;
