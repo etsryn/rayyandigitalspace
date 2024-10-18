@@ -282,7 +282,7 @@ header .container_main_for_header {
 #recommendation_cards .recommendation_card p {
     margin-top: 1vw;
     margin-bottom: 2vw;
-    font-size: 1.1vw;
+    font-size: 1.1vw; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     word-spacing: 3px;
     line-height: 2vw;
