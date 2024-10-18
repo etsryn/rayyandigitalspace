@@ -12,8 +12,42 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./Images_Index/favicon.ico">
+    <style>
+        /* Toast Notification Styles */
+        #toastOffline {
+            display: none;
+            position: fixed;
+            bottom: 0px;
+            text-align: center;
+            background-color: #212121;
+            color: #fff;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+            width: 100%;
+            font-size: 14px;
+        }
+        #toastOnline {
+            display: none;
+            position: fixed;
+            bottom: 0px;
+            text-align: center;
+            background-color: green;
+            color: #fff;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+
 </head>
 <body>
+    <div id="toastOffline">Network status will be shown here</div>
+    <div id="toastOnline">Network status will be shown here</div>
     <!-- Navigation Bar Starts -->
     <header>
         <div class="container_main_for_header">
@@ -512,6 +546,34 @@ I highly recommend Rayyan to anyone looking for someone with a tireless drive to
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
         });
+    </script>
+    <script>
+        const toastOf = document.getElementById('toastOffline');
+        const toastOn = document.getElementById('toastOnline');
+    
+        function showToastOf(message) {
+            toastOf.textContent = message;
+            toastOf.style.display = 'block';
+            setTimeout(() => {
+                toastOf.style.display = 'none';
+            }, 3000);
+        }
+        function showToastOn(message) {
+            toastOn.textContent = message;
+            toastOn.style.display = 'block';
+            setTimeout(() => {
+                toastOn.style.display = 'none';
+            }, 3000);
+        }
+        function updateNetworkStatus() {
+            if (navigator.onLine) {
+                showToastOn('Back Online');
+            } else {
+                showToastOf('No Internet connection');
+            }
+        }
+        window.addEventListener('online', updateNetworkStatus);
+        window.addEventListener('offline', updateNetworkStatus);
     </script>
 </body>
 </html>
