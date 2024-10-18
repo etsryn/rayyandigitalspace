@@ -909,6 +909,7 @@ header .container_main_for_header {
         flex-direction: column;
         margin: 10vw calc(100% - 82vw);
         width: 0%;
+	overflow-y: scroll;
     }
     .recommendation_card {
         width: 60vw;
@@ -916,7 +917,6 @@ header .container_main_for_header {
     }  
     #recommendation_cards #recommendation_card_second_child {
         margin-left: 2vw;
-	overflow-y: scroll;
     }
     .heading_as_separator #h_1 {
         width: 100%;
