@@ -906,19 +906,25 @@ header .container_main_for_header {
         width: 75%;
     }
     #recommendation_cards {
-        flex-direction: column;
-        margin: 10vw calc(100% - 82vw);
-        width: 0%;
-	max-height: 30vw;
-    }
-    .recommendation_card {
-        width: 60vw;
-        margin: 3vw 2vw;
-	overflow-y: scroll;
-    }  
-    #recommendation_cards #recommendation_card_second_child {
-        margin-left: 2vw;
-    }
+    display: flex;
+    flex-direction: column;
+    margin: 10vw calc(100% - 82vw);
+    width: 0%;
+    max-height: 30vw;
+}
+
+.recommendation_card {
+    width: 60vw;
+    margin: 3vw 2vw;
+    overflow: hidden; /* Default state to avoid unnecessary scrollbars */
+}
+
+#recommendation_card_second_child {
+    margin-left: 2vw;
+    max-height: 20vw; /* Adjust height to fit content */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
     .heading_as_separator #h_1 {
         width: 100%;
         height: 2.5vw;
