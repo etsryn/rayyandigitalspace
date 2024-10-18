@@ -914,14 +914,10 @@ header .container_main_for_header {
     .recommendation_card {
         width: 60vw;
         margin: 3vw 2vw;
+	overflow-y: scroll;
     }  
     #recommendation_cards #recommendation_card_second_child {
         margin-left: 2vw;
-    }
-#recommendation_cards #recommendation_card_second_child p {
-        overflow-y: scroll;
-	width: auto;
-	max-height: 10vw;
     }
 
 
