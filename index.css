@@ -906,26 +906,21 @@ header .container_main_for_header {
         width: 75%;
     }
 #recommendation_cards {
-    display: flex;
-    flex-direction: column;
-    margin: 10vw calc(100% - 82vw);
-    width: 0%;
-    max-height: 30vw;
-}
-
-.recommendation_card {
-    width: 60vw;
-    margin: 3vw 2vw;
-    overflow: hidden; /* Default state */
-    flex-shrink: 0; /* Prevent cards from shrinking */
-}
-
-#recommendation_card_second_child {
-    margin-left: 2vw;
-    max-height: 20vw; /* Set a max height to limit content display */
-    overflow-y: auto; /* Enable vertical scroll */
-    display: block; /* Ensure the card behaves like a block element */
-}
+        flex-direction: column;
+        margin: 10vw calc(100% - 82vw);
+        width: 0%;
+	max-height: 30vw;
+    }
+    .recommendation_card {
+        width: 60vw;
+        margin: 3vw 2vw;
+    }  
+    #recommendation_cards #recommendation_card_second_child {
+        margin-left: 2vw;
+    }
+#recommendation_cards #recommendation_card_second_child p {
+        overflow-y: scroll;
+    }
 
 
     .heading_as_separator #h_1 {
