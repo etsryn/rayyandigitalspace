@@ -276,7 +276,12 @@ header .container_main_for_header {
     border-radius: 5px;
     margin: 3vw 2vw;
 }
-
+.recommender_name {
+    cursor: pointer;
+}
+.recommender_name:hover {
+    color: #000;
+}
 #recommendation_cards .recommendation_card p {
     margin-top: 1vw;
     margin-bottom: 2vw;
@@ -317,6 +322,8 @@ header .container_main_for_header {
 #recommendation_cards .recommendation_card h4 {
     font-size: 1vw;
 }
+
+
 
 /* Drop-Down */
 #nav_options {
