@@ -431,7 +431,7 @@ header .container_main_for_header {
 
 .content_page_third #group_skills .individual_skill {
     width: 40vw;
-    height: auto;
+    height: 10vw;
     background-color: transparent;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -442,7 +442,18 @@ header .container_main_for_header {
     color: #fff;
     margin: 2vw;
 }
-
+.content_page_third #group_skills .individual_skill #skill_h1 img {
+    width: 2.2vw;
+}
+.content_page_third #group_skills .individual_skill #skill_h2 img {
+    width: 4vw;
+}
+.content_page_third #group_skills .individual_skill #skill_h3 img {
+    width: 2vw;
+}
+.content_page_third #group_skills .individual_skill #skill_h4 img {
+    width: 3.7vw;
+}
 .content_page_third #group_skills .individual_skill .base_container {
     width: 90%;
     height: 0.3vw;
@@ -1406,6 +1417,18 @@ header .container_main_for_header {
     .content_page_third #group_skills .individual_skill .skill_heading {
         font-size: 4vw;
         padding-bottom: 3vw;
+    }
+    .content_page_third #group_skills .individual_skill #skill_h1 img {
+        width: 5.2vw;
+    }
+    .content_page_third #group_skills .individual_skill #skill_h2 img {
+        width: 7vw;
+    }
+    .content_page_third #group_skills .individual_skill #skill_h3 img {
+        width: 4vw;
+    }
+    .content_page_third #group_skills .individual_skill #skill_h4 img {
+        width: 6.5vw;
     }
     html, body {  /* IMPORTANT */
         display: flex;
