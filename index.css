@@ -1016,6 +1016,47 @@ header .container_main_for_header {
         background-color: transparent;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
+
+
+
+    .content_page_third #group_skills .individual_skill .base_container {
+        width: 90%;
+        height: 1.8vw;
+        background-color: rgb(156 163 175);
+        margin: 2vw;
+    }
+    
+    .content_page_third #group_skills .individual_skill .base_container #actual_coverage1 {
+        width: 30%;
+        height: 1.8vw;
+        background-color: #2270E2;
+    }
+    
+    .content_page_third #group_skills .individual_skill .base_container #actual_coverage2 {
+        width: 20%;
+        height: 0.8vw;
+        background-color: #2270E2;
+    }
+    
+    .content_page_third #group_skills .individual_skill .base_container #actual_coverage3 {
+        width: 90%;
+        height: 0.8vw;
+        background-color: #2270E2;
+    }
+    
+    .content_page_third #group_skills .individual_skill .base_container #actual_coverage4 {
+        width: 30%;
+        height: 0.8vw;
+        background-color: #2270E2;
+    }
+
+
+
+
+
+
+
+
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Fourth Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     .content_page_fourth .heading_as_separator {
         padding-bottom: 12vw;
