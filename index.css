@@ -1634,6 +1634,7 @@ img[src="./Images_Index/pieces_logo.png"] {
     }
     .content_page_sixth #scroll_end_thought #thought h2 {
         font-size: 4.5vw;
+        line-height: 10vw;
     }
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     .footer_page_seventh {
