@@ -614,6 +614,13 @@ header .container_main_for_header {
     text-decoration: underline;
     color: blue;
 }
+.content_page_fourth #group_softwares #section_top .software_common_design .software_image img, .content_page_fourth #group_softwares #section_bottom .software_common_design .software_image img {
+ width: 10vw;
+}
+img[src="./Images_Index/pieces_logo.png"] {
+    width: 12vw !important;
+    margin-top: -1.1vw !important;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 4th Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .content_page_fifth {
@@ -1566,6 +1573,13 @@ header .container_main_for_header {
         justify-content: center;
         font-size: 2vw;
         margin-top: 10vw;
+    }
+    .content_page_fourth #group_softwares #section_top .software_common_design .software_image img, .content_page_fourth #group_softwares #section_bottom .software_common_design .software_image img {
+        width: 20vw;
+    }
+    img[src="./Images_Index/pieces_logo.png"] {
+        width: 25vw !important;
+        margin-top: -1.1vw !important;
     }
     /* FIFTH PAGE */
     .content_page_fifth {
