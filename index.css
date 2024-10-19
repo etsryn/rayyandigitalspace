@@ -1598,6 +1598,8 @@ img[src="./Images_Index/pieces_logo.png"] {
     .content_page_fifth #group_connectivities {
         flex-direction: column;
         margin-top: 10vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
     }
     
     .content_page_fifth #group_connectivities .individual_connectivity {
@@ -1612,13 +1614,13 @@ img[src="./Images_Index/pieces_logo.png"] {
     }
     
     .content_page_fifth #group_connectivities .individual_connectivity .magnitude {
-        font-size: 3.5vw;
+        font-size: 5.5vw;
         color: #fff;
     }
     .content_page_fifth #group_connectivities .individual_connectivity .base_heading {
-        font-size: 2.4vw;
+        font-size: 5.4vw;
         color: #fff;
-        font-weight: bolder;
+        font-weight: normal;
     }
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Sixth Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     .content_page_sixth #scroll_end_thought #thought p {
