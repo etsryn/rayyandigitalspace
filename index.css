@@ -933,12 +933,12 @@ header .container_main_for_header {
         flex-direction: column;
         margin: 10vw calc(100% - 82vw);
         width: 0%;
-	max-height: 30vw;
+	    max-height: 30vw;
     }
     .recommendation_card {
         width: 60vw;
         margin: 3vw 2vw;
-	overflow-y: scroll;
+	    overflow-y: scroll;
     }  
     #recommendation_cards #recommendation_card_second_child {
         margin-left: 2vw;
@@ -1296,6 +1296,7 @@ header .container_main_for_header {
     #recommendation_cards .recommendation_card p {
         font-size: 3vw;
         line-height: 5vw;
+        min-height: 20vw;
     }
     #recommendation_cards .recommendation_card h3 {
         margin-top: 5.5vw;
