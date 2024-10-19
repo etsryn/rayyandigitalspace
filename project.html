@@ -78,6 +78,33 @@
     <!-- Page 1 Content Starts -->
     <div class="content_page_first" id="color_change_item_11">
 
+        <!-- Card -1 -->
+        <div id="project_listed_number_6" class="project_list_common_design"> <!-- flex-col-->
+            <div class="top_container" id="top_container_6"> <!-- flex-row -->
+                <div class="top_left_division"> <!-- flex-row -->
+                    <div id="project_card_heading_container">
+                        <h1 id="project_id_6" class="card_heading">Linear Regression Models (Biginner Version)</h1>
+                    </div>
+                    <div id="description_id_6" class="description_container_common_design">
+                        <p id="paragraph_id_6" class="paragraph_common_design">
+                            This repository serves as a collection of Linear Regression models, each created using different datasets to demonstrate the versatility of Linear Regression in solving various real-world problems. The repository is structured to provide easy access to different examples and help users understand the application of Linear Regression.
+
+                            Moreover this repository aims to illustrate how Linear Regression can be applied in different contexts, providing an educational resource for understanding how relationships between input variables and output variables can be modeled. Whether you are just starting to learn about Linear Regression or you are looking for a resource to understand its practical applications, this repository is designed to assist you.
+                        </p>
+                    </div>
+                </div>
+                <div class="top_right_division">
+                    <button class="repo_download_button" id="repo_download_lrm_temp">Download<br />Project</button>
+                </div>
+            </div>
+            <div class="bottom_full_no_division" id="id_bottom_full_no_division_6">
+                <div id="bottom_full_button_container">
+                    <button id="lrm_repo">To GitHub</button></a>
+                    <button id="lrm_project"><span>Explore more</span></button>
+                    <button class="repo_download_button" id="repo_download_lrm">Download Project</button>
+                </div>
+            </div>
+        </div>
         <!-- Card 1 -->
         <div id="project_listed_number_1" class="project_list_common_design"> <!-- flex-col-->
             <div class="top_container" id="top_container_1"> <!-- flex-row -->
@@ -291,6 +318,9 @@
         });
         document.getElementById('rds_feedback').addEventListener('click', () => {
             window.location.href = 'https://etsryn.github.io/rayyandigitalspace/feedback.html';
+        });
+        document.getElementById('lrm_repo').addEventListener('click', () => {
+            window.open('https://github.com/etsryn/Linear-Regression.git', '_blank');
         });
     </script>
 </body>

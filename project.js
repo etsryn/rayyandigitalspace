@@ -100,6 +100,19 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("rds_repo").style.color = "#000";
             document.getElementById("rds_project").style.color = "#000";
             document.getElementById("rds_web").style.color = "#000";
+
+            // For Project 6
+            document.getElementById("project_listed_number_6").style.backgroundImage = "url(./Images_Index/wipped_wall_putty.jpg)";
+            document.getElementById("project_listed_number_6").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.5)";
+            document.getElementById("top_container_6").style.backgroundColor = "transparent";
+            document.getElementById("id_bottom_full_no_division_6").style.backgroundColor = "transparent";
+            document.getElementById("project_id_6").style.color = "#000";
+            document.getElementById("paragraph_id_6").style.color = "#000";
+            document.getElementById("repo_download_lrm_temp").style.color = "#000";
+            document.getElementById("repo_download_lrm").style.color = "#000";
+            document.getElementById("lrm_repo").style.color = "#000";
+            document.getElementById("lrm_project").style.color = "#000";
+            document.getElementById("lrm_web").style.color = "#000";
         } else {
             toggle_count_index = toggle_count_index - 1;
             
@@ -182,6 +195,19 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("rds_repo").style.color = "#fff";
             document.getElementById("rds_project").style.color = "#fff";
             document.getElementById("rds_web").style.color = "#fff";
+
+            // For Project 6
+            document.getElementById("project_listed_number_6").style.backgroundImage = "url(./Images_Index/stars_sky.jpg)";
+            document.getElementById("project_listed_number_6").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.5)";
+            document.getElementById("top_container_6").style.backgroundColor = "rgba(0,0,0,0.3)";
+            document.getElementById("id_bottom_full_no_division_6").style.backgroundColor = "rgba(0,0,0,0.3)";
+            document.getElementById('project_id_6').style.removeProperty('color');
+            document.getElementById('paragraph_id_6').style.removeProperty('color');
+            document.getElementById("repo_download_lrm_temp").style.color = "#fff";
+            document.getElementById("repo_download_lrm").style.color = "#fff";
+            document.getElementById("lrm_repo").style.color = "#fff";
+            document.getElementById("lrm_project").style.color = "#fff";
+            document.getElementById("lrm_web").style.color = "#fff";
         }
     });
 });
@@ -273,6 +299,19 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("rds_project").style.color = "#000";
             document.getElementById("rds_web").style.color = "#000";
 
+            // For Project 6
+            document.getElementById("project_listed_number_6").style.backgroundImage = "url(./Images_Index/wipped_wall_putty.jpg)";
+            document.getElementById("project_listed_number_6").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.5)";
+            document.getElementById("top_container_6").style.backgroundColor = "transparent";
+            document.getElementById("id_bottom_full_no_division_6").style.backgroundColor = "transparent";
+            document.getElementById("project_id_6").style.color = "#000";
+            document.getElementById("paragraph_id_6").style.color = "#000";
+            document.getElementById("repo_download_lrm_temp").style.color = "#000";
+            document.getElementById("repo_download_lrm").style.color = "#000";
+            document.getElementById("lrm_repo").style.color = "#000";
+            document.getElementById("lrm_project").style.color = "#000";
+            document.getElementById("lrm_web").style.color = "#000";
+
         } else {
             toggle_count_index = toggle_count_index - 1;
             
@@ -355,6 +394,19 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("rds_repo").style.color = "#fff";
             document.getElementById("rds_project").style.color = "#fff";
             document.getElementById("rds_web").style.color = "#fff";
+
+            // For Project 6
+            document.getElementById("project_listed_number_6").style.backgroundImage = "url(./Images_Index/stars_sky.jpg)";
+            document.getElementById("project_listed_number_6").style.boxShadow = "-4px 4px 10px rgba(0, 0, 0, 0.5)";
+            document.getElementById("top_container_6").style.backgroundColor = "rgba(0,0,0,0.3)";
+            document.getElementById("id_bottom_full_no_division_6").style.backgroundColor = "rgba(0,0,0,0.3)";
+            document.getElementById('project_id_6').style.removeProperty('color');
+            document.getElementById('paragraph_id_6').style.removeProperty('color');
+            document.getElementById("repo_download_lrm_temp").style.color = "#fff";
+            document.getElementById("repo_download_lrm").style.color = "#fff";
+            document.getElementById("lrm_repo").style.color = "#fff";
+            document.getElementById("lrm_project").style.color = "#fff";
+            document.getElementById("lrm_web").style.color = "#fff";
         }
     });
 });
