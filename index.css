@@ -1459,14 +1459,14 @@ header .container_main_for_header {
 
     .content_page_third #group_skills .individual_skill .base_container {
         width: 90%;
-        height: 0.8vw;
+        height: 1.8vw;
         background-color: rgb(156 163 175);
         margin: 2vw;
     }
     
     .content_page_third #group_skills .individual_skill .base_container #actual_coverage1 {
         width: 30%;
-        height: 0.8vw;
+        height: 1.8vw;
         background-color: #2270E2;
     }
     
