@@ -1571,8 +1571,9 @@ img[src="./Images_Index/pieces_logo.png"] {
         grid-template-rows: auto auto;
         gap: 3vW;
         justify-content: center;
-        font-size: 2vw;
+        font-size: 4vw;
         margin-top: 10vw;
+        line-height: 5vw;
     }
     .content_page_fourth #group_softwares #section_top .software_common_design .software_image img, .content_page_fourth #group_softwares #section_bottom .software_common_design .software_image img {
         width: 20vw;
@@ -1580,6 +1581,9 @@ img[src="./Images_Index/pieces_logo.png"] {
     img[src="./Images_Index/pieces_logo.png"] {
         width: 25vw !important;
         margin-top: -1.1vw !important;
+    }
+    .content_page_fourth #group_softwares #section_top .software_common_design .software_name, .content_page_fourth #group_softwares #section_bottom .software_common_design .software_name {
+        font-size: 2.5vw;
     }
     /* FIFTH PAGE */
     .content_page_fifth {
