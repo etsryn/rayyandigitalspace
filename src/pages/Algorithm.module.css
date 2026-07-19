@@ -1,0 +1,208 @@
+.page {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+/* ====================================================== */
+/* HERO */
+/* ====================================================== */
+
+.hero {
+    margin-bottom: 120px;
+}
+
+.eyebrow {
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    color: var(--text-muted);
+    margin-bottom: 22px;
+}
+
+.title {
+    font-size: clamp(3.8rem, 7vw, 6rem);
+    line-height: .95;
+    letter-spacing: -.05em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    max-width: 760px;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+}
+
+/* ====================================================== */
+/* SECTION */
+/* ====================================================== */
+
+.section {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 45px;
+
+    padding: 90px 0;
+
+    border-top: 1px solid var(--border);
+}
+
+.section:last-of-type {
+    border-bottom: 1px solid var(--border);
+}
+
+.number {
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .25rem;
+    color: var(--accent);
+
+    position: sticky;
+    top: 120px;
+
+    align-self: start;
+}
+
+.content h2 {
+    font-size: 2rem;
+    letter-spacing: -.03em;
+    margin-bottom: 38px;
+}
+
+/* ====================================================== */
+/* LIST */
+/* ====================================================== */
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    font-size: 1.08rem;
+
+    transition: .25s ease;
+}
+
+.list li::before {
+    content: "•";
+
+    color: var(--accent);
+
+    font-size: 1.2rem;
+
+    margin-right: 18px;
+
+    flex-shrink: 0;
+}
+
+.list li:hover {
+    color: var(--accent);
+    padding-left: 10px;
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+/* ====================================================== */
+/* FOOTER */
+/* ====================================================== */
+
+.footer {
+    text-align: center;
+
+    padding: 160px 0 80px;
+}
+
+.footer h2 {
+    font-size: clamp(2.8rem, 5vw, 5rem);
+
+    line-height: 1.08;
+
+    letter-spacing: -.05em;
+
+    margin-bottom: 28px;
+}
+
+.footer p {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+    color: var(--text-secondary);
+}
+
+/* ====================================================== */
+/* RESPONSIVE */
+/* ====================================================== */
+
+@media (max-width: 900px) {
+
+    .section {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .number {
+        position: static;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .page {
+        width: 92%;
+        padding: 80px 0;
+    }
+
+    .hero {
+        margin-bottom: 80px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .content h2 {
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    .list li {
+        font-size: 1rem;
+        padding: 16px 0;
+    }
+
+    .footer {
+        padding-top: 110px;
+    }
+
+    .footer h2 {
+        font-size: 2.4rem;
+    }
+
+}

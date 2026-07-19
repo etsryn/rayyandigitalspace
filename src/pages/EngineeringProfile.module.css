@@ -1,0 +1,424 @@
+/* ============================================================
+   CODEFORCES-THEMED ENGINEERING PROFILE
+   Palette pulled from CF's rating ladder + light UI
+   ============================================================ */
+
+:root {
+  --cf-bg: #ffffff;
+  --cf-panel: #ffffff;
+  --cf-panel-alt: #f8fafc;
+  --cf-navy: #eff6ff;
+  --cf-border: #d7dee9;
+  --cf-border-soft: #e8edf4;
+  --cf-text: #334155;
+  --cf-text-dim: #64748b;
+  --cf-text-bright: #0f172a;
+
+  /* CF rating-color ladder */
+  --cf-gray: #808080;
+  --cf-green: #178a3d;
+  --cf-cyan: #057f78;
+  --cf-blue: #2563eb;
+  --cf-violet: #8b3a86;
+  --cf-orange: #d97706;
+  --cf-red: #dc2626;
+
+  --cf-mono: "JetBrains Mono", "Fira Code", "SFMono-Regular", Consolas, Menlo, monospace;
+  --cf-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+.justifytext {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.page {
+  background-color: var(--cf-bg);
+  background-image:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%),
+    repeating-linear-gradient(180deg, transparent, transparent 39px, #0f172a08 39px, #0f172a08 40px);
+  color: var(--cf-text);
+  font-family: var(--cf-sans);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.page * {
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   HERO — modeled on a CF user profile header:
+   handle, rating number, rating title, contest-rank strip
+   ============================================================ */
+
+.hero {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1% 32px 48px;
+  border-bottom: 1px solid var(--cf-border);
+}
+
+
+.heroTitle {
+  font-family: var(--cf-sans);
+  font-weight: 800;
+  font-size: clamp(28px, 4.4vw, 46px);
+  line-height: 1.15;
+  color: var(--cf-text-bright);
+  margin: 0 0 24px;
+  max-width: 720px;
+  letter-spacing: -0.01em;
+}
+
+.heroDescription {
+  font-size: 15.5px;
+  color: var(--cf-text);
+  max-width: 100%;
+  margin: 0 0 32px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.heroDescription strong {
+  color: var(--cf-text-bright);
+  font-weight: 700;
+}
+
+/* contest-rank style stat strip, like CF's profile sidebar stats */
+.statStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--cf-border);
+  background: var(--cf-panel);
+  box-shadow: 0 12px 30px #0f172a0a;
+}
+
+.statCell {
+  padding: 14px 16px;
+  border-right: 1px solid var(--cf-border);
+}
+
+.statCell:last-child {
+  border-right: none;
+}
+
+.statLabel {
+  font-family: var(--cf-mono);
+  font-size: 10.5px;
+  color: var(--cf-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.statValue {
+  font-family: var(--cf-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--cf-text-bright);
+}
+
+.statValue[data-tone="green"] {
+  color: var(--cf-green);
+}
+
+.statValue[data-tone="orange"] {
+  color: var(--cf-orange);
+}
+
+.statValue[data-tone="cyan"] {
+  color: var(--cf-cyan);
+}
+
+/* ============================================================
+   SECTION — table-row structure, like CF problem/submission
+   tables. Problem "letters" replace generic 01/02/03 numbering
+   ============================================================ */
+
+.section {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 44px 32px;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 28px;
+  border-bottom: 1px solid var(--cf-border-soft);
+}
+
+.sectionNumber {
+  font-family: var(--cf-mono);
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  background: var(--cf-text-bright);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.sectionContent h2 {
+  font-family: var(--cf-sans);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--cf-text-bright);
+  margin: 0 0 18px;
+  letter-spacing: -0.005em;
+}
+
+.sectionContent p {
+  font-size: 15px;
+  color: var(--cf-text);
+  margin: 0 0 14px;
+  max-width: 680px;
+}
+
+.quote {
+  font-family: var(--cf-mono);
+  font-size: 14.5px;
+  border-left: 3px solid gray;
+  padding: 10px 0 10px 18px;
+  margin: 20px 0;
+}
+
+/* ============================================================
+   PROFILE GRID — a "submission table" look
+   ============================================================ */
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--cf-border);
+  background: var(--cf-panel);
+  box-shadow: 0 12px 30px #0f172a08;
+}
+
+.profileItem {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--cf-border-soft);
+  border-right: 1px solid var(--cf-border-soft);
+}
+
+.profileItem:nth-child(2n) {
+  border-right: none;
+}
+
+.profileItem:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.profileItem span {
+  font-family: var(--cf-mono);
+  font-size: 10.5px;
+  color: var(--cf-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.profileItem h3 {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--cf-text-bright);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   PRINCIPLES — styled as CF "verdicts" (Accepted / green badge)
+   ============================================================ */
+
+.principles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--cf-border-soft);
+  border: 1px solid var(--cf-border);
+  box-shadow: 0 12px 30px #0f172a08;
+}
+
+.principle {
+  background: var(--cf-panel);
+  padding: 20px 22px;
+  position: relative;
+}
+
+.principleLabel {
+  font-family: var(--cf-mono);
+  font-size: 11px;
+  color: var(--cf-text-dim);
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+
+.principle h3 {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--cf-text-bright);
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+
+.principle p {
+  font-size: 13.5px;
+  color: var(--cf-text-dim);
+  margin: 0 0 14px;
+  line-height: 1.55;
+}
+
+
+/* ============================================================
+   FOCUS GRID — dashboard cards with rating-colored top rules
+   ============================================================ */
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.focusCard {
+  background: var(--cf-panel);
+  /* border: 1px solid var(--cf-border); */
+  border-left: 3px solid #000;
+  padding: 20px 22px;
+  box-shadow: 0 10px 24px #0f172a08;
+}
+
+.focusCard:nth-child(2) {
+  border-top-color: var(--cf-cyan);
+}
+
+.focusCard:nth-child(3) {
+  border-top-color: var(--cf-violet);
+}
+
+.focusCard:nth-child(4) {
+  border-top-color: var(--cf-green);
+}
+
+.focusCard span {
+  font-family: var(--cf-mono);
+  font-size: 10.5px;
+  color: var(--cf-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.focusCard h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--cf-text-bright);
+  margin: 0 0 10px;
+}
+
+.focusCard p {
+  font-size: 13.5px;
+  color: var(--cf-text-dim);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ============================================================
+   VISION — light contest-announcement panel
+   ============================================================ */
+
+.vision {
+  padding: 44px 32px;
+  border-top: 1px solid var(--cf-border);
+  border-bottom: 1px solid var(--cf-border);
+}
+
+.visionLabel {
+  max-width: 980px;
+  margin: 0 auto 20px;
+  font-family: var(--cf-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.visionTitle {
+  max-width: 980px;
+  margin: 0 auto 24px;
+  font-family: var(--cf-sans);
+  font-weight: 800;
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 1.2;
+  color: var(--cf-text-bright);
+  letter-spacing: -0.01em;
+}
+
+.visionText {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 15.5px;
+  color: var(--cf-text);
+  max-width: 640px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 680px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 32px 20px;
+  }
+
+  .hero {
+    padding: 48px 20px 36px;
+  }
+
+  .statStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statCell:nth-child(2n) {
+    border-right: none;
+  }
+
+  .statCell:nth-child(-n+2) {
+    border-bottom: 1px solid var(--cf-border);
+  }
+
+  .profileGrid,
+  .principles,
+  .focusGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .profileItem {
+    border-right: none;
+  }
+
+  .profileItem:last-child {
+    border-bottom: none;
+  }
+
+  .vision {
+    padding: 48px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}

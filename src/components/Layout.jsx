@@ -296,47 +296,20 @@ export default function Layout({ children }) {
                                     Navigation
                                 </div>
                             )}
-                            <Link
-                                to="/"
-                                className={isActive("/") ? "active" : ""}
-                            >
-                                HOME
-                            </Link>
-
-                            <Link
-                                to="/gym"
-                                className={isActive("/gym") ? "active" : ""}
-                            >
-                                GYM
-                            </Link>
-
-                            <Link
-                                to="/projects"
-                                className={isActive("/projects") ? "active" : ""}
-                            >
-                                PROJECTS
-                            </Link>
-
-                            <Link
-                                to="/quant"
-                                className={isActive("/quant") ? "active" : ""}
-                            >
-                                QUANT
-                            </Link>
-
-                            <Link
-                                to="/logs"
-                                className={isActive("/logs") ? "active" : ""}
-                            >
-                                LOGS
-                            </Link>
-
-                            <Link
-                                to="/gate"
-                                className={isActive("/gate") ? "active" : ""}
-                            >
-                                GATE
-                            </Link>
+                            
+                            <Link to="/" className={isActive("/") ? "active" : ""}>HOME</Link>
+                            <Link to="/engineeringprofile" className={isActive("/engineeringprofile") ? "active" : ""}>ENGINEERING PROFILE</Link>
+                            <Link to="/quant" className={isActive("/quant") ? "active" : ""}>QUANT</Link>
+                            <Link to="/gate" className={isActive("/gate") ? "active" : ""}>GATE</Link>
+                            <Link to="/projects" className={isActive("/projects") ? "active" : ""}>PROJECTS</Link>
+                            <Link to="/algorithm" className={isActive("/algorithm") ? "active" : ""}>ALGORITHM</Link>
+                            <Link to="/knowledge" className={isActive("/knowledge") ? "active" : ""}>KNOWLEDGE</Link>
+                            <Link to="/research" className={isActive("/research") ? "active" : ""}>RESEARCH</Link>
+                            <Link to="/logs" className={isActive("/logs") ? "active" : ""}>LOGS</Link>
+                            <Link to="/achievements" className={isActive("/achievements") ? "active" : ""}>ACHIEVEMENTS</Link>
+                            <Link to="/gym" className={isActive("/gym") ? "active" : ""}>GYM</Link>
+                            <Link to="/contact" className={isActive("/contact") ? "active" : ""}>CONTACT</Link>
+                            <Link to="/faq" className={isActive("/faq") ? "active" : ""}>FAQs</Link>
 
                         </div>
 
@@ -594,7 +567,7 @@ export default function Layout({ children }) {
             </main>
 
             <footer>
-                <p>© 2026 Rayyan's Codeforces Portfolio</p>
+                <p>© 2026 Rayyan Digital Space @ https://rayyandigitalspace.vercel.app</p>
             </footer>
         </div>
     );

@@ -1,0 +1,44 @@
+.justifyIntroduction {
+    line-height: 1.5;
+    /* color: #4b5563; */
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+.philosophy {
+    margin: 1rem 5rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+.justifyphilosophy {
+    line-height: 1.5;
+    /* color: #4b5563; */
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+.justifythanking {
+    float: right;
+}
+.resumeIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 6px;
+    vertical-align: super;
+
+    cursor: pointer;
+    color: inherit;
+
+    opacity: 0.7;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.resumeIcon:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}

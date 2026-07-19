@@ -2,6 +2,13 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
+import EngineeringProfile from './pages/EngineeringProfile'
+import Contact from './pages/Contact'
+import Faq from './pages/Faq'
+import Achievements from './pages/Achievements'
+import Research from './pages/Research'
+import Knowledge from './pages/Knowledge'
+import Algorithm from './pages/Algorithm'
 import Gym from './pages/Gym'
 import Projects from './pages/Projects'
 import Quant from './pages/Quant'
@@ -13,6 +20,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout><Home /></Layout>} path="/" />
+        <Route element={<Layout><EngineeringProfile /></Layout>} path="/engineeringprofile" />
+        <Route element={<Layout><Contact /></Layout>} path="/contact" />
+        <Route element={<Layout><Faq /></Layout>} path="/faq" />
+        <Route element={<Layout><Achievements /></Layout>} path="/achievements" />
+        <Route element={<Layout><Research /></Layout>} path="/research" />
+        <Route element={<Layout><Knowledge /></Layout>} path="/knowledge" />
+        <Route element={<Layout><Algorithm /></Layout>} path="/algorithm" />
         <Route element={<Layout><Gym /></Layout>} path="/gym" />
         <Route element={<Layout><Projects /></Layout>} path="/projects" />
         <Route element={<Layout><Quant /></Layout>} path="/quant" />
