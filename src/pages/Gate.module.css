@@ -1,0 +1,578 @@
+.justifyContent {
+    max-width: 900px;
+    
+    line-height: 1.9;
+    color: #4b5563;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+.syllabusCompleted {
+    color: green;
+    text-decoration: line-through;
+}
+.spinning {
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* ===========================
+   Page
+=========================== */
+
+.page {
+    min-height: 100vh;
+    padding: 32px;
+    background: #ffffff;
+}
+
+/* ===========================
+   Dashboard Grid
+=========================== */
+
+.dashboard {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* ===========================
+   Base Card
+=========================== */
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    padding: 28px;
+
+    overflow: hidden;
+
+    transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background-color .18s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: #cbd5e1;
+}
+
+/* ===========================
+   Grid Sizes
+=========================== */
+
+.hero {
+    grid-column: 1 / -1;
+}
+
+.large {
+    grid-column: span 8;
+}
+
+.medium {
+    grid-column: span 4;
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.quote {
+    grid-column: span 4;
+}
+
+.subjectSection {
+    grid-column: 1 / -1;
+}
+
+.beyond {
+    grid-column: span 8;
+}
+
+.skills {
+    grid-column: span 4;
+}
+
+.mindset {
+    grid-column: span 4;
+}
+
+.banner {
+    grid-column: 1 / -1;
+}
+/* ===========================
+   Page
+=========================== */
+
+.page {
+    min-height: 100vh;
+    padding: 32px;
+    background: #ffffff;
+}
+
+/* ===========================
+   Dashboard Grid
+=========================== */
+
+.dashboard {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* ===========================
+   Base Card
+=========================== */
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    padding: 28px;
+
+    overflow: hidden;
+
+    transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background-color .18s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: #cbd5e1;
+}
+
+/* ===========================
+   Grid Sizes
+=========================== */
+
+.hero {
+    grid-column: 1 / -1;
+}
+
+.large {
+    grid-column: span 8;
+}
+
+.medium {
+    grid-column: span 4;
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.quote {
+    grid-column: span 4;
+}
+
+.subjectSection {
+    grid-column: 1 / -1;
+}
+
+.beyond {
+    grid-column: span 8;
+}
+
+.skills {
+    grid-column: span 4;
+}
+
+.mindset {
+    grid-column: span 4;
+}
+
+.banner {
+    grid-column: 1 / -1;
+}
+/* ===========================================================
+   CONTENT GRID
+=========================================================== */
+.cardTitle {
+    position: relative;
+
+    display: inline-block;
+
+    margin-bottom: 28px;
+
+    font-size: 12px;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+
+    color: #6b7280;
+}
+
+
+.principlesGrid,
+.subjectGrid,
+.careerGrid {
+    display: grid;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.principlesGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.subjectGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.careerGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* ===========================================================
+   UNIFIED CONTENT CARD
+=========================================================== */
+
+.principle,
+.subjectCard,
+.careerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    min-height: 180px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    transition:
+        border-color .18s ease,
+        background-color .18s ease,
+        transform .18s ease;
+}
+
+.principle:hover,
+.subjectCard:hover,
+.careerCard:hover {
+    border-color: #d1d5db;
+    background: #fcfcfc;
+    transform: translateY(-2px);
+}
+
+/* ===========================================================
+   NUMBER
+=========================================================== */
+
+.principle span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: #d1d5db;
+}
+
+/* ===========================================================
+   HEADINGS
+=========================================================== */
+.subjectGrid {
+    display: grid;
+
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    gap: 18px;
+}
+.subjectCard {
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 22px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    height: auto;
+    min-height: unset;
+
+    align-self: start;
+}
+.math {
+    grid-column: 1 / -1;
+}
+
+.logic {
+    grid-column: span 3;
+}
+
+.coa {
+    grid-column: span 3;
+}
+
+.programming {
+    grid-column: span 3;
+}
+
+.algorithms {
+    grid-column: span 3;
+}
+
+.toc {
+    grid-column: span 3;
+}
+
+.compiler {
+    grid-column: span 3;
+}
+
+.os {
+    grid-column: span 3;
+}
+
+.dbms {
+    grid-column: span 3;
+}
+
+.networks {
+    grid-column: 1 / -1;
+}
+.principle h4,
+.subjectCard h4,
+.careerCard h4 {
+    margin: 0 0 12px;
+
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.35;
+
+    color: #111827;
+}
+
+/* ===========================================================
+   DESCRIPTION
+=========================================================== */
+
+.principle p,
+.subjectCard p,
+.careerCard p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #6b7280;
+}
+
+/* ===========================================================
+   SECTION INTRO
+=========================================================== */
+
+.sectionIntro {
+    max-width: 900px;
+    margin-bottom: 24px;
+}
+/* ===========================================================
+   QUOTE
+=========================================================== */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quoteText {
+    margin: 0;
+
+    padding-left: 18px;
+
+    border-left: 3px solid #e5e7eb;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8;
+
+    color: #374151;
+}
+
+/* ===========================================================
+   SKILL CLOUD
+=========================================================== */
+
+.skillCloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skillCloud span {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 8px 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #4b5563;
+
+    transition:
+        border-color .18s ease,
+        background-color .18s ease;
+}
+
+.skillCloud span:hover {
+    background: #fafafa;
+    border-color: #d1d5db;
+}
+
+/* ===========================================================
+   ENGINEERING MINDSET LIST
+=========================================================== */
+
+.mindsetList {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.mindsetList li {
+    position: relative;
+
+    padding-left: 18px;
+
+    color: #4b5563;
+
+    line-height: 1.7;
+}
+
+.mindsetList li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 11px;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #9ca3af;
+}
+
+@media (max-width: 1200px) {
+    .large,
+    .medium,
+    .quote,
+    .mindset,
+    .skills,
+    .beyond {
+        grid-column: 1 / -1;
+    }
+
+    .principlesGrid,
+    .subjectGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        gap: 16px;
+    }
+
+    .principlesGrid,
+    .subjectGrid,
+    .careerGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 28px;
+    }
+}
+
+.banner{
+
+    text-align:center;
+
+    padding:60px;
+
+    border:1px solid #e5e7eb;
+
+    background:#fff;
+}
+
+.banner h1{
+
+    font-size:44px;
+
+    font-weight:700;
+
+    color:#111827;
+}
+
+.banner h2{
+
+    font-size:20px;
+
+    color:#6b7280;
+
+    font-weight:500;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+}
+
+button,
+a{
+    transition:.18s;
+}
+.meta{
+    margin-top:18px;
+
+    font-size:14px;
+
+    color:#6b7280;
+
+    font-weight:500;
+}
