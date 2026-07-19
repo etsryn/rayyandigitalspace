@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
-import EngineeringProfile from './pages/EngineeringProfile'
+import Profile from './pages/Profile'
 import Contact from './pages/Contact'
 import Faq from './pages/Faq'
 import Achievements from './pages/Achievements'
@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout><Home /></Layout>} path="/" />
-        <Route element={<Layout><EngineeringProfile /></Layout>} path="/engineeringprofile" />
+        <Route element={<Layout><Profile /></Layout>} path="/profile" />
         <Route element={<Layout><Contact /></Layout>} path="/contact" />
         <Route element={<Layout><Faq /></Layout>} path="/faq" />
         <Route element={<Layout><Achievements /></Layout>} path="/achievements" />

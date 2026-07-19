@@ -1,6 +1,6 @@
-import styles from "./EngineeringProfile.module.css";
+import styles from "./Profile.module.css";
 
-export default function EngineeringProfile() {
+export default function Profile() {
     return (
         <main className={styles.page}>
             {/* ========================================================= */}

@@ -298,7 +298,7 @@ export default function Layout({ children }) {
                             )}
                             
                             <Link to="/" className={isActive("/") ? "active" : ""}>HOME</Link>
-                            <Link to="/engineeringprofile" className={isActive("/engineeringprofile") ? "active" : ""}>ENGINEERING PROFILE</Link>
+                            <Link to="/profile" className={isActive("/profile") ? "active" : ""}>PROFILE</Link>
                             <Link to="/quant" className={isActive("/quant") ? "active" : ""}>QUANT</Link>
                             <Link to="/gate" className={isActive("/gate") ? "active" : ""}>GATE</Link>
                             <Link to="/projects" className={isActive("/projects") ? "active" : ""}>PROJECTS</Link>
