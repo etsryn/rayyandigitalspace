@@ -1,4 +1,6 @@
+import { trackInteraction } from "../services/analytics";
 import styles from "./Contact.module.css";
+
 import {
   FaGithub,
   FaLinkedin,
@@ -55,7 +57,9 @@ export default function Contact() {
               <FaEnvelope size={18} />
               <div>
                 <span>Email</span>
-                <p>rayyan.connects@gmail.com</p>
+                <a
+                  href="mailto:abc@gmail.com"
+                  onClick={() => trackInteraction("email_clicked")}>rayyan.connects@gmail.com</a>
               </div>
             </div>
 
@@ -105,6 +109,7 @@ export default function Contact() {
 
             <a
               href="https://github.com/etsryn"
+              onClick={() => {console.log("GitHub clicked");trackInteraction("github_clicked")}}
               className={styles.linkCard}
               target="_blank"
               rel="noreferrer"
@@ -118,6 +123,7 @@ export default function Contact() {
 
             <a
               href="https://www.linkedin.com/in/rayyan-ashraf/"
+              onClick={() => trackInteraction("linkedin_clicked")}
               className={styles.linkCard}
               target="_blank"
               rel="noreferrer"
@@ -131,6 +137,7 @@ export default function Contact() {
 
             <a
               href="https://leetcode.com/u/RayyanAshraf/"
+              onClick={() => trackInteraction("leetcode_clicked")}
               className={styles.linkCard}
               target="_blank"
               rel="noreferrer"
@@ -144,6 +151,7 @@ export default function Contact() {
 
             <a
               href="https://codeforces.com/profile/Rayyan-Ashraf"
+              onClick={() => trackInteraction("codeforces_clicked")}
               className={styles.linkCard}
               target="_blank"
               rel="noreferrer"

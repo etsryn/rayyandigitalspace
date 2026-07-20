@@ -1,8 +1,9 @@
 import styles from './Home.module.css'
 import { Download, FileDown } from "lucide-react";
-
+import { trackInteraction } from "../services/analytics";
 export default function Home() {
-    const downloadResume = () => {
+    const downloadResume = async () => {
+        await trackInteraction("downloaded_resume");
         const link = document.createElement("a");
         link.href = "/resume.pdf";
         link.download = "Rayyan_Ashraf_Resume.pdf";

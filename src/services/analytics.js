@@ -152,3 +152,19 @@ export async function trackVisitor() {
     }
 
 }
+export async function trackInteraction(column) {
+
+    const sessionUUID = sessionStorage.getItem("session_uuid");
+
+    const { data, error } = await supabase
+        .from("visitors")
+        .update({
+            [column]: true,
+            updated_at: new Date().toISOString()
+        })
+        .eq("session_uuid", sessionUUID)
+        .select("*");
+
+    // console.log("Data:", data);
+    // console.log("Error:", error);
+}
