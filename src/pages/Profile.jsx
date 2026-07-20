@@ -265,112 +265,109 @@ export default function Profile() {
 
 
             {/* ========================================================= */}
-            {/* ACADEMIC RECORD - GRADUATION                              */}
-            {/* ========================================================= */}
+      {/* VI — ACADEMIC RECORD                                      */}
+      {/* ========================================================= */}
 
-            <section className={styles.section}>
-                <div className={styles.sectionNumber}>VI</div>
+      <section className={styles.section}>
+        <div className={styles.sectionNumber}>VI</div>
 
-                <div className={styles.sectionContent}>
-                    <h2>ACADEMIC RECORD - GRADUATION</h2>
+        <div className={styles.sectionContent}>
+          <h2>Academic Record</h2>
 
-                    <p>
-                        <strong>Degree</strong><br />
-                        Bachelor of Technology (B.Tech) in Computer Science & Engineering
-                    </p>
+          <div className={styles.recordBlock}>
+            <p className={styles.recordLabel}>Graduation</p>
+            <table className={styles.recordTable}>
+              <tbody>
+                <tr>
+                  <td>Degree</td>
+                  <td>
+                    Bachelor of Technology (B.Tech) in Computer Science &
+                    Engineering
+                  </td>
+                </tr>
+                <tr>
+                  <td>Institution</td>
+                  <td>Galgotias University</td>
+                </tr>
+                <tr>
+                  <td>Duration</td>
+                  <td>2022 – 2026</td>
+                </tr>
+                <tr>
+                  <td>CGPA</td>
+                  <td>
+                    8.5 / 10{" "}
+                    <span className={styles.cgpaNote}>(Current)</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-                    <p>
-                        <strong>Institution</strong><br />
-                        Galgotias University
-                    </p>
+          <div className={styles.recordBlock}>
+            <p className={styles.recordLabel}>
+              Intermediate of Science (PCM)
+            </p>
+            <table className={styles.recordTable}>
+              <tbody>
+                <tr>
+                  <td>Qualification</td>
+                  <td>Senior Secondary Education (Class XII)</td>
+                </tr>
+                <tr>
+                  <td>Board</td>
+                  <td>Aligarh Muslim University (AMU) Board</td>
+                </tr>
+                <tr>
+                  <td>Institution</td>
+                  <td>
+                    Saiyyid Hamid Senior Secondary School (SHSSS) — Boys
+                  </td>
+                </tr>
+                <tr>
+                  <td>Year of Completion</td>
+                  <td>2021</td>
+                </tr>
+                <tr>
+                  <td>Percentage</td>
+                  <td>67%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-                    <p>
-                        <strong>Duration</strong><br />
-                        2022 – 2026
-                    </p>
-
-                    <p>
-                        <strong>CGPA</strong><br />
-                        8.5 / 10 <span className={styles.cgpaNote}>(Current)</span>
-                    </p>
-                </div>
-            </section>
-
-
-            {/* ========================================================= */}
-            {/* ACADEMIC RECORD - INTERMEDIATE OF SCIENCE (PCM)           */}
-            {/* ========================================================= */}
-
-            <section className={styles.section}>
-                <div className={styles.sectionNumber}>VII</div>
-
-                <div className={styles.sectionContent}>
-                    <h2>ACADEMIC RECORD - INTERMEDIATE OF SCIENCE (PCM)</h2>
-
-                    <p>
-                        <strong>Qualification</strong><br />
-                        Senior Secondary Education (Class XII)
-                    </p>
-
-                    <p>
-                        <strong>Board</strong><br />
-                        Aligarh Muslim University (AMU) Board
-                    </p>
-
-                    <p>
-                        <strong>Institution</strong><br />
-                        Saiyyid Hamid Senior Secondary School (SHSSS) - Boys
-                    </p>
-
-                    <p>
-                        <strong>Year of Completion</strong><br />
-                        2021
-                    </p>
-
-                    <p>
-                        <strong>Percentage</strong><br />
-                        67%
-                    </p>
-                </div>
-            </section>
-
-
-            {/* ========================================================= */}
-            {/* ACADEMIC RECORD - HIGH SCHOOL                             */}
-            {/* ========================================================= */}
-
-            <section className={styles.section}>
-                <div className={styles.sectionNumber}>VIII</div>
-
-                <div className={styles.sectionContent}>
-                    <h2>ACADEMIC RECORD - HIGH SCHOOL</h2>
-
-                    <p>
-                        <strong>Qualification</strong><br />
-                        Higher Secondary Education (Class X)
-                    </p>
-
-                    <p>
-                        <strong>Board</strong><br />
-                        Aligarh Muslim University (AMU) Board
-                    </p>
-
-                    <p>
-                        <strong>Institution</strong><br />
-                        Syedna Tahir Saifuddin School (STS School, Minto Circle)
-                    </p>
-
-                    <p>
-                        <strong>Year of Completion</strong><br />
-                        2019
-                    </p>
-
-                    <p>
-                        <strong>Percentage</strong><br />
-                        73.6%
-                    </p>
-                </div>
-            </section>
+          <div className={styles.recordBlock}>
+            <p className={styles.recordLabel}>High School</p>
+            <table className={styles.recordTable}>
+              <tbody>
+                <tr>
+                  <td>Qualification</td>
+                  <td>Higher Secondary Education (Class X)</td>
+                </tr>
+                <tr>
+                  <td>Board</td>
+                  <td>Aligarh Muslim University (AMU) Board</td>
+                </tr>
+                <tr>
+                  <td>Institution</td>
+                  <td>
+                    Syedna Tahir Saifuddin School (STS School, Minto
+                    Circle)
+                  </td>
+                </tr>
+                <tr>
+                  <td>Year of Completion</td>
+                  <td>2019</td>
+                </tr>
+                <tr>
+                  <td>Percentage</td>
+                  <td>73.6%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
             {/* ========================================================= */}
             {/* VISION                                                    */}
@@ -396,3 +393,4 @@ export default function Profile() {
         </main>
     );
 }
+

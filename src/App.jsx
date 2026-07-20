@@ -10,7 +10,7 @@ import Research from './pages/Research'
 import Knowledge from './pages/Knowledge'
 import Algorithm from './pages/Algorithm'
 import Gym from './pages/Gym'
-import Projects from './pages/Projects'
+import Project from './pages/Project'
 import Quant from './pages/Quant'
 import Logs from './pages/Logs'
 import Gate from './pages/Gate'
@@ -28,7 +28,7 @@ function App() {
         <Route element={<Layout><Knowledge /></Layout>} path="/knowledge" />
         <Route element={<Layout><Algorithm /></Layout>} path="/algorithm" />
         <Route element={<Layout><Gym /></Layout>} path="/gym" />
-        <Route element={<Layout><Projects /></Layout>} path="/projects" />
+        <Route element={<Layout><Project /></Layout>} path="/project" />
         <Route element={<Layout><Quant /></Layout>} path="/quant" />
         <Route element={<Layout><Logs /></Layout>} path="/logs" />
         <Route element={<Layout><Gate /></Layout>} path="/gate" />

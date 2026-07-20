@@ -422,3 +422,59 @@
     scroll-behavior: auto !important;
   }
 }
+
+
+
+/*  */
+
+.recordBlock {
+  margin-bottom: 28px;
+}
+
+.recordBlock:last-child {
+  margin-bottom: 0;
+}
+
+.recordLabel {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 10px;
+}
+
+.recordTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+
+.recordTable tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.recordTable tr:first-child {
+  border-top: 1px solid #1a1a1a;
+}
+
+.recordTable td {
+  padding: 10px 12px 10px 0;
+  vertical-align: top;
+  color: #2a2a2a;
+}
+
+.recordTable td:first-child {
+  width: 34%;
+  font-weight: 600;
+  color: #444;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .recordTable td:first-child {
+    width: 44%;
+    white-space: normal;
+  }
+}

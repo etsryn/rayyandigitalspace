@@ -1,0 +1,296 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
+  padding: 56px 0 96px;
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ---------- Header ---------- */
+.header {
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 8px;
+  color: #111;
+}
+
+.subtitle {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 14.5px;
+  color: #555;
+  margin: 0;
+}
+
+/* ---------- Section headings ---------- */
+.section {
+  margin-bottom: 44px;
+}
+
+.sectionTitle {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #111;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin: 0 0 18px;
+}
+
+.sectionNumber {
+  color: #999;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: #2a2a2a;
+  margin: 0 0 16px;
+  max-width: 78ch;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Tables ---------- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 13.5px;
+}
+
+.table th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #555;
+  padding: 0 12px 8px 0;
+  border-bottom: 1.5px solid #1a1a1a;
+}
+
+.table td {
+  padding: 10px 12px 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #2a2a2a;
+  vertical-align: top;
+}
+
+.table tr:last-child td {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.keyValueTable td:first-child {
+  font-weight: 600;
+  color: #444;
+  width: 26%;
+  white-space: nowrap;
+}
+
+.numCell {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.mono {
+  font-family: "SF Mono", "Consolas", "Menlo", monospace;
+  font-size: 12.5px;
+  color: #444;
+}
+
+/* ---------- Status tags ---------- */
+.status {
+  display: inline-block;
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+.statusActive {
+  color: #14532d;
+  background: #edf5ee;
+}
+
+.statusOngoing {
+  color: #713f12;
+  background: #faf3e6;
+}
+
+.statusCompleted {
+  color: #444;
+  background: #f0f0f0;
+}
+
+/* ---------- Project index table row hover ---------- */
+.indexRow {
+  cursor: default;
+}
+
+.indexRow:hover {
+  background: #fafafa;
+}
+
+.indexId {
+  font-family: "SF Mono", "Consolas", "Menlo", monospace;
+  font-size: 12px;
+  color: #888;
+  font-weight: 600;
+}
+
+/* ---------- Project entries ---------- */
+.projectEntry {
+  border-top: 1px solid #1a1a1a;
+  padding-top: 28px;
+  margin-bottom: 40px;
+}
+
+.projectEntry:last-child {
+  margin-bottom: 0;
+}
+
+.projectHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.projectId {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  letter-spacing: 0.02em;
+}
+
+.projectTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.projectMeta {
+  margin-bottom: 18px;
+}
+
+.subheading {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777;
+  margin: 22px 0 10px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #2a2a2a;
+}
+
+.list li {
+  margin-bottom: 5px;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Index / TOC ---------- */
+.toc {
+  columns: 2;
+  column-gap: 32px;
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tocItem {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px dotted #ddd;
+  break-inside: avoid;
+}
+
+.tocId {
+  color: #999;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 30px;
+}
+
+.tocName {
+  color: #333;
+  flex: 1;
+}
+
+/* ---------- Footer note ---------- */
+.footerNote {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .toc {
+    columns: 1;
+  }
+
+  .keyValueTable td:first-child {
+    width: 40%;
+  }
+}
