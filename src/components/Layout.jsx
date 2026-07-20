@@ -1,20 +1,45 @@
+import { trackVisitor } from "../services/analytics";
+import { supabase } from "../lib/supabase";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import Mark from "mark.js";
 import { FaUserCircle } from "react-icons/fa";
+import { Trash2, X } from "lucide-react";
 
 export default function Layout({ children }) {
+    
+async function fetchVisitorCount() {
+
+    const { count, error } = await supabase
+        .from("visitors")
+        .select("*", {
+            count: "exact",
+            head: true
+        });
+
+    if (error) {
+        console.error(error);
+        return;
+    }
+
+    setVisitorCount(count);
+}
     const location = useLocation();
     const navigate = useNavigate();
     const [visitor, setVisitor] = useState("Visitor");
     const [input, setInput] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
+    const [searchFocused, setSearchFocused] = useState(false);
+    const searchInputRef = useRef(null);
     const [matches, setMatches] = useState([]);
     const [currentMatch, setCurrentMatch] = useState(0);
-
+    const [utcTime, setUtcTime] = useState("");
+    const [visitorCount, setVisitorCount] = useState(0);
     const [history, setHistory] = useState(() => {
         return JSON.parse(localStorage.getItem("search-history")) || [];
     });
+    
+
 
     const [navFloating, setNavFloating] = useState(false);
     const navRef = useRef(null);
@@ -37,6 +62,27 @@ export default function Layout({ children }) {
 
         return () => observer.disconnect();
     }, []);
+
+    useEffect(() => {
+        const updateClock = () => {
+            const now = new Date();
+
+            setUtcTime(
+                now.toLocaleTimeString("en-GB", {
+                    timeZone: "UTC",
+                    hour12: false,
+                })
+            );
+        };
+
+        updateClock();
+
+        const interval = setInterval(updateClock, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+
 
     const currentMatchStyle = {
         backgroundColor: "#2563eb",
@@ -97,6 +143,47 @@ export default function Layout({ children }) {
 
         new Mark(root).unmark();
     }, [location.pathname]);
+
+    useEffect(() => {
+        const handleShortcut = (e) => {
+            // Ctrl + K (Windows/Linux)
+            // Cmd + K (Mac)
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+                e.preventDefault();
+
+                searchInputRef.current?.focus();
+            }
+
+            // "/" focuses search when not typing
+            if (
+                e.key === "/" &&
+                document.activeElement.tagName !== "INPUT" &&
+                document.activeElement.tagName !== "TEXTAREA"
+            ) {
+                e.preventDefault();
+
+                searchInputRef.current?.focus();
+            }
+        };
+
+        window.addEventListener("keydown", handleShortcut);
+
+        return () =>
+            window.removeEventListener("keydown", handleShortcut);
+    }, []);
+
+    const deleteHistoryItem = (query, path) => {
+        const updated = history.filter(
+            (item) =>
+                !(
+                    item.query === query &&
+                    item.path === path
+                )
+        );
+
+        setHistory(updated);
+        localStorage.setItem("search-history", JSON.stringify(updated));
+    };
 
     // Search
     useEffect(() => {
@@ -222,6 +309,17 @@ export default function Layout({ children }) {
         setCurrentMatch(next);
     };
 
+    useEffect(() => {
+
+    async function init() {
+        await trackVisitor();
+        await fetchVisitorCount();
+    }
+
+    init();
+
+}, [location.pathname]);
+
     return (
         <div className="container">
             <header>
@@ -237,9 +335,9 @@ export default function Layout({ children }) {
                     </Link>
 
                     <div className="header-right">
-                        <a href="#enter">Enter</a>
+                        <span>UTC {utcTime}</span>
                         <span>|</span>
-                        <a href="#register">Register</a>
+                        <span>Visitor #{visitorCount.toString().padStart(6, "0")}</span>
                     </div>
                 </div>
                 <div ref={navTriggerRef}>
@@ -296,7 +394,7 @@ export default function Layout({ children }) {
                                     Navigation
                                 </div>
                             )}
-                            
+
                             <Link to="/" className={isActive("/") ? "active" : ""}>HOME</Link>
                             <Link to="/profile" className={isActive("/profile") ? "active" : ""}>PROFILE</Link>
                             <Link to="/quant" className={isActive("/quant") ? "active" : ""}>QUANT</Link>
@@ -310,6 +408,7 @@ export default function Layout({ children }) {
                             <Link to="/gym" className={isActive("/gym") ? "active" : ""}>GYM</Link>
                             <Link to="/contact" className={isActive("/contact") ? "active" : ""}>CONTACT</Link>
                             <Link to="/faq" className={isActive("/faq") ? "active" : ""}>FAQs</Link>
+                            <Link to="/admin"className={isActive("/admin") ? "active" : ""}>ADMIN</Link>
 
                         </div>
 
@@ -333,9 +432,16 @@ export default function Layout({ children }) {
                             >
                                 <input
                                     type="text"
+                                    ref={searchInputRef}
                                     className="search-box"
-                                    placeholder="Search..."
+                                    placeholder="Press Ctrl+K or ' / ' to Search..."
                                     value={input}
+                                    onFocus={() => setSearchFocused(true)}
+                                    onBlur={() => {
+                                        setTimeout(() => {
+                                            setSearchFocused(false);
+                                        }, 150);
+                                    }}
                                     onChange={(e) => setInput(e.target.value)}
                                     onKeyDown={(e) => {
                                         if (e.key === "Enter") {
@@ -392,7 +498,7 @@ export default function Layout({ children }) {
                                 )}
 
                                 {/* Recent Searches */}
-                                {input.trim() === "" && (
+                                {searchFocused && input.trim() === "" && (
                                     <div
                                         style={{
                                             position: "absolute",
@@ -410,6 +516,7 @@ export default function Layout({ children }) {
                                             overflowY: "auto",
 
                                             zIndex: 1001,
+
                                         }}
                                     >
                                         <div
@@ -422,13 +529,17 @@ export default function Layout({ children }) {
                                                 display: "flex",
                                                 justifyContent: "space-between",
                                                 alignItems: "center",
+
                                             }}
                                         >
                                             <span>Recent Searches</span>
 
                                             {history.length > 0 && (
+
                                                 <button
-                                                    onClick={() => {
+                                                    onMouseDown={(e) => {
+                                                        e.preventDefault();
+
                                                         setHistory([]);
                                                         localStorage.removeItem("search-history");
                                                     }}
@@ -440,7 +551,7 @@ export default function Layout({ children }) {
                                                         fontSize: "11px",
                                                     }}
                                                 >
-                                                    Clear
+                                                    <Trash2 size={14} color="black" />
                                                 </button>
                                             )}
                                         </div>
@@ -452,6 +563,7 @@ export default function Layout({ children }) {
                                                     color: "#777",
                                                     fontSize: "13px",
                                                     textAlign: "center",
+
                                                 }}
                                             >
                                                 No recent searches.
@@ -460,7 +572,9 @@ export default function Layout({ children }) {
                                             history.map((item) => (
                                                 <div
                                                     key={`${item.path}-${item.query}`}
-                                                    onClick={() => {
+                                                    onMouseDown={(e) => {
+                                                        e.preventDefault();
+
                                                         if (location.pathname === item.path) {
                                                             setInput(item.query);
                                                             setSearchQuery(item.query);
@@ -468,6 +582,8 @@ export default function Layout({ children }) {
                                                             sessionStorage.setItem("pending-search", item.query);
                                                             navigate(item.path);
                                                         }
+
+                                                        setSearchFocused(false);
                                                     }}
                                                     style={{
                                                         display: "flex",
@@ -503,14 +619,37 @@ export default function Layout({ children }) {
                                                         </span>
                                                     </div>
 
-                                                    <span
+                                                    <button
+                                                        onMouseDown={(e) => {
+                                                            e.stopPropagation();
+                                                            e.preventDefault();
+
+                                                            deleteHistoryItem(item.query, item.path);
+                                                        }}
                                                         style={{
+                                                            display: "flex",
+                                                            alignItems: "center",
+                                                            justifyContent: "center",
+                                                            width: "26px",
+                                                            height: "26px",
+                                                            border: "none",
+                                                            background: "transparent",
+                                                            borderRadius: "6px",
+                                                            cursor: "pointer",
                                                             color: "#6e7781",
-                                                            fontSize: "13px",
+                                                            transition: ".15s",
+                                                        }}
+                                                        onMouseEnter={(e) => {
+                                                            e.currentTarget.style.background = "#f3f4f6";
+                                                            e.currentTarget.style.color = "#dc2626";
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.currentTarget.style.background = "transparent";
+                                                            e.currentTarget.style.color = "#6e7781";
                                                         }}
                                                     >
-                                                        ↗
-                                                    </span>
+                                                        <X size={15} />
+                                                    </button>
                                                 </div>
                                             ))
                                         )}

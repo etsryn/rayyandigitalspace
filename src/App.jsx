@@ -14,6 +14,7 @@ import Project from './pages/Project'
 import Quant from './pages/Quant'
 import Logs from './pages/Logs'
 import Gate from './pages/Gate'
+import Admin from './pages/Admin'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route element={<Layout><Quant /></Layout>} path="/quant" />
         <Route element={<Layout><Logs /></Layout>} path="/logs" />
         <Route element={<Layout><Gate /></Layout>} path="/gate" />
+        <Route element={<Layout><Admin /></Layout>} path="/admin" />
       </Routes>
     </BrowserRouter>
   )
