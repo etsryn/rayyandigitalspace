@@ -1,0 +1,2067 @@
+/* ===========================================================
+   ALGORITHM PAGE
+=========================================================== */
+
+.page{
+    width:100%;
+    min-height:100vh;
+    background:#f6f7fb;
+    padding:70px 40px;
+}
+
+.layout{
+    max-width:1700px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 360px;
+    gap:35px;
+
+    align-items:start;
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+/* ===========================================================
+   HERO
+=========================================================== */
+
+.hero{
+
+    background:white;
+
+    border:1px solid #ececec;
+
+    border-radius:28px;
+
+    padding:48px;
+
+    box-shadow:
+    0 18px 50px rgba(0,0,0,.04);
+
+}
+
+.heroTop{
+
+    display:flex;
+    align-items:center;
+
+    justify-content:flex-start;
+
+    margin-bottom:24px;
+
+}
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#eef3ff;
+
+    color:#2554d8;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+.badge svg{
+
+    font-size:.95rem;
+
+}
+
+.hero h1{
+
+    font-size:4.6rem;
+
+    line-height:1;
+
+    font-weight:800;
+
+    letter-spacing:-3px;
+
+    color:#101010;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1 span{
+
+    color:#2554d8;
+
+}
+
+.hero p{
+
+    max-width:760px;
+
+    color:#5f6472;
+
+    font-size:1.12rem;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   STATS
+=========================================================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.statCard{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    border:1px solid #ececec;
+
+    transition:.35s;
+
+}
+
+.statCard:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.06);
+
+}
+
+.statCard h2{
+
+    font-size:2.3rem;
+
+    font-weight:800;
+
+    color:#101010;
+
+    margin-bottom:8px;
+
+}
+
+.statCard h3{
+
+    font-size:1rem;
+
+    color:#232323;
+
+    margin-bottom:6px;
+
+}
+
+.statCard p{
+
+    color:#8c8c8c;
+
+    font-size:.88rem;
+
+}
+
+/* ===========================================================
+   FEATURED PANEL
+=========================================================== */
+
+.featuredPanel{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:42px;
+
+    border:1px solid #ececec;
+
+}
+
+.featuredLeft{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.featuredLeft span{
+
+    color:#2554d8;
+
+    font-weight:700;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+    font-size:.8rem;
+
+}
+
+.featuredLeft h2{
+
+    font-size:2.6rem;
+
+    font-weight:800;
+
+    color:#111;
+
+}
+
+.featuredLeft p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    max-width:650px;
+
+}
+
+.featuredRight{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.featuredRight div{
+
+    background:#f8f9fd;
+
+    border-radius:18px;
+
+    padding:24px;
+
+}
+
+.featuredRight strong{
+
+    display:block;
+
+    font-size:1.6rem;
+
+    color:#111;
+
+    margin-bottom:8px;
+
+}
+
+.featuredRight span{
+
+    color:#707070;
+
+    font-size:.88rem;
+
+}
+
+/* ===========================================================
+   METRICS
+=========================================================== */
+
+.metricsRibbon{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.metricCard{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:26px;
+
+    border:1px solid #ececec;
+
+    transition:.3s;
+
+}
+
+.metricCard:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 14px 28px rgba(0,0,0,.05);
+
+}
+
+.metricCard p{
+
+    font-size:.78rem;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:#8f8f8f;
+
+    margin-bottom:12px;
+
+}
+
+.metricCard h2{
+
+    font-size:2rem;
+
+    color:#101010;
+
+    margin-bottom:10px;
+
+}
+
+.metricCard span{
+
+    color:#666;
+
+    line-height:1.6;
+
+    font-size:.92rem;
+
+}
+
+/* ===========================================================
+   DASHBOARD GRID
+=========================================================== */
+
+.dashboardGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:24px;
+
+    align-items:start;
+
+}
+
+/* Variable heights */
+
+.small{
+
+    min-height:330px;
+
+}
+
+.medium{
+
+    min-height:430px;
+
+}
+
+.large{
+
+    min-height:560px;
+
+}
+
+.tall{
+
+    min-height:680px;
+
+}
+
+/* ===========================================================
+   BASE CARD
+=========================================================== */
+
+.algorithmCard{
+
+    background:white;
+
+    border:1px solid #ececec;
+
+    border-radius:28px;
+
+    padding:28px;
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.algorithmCard:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,.07);
+
+}
+
+/* ===========================================================
+   CARD HEADER
+=========================================================== */
+
+.cardTop{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:28px;
+
+}
+
+.categoryType{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    background:#eef2ff;
+
+    color:#2554d8;
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    margin-bottom:14px;
+
+}
+
+.cardTop h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:1.5rem;
+
+    color:#101010;
+
+}
+
+.cardTop h2 svg{
+
+    color:#2554d8;
+
+}
+
+.cardIndex{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:#d9d9d9;
+
+}
+/* ===========================================================
+   CARD SUMMARY
+=========================================================== */
+
+.cardSummary{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+    margin-bottom:26px;
+
+}
+
+.cardSummary div{
+
+    background:#fafbfd;
+
+    border:1px solid #edf0f5;
+
+    border-radius:16px;
+
+    padding:18px;
+
+    transition:.25s;
+
+}
+
+.cardSummary div:hover{
+
+    background:#f4f7ff;
+
+    border-color:#dce5ff;
+
+}
+
+.cardSummary strong{
+
+    display:block;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:6px;
+
+}
+
+.cardSummary span{
+
+    font-size:.82rem;
+
+    color:#7a7a7a;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+/* ===========================================================
+   ALGORITHM LIST
+=========================================================== */
+
+.algorithmList{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    margin-top:8px;
+
+    margin-bottom:24px;
+
+    flex:1;
+
+}
+
+/* ===========================================================
+   ROW
+=========================================================== */
+
+.algorithmRow{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:16px 18px;
+
+    border-radius:18px;
+
+    background:#fbfbfc;
+
+    border:1px solid transparent;
+
+    transition:.28s;
+
+}
+
+.algorithmRow:hover{
+
+    background:white;
+
+    border-color:#dfe7ff;
+
+    transform:translateX(6px);
+
+    box-shadow:
+    0 10px 22px rgba(0,0,0,.05);
+
+}
+
+/* ===========================================================
+   LEFT
+=========================================================== */
+
+.algorithmInfo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    flex:1;
+
+}
+
+.algorithmInfo h4{
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:#151515;
+
+    line-height:1.2;
+
+}
+
+/* ===========================================================
+   META
+=========================================================== */
+
+.algorithmMeta{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.algorithmMeta span{
+
+    font-size:.76rem;
+
+    color:#7b7b7b;
+
+}
+
+/* ===========================================================
+   BADGE
+=========================================================== */
+
+.badgeChip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    background:#eef3ff;
+
+    color:#2554d8 !important;
+
+    font-size:.70rem !important;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.06em;
+
+}
+
+/* ===========================================================
+   RIGHT
+=========================================================== */
+
+.algorithmRight{
+
+    flex-shrink:0;
+
+}
+
+.algorithmRight strong{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:90px;
+
+    padding:10px 16px;
+
+    border-radius:14px;
+
+    background:#101010;
+
+    color:white;
+
+    font-size:.82rem;
+
+    letter-spacing:.02em;
+
+}
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+
+.cardFooter{
+
+    margin-top:auto;
+
+    padding-top:22px;
+
+    border-top:1px solid #efefef;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:12px;
+
+}
+
+.cardFooter div{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    background:#f8f9fb;
+
+    border-radius:14px;
+
+    padding:12px;
+
+    font-size:.74rem;
+
+    font-weight:600;
+
+    color:#5f6472;
+
+}
+
+.cardFooter svg{
+
+    color:#2f6dff;
+
+    font-size:.82rem;
+
+}
+
+/* ===========================================================
+   STATUS
+=========================================================== */
+
+.cardStatus{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:14px;
+
+    margin-top:22px;
+
+}
+
+.cardStatus div{
+
+    padding:16px;
+
+    border-radius:16px;
+
+    background:#fbfbfd;
+
+    border:1px solid #edf0f5;
+
+}
+
+.cardStatus span{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    font-size:.70rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    color:#8a8a8a;
+
+}
+
+.cardStatus strong{
+
+    font-size:1.15rem;
+
+    color:#101010;
+
+}
+
+/* ===========================================================
+   SUBTLE CATEGORY COLORS
+=========================================================== */
+
+.algorithmCard:nth-child(1){
+
+    border-top:5px solid #2f6dff;
+
+}
+
+.algorithmCard:nth-child(2){
+
+    border-top:5px solid #4caf50;
+
+}
+
+.algorithmCard:nth-child(3){
+
+    border-top:5px solid #ff9800;
+
+}
+
+.algorithmCard:nth-child(4){
+
+    border-top:5px solid #9c27b0;
+
+}
+
+.algorithmCard:nth-child(5){
+
+    border-top:5px solid #00acc1;
+
+}
+
+.algorithmCard:nth-child(6){
+
+    border-top:5px solid #ef5350;
+
+}
+
+.algorithmCard:nth-child(7){
+
+    border-top:5px solid #8d6e63;
+
+}
+
+.algorithmCard:nth-child(8){
+
+    border-top:5px solid #5c6bc0;
+
+}
+
+.algorithmCard:nth-child(9){
+
+    border-top:5px solid #43a047;
+
+}
+
+.algorithmCard:nth-child(10){
+
+    border-top:5px solid #3949ab;
+
+}
+
+/* ===========================================================
+   CARD ANIMATION
+=========================================================== */
+
+.algorithmCard{
+
+    animation:fadeUp .55s ease both;
+
+}
+
+.algorithmCard:nth-child(2){
+
+    animation-delay:.05s;
+
+}
+
+.algorithmCard:nth-child(3){
+
+    animation-delay:.10s;
+
+}
+
+.algorithmCard:nth-child(4){
+
+    animation-delay:.15s;
+
+}
+
+.algorithmCard:nth-child(5){
+
+    animation-delay:.20s;
+
+}
+
+.algorithmCard:nth-child(6){
+
+    animation-delay:.25s;
+
+}
+
+.algorithmCard:nth-child(7){
+
+    animation-delay:.30s;
+
+}
+
+.algorithmCard:nth-child(8){
+
+    animation-delay:.35s;
+
+}
+
+.algorithmCard:nth-child(9){
+
+    animation-delay:.40s;
+
+}
+
+.algorithmCard:nth-child(10){
+
+    animation-delay:.45s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ===========================================================
+   SIDEBAR
+=========================================================== */
+
+.sidebar{
+
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+
+    position:sticky;
+    top:30px;
+
+}
+
+.sideCard{
+
+    background:white;
+
+    border:1px solid #ececec;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    box-shadow:
+    0 12px 28px rgba(0,0,0,.035);
+
+}
+
+.sideCard h3{
+
+    font-size:1.2rem;
+
+    color:#101010;
+
+    margin-bottom:22px;
+
+}
+
+.sideCard p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
+
+/* ===========================================================
+   COMPLEXITY GUIDE
+=========================================================== */
+
+.complexityRow{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #f0f0f0;
+
+}
+
+.complexityRow:last-child{
+
+    border-bottom:none;
+
+}
+
+.complexityRow strong{
+
+    color:#2554d8;
+
+    font-size:.9rem;
+
+}
+
+.complexityRow span{
+
+    color:#707070;
+
+    font-size:.9rem;
+
+}
+
+/* ===========================================================
+   CURRENT FOCUS
+=========================================================== */
+
+.sideCard ul{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.sideCard li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#444;
+
+    font-size:.92rem;
+
+}
+
+.sideCard li::before{
+
+    content:"";
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#2f6dff;
+
+}
+
+/* ===========================================================
+   ENGINEERING NOTES
+=========================================================== */
+
+.note{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:#fafbfd;
+
+    margin-bottom:16px;
+
+    transition:.25s;
+
+}
+
+.note:last-child{
+
+    margin-bottom:0;
+
+}
+
+.note:hover{
+
+    background:#f3f6ff;
+
+}
+
+.note svg{
+
+    color:#2f6dff;
+
+    margin-top:2px;
+
+    flex-shrink:0;
+
+}
+
+.note span{
+
+    color:#626262;
+
+    line-height:1.7;
+
+    font-size:.9rem;
+
+}
+
+/* ===========================================================
+   TECH STACK
+=========================================================== */
+
+.techStack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.techStack span{
+
+    padding:10px 14px;
+
+    background:#eef3ff;
+
+    border-radius:999px;
+
+    color:#2554d8;
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.techStack span:hover{
+
+    background:#2554d8;
+
+    color:white;
+
+}
+
+/* ===========================================================
+   WORKFLOW
+=========================================================== */
+
+.workflowPanel{
+
+    background:white;
+
+    border:1px solid #ececec;
+
+    border-radius:28px;
+
+    padding:40px;
+
+}
+
+.workflowHeader{
+
+    margin-bottom:30px;
+
+}
+
+.workflowHeader h2{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+    color:#101010;
+
+}
+
+.workflowHeader p{
+
+    color:#6b6b6b;
+
+    line-height:1.8;
+
+}
+
+.workflowGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+
+}
+
+.workflowCard{
+
+    background:#fafbfd;
+
+    border-radius:20px;
+
+    padding:24px;
+
+    border:1px solid #edf0f5;
+
+    transition:.3s;
+
+}
+
+.workflowCard:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 16px 34px rgba(0,0,0,.05);
+
+}
+
+.workflowCircle{
+
+    width:52px;
+    height:52px;
+
+    border-radius:50%;
+
+    background:#2554d8;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.workflowCard h4{
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+    color:#222;
+
+}
+
+/* ===========================================================
+   OVERVIEW PANEL
+=========================================================== */
+
+.overviewPanel{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.overviewPanel div{
+
+    background:white;
+
+    border-radius:22px;
+
+    border:1px solid #ececec;
+
+    padding:28px;
+
+    transition:.3s;
+
+}
+
+.overviewPanel div:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 16px 35px rgba(0,0,0,.05);
+
+}
+
+.overviewPanel h2{
+
+    font-size:2.2rem;
+
+    color:#111;
+
+    margin-bottom:8px;
+
+}
+
+.overviewPanel p{
+
+    color:#707070;
+
+    font-size:.9rem;
+
+}
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f2f3f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#cfd6e6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#b7bfd3;
+
+}
+
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+
+@media (max-width:1400px){
+
+.layout{
+
+grid-template-columns:1fr 320px;
+
+}
+
+.hero h1{
+
+font-size:3.8rem;
+
+}
+
+}
+
+@media (max-width:1200px){
+
+.layout{
+
+grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+position:static;
+
+}
+
+.dashboardGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.metricsRibbon{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.overviewPanel{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.page{
+
+padding:25px;
+
+}
+
+.hero{
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:2.8rem;
+
+letter-spacing:-1px;
+
+}
+
+.featuredPanel{
+
+grid-template-columns:1fr;
+
+}
+
+.featuredRight{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.metricsRibbon{
+
+grid-template-columns:1fr;
+
+}
+
+.cardSummary{
+
+grid-template-columns:1fr;
+
+}
+
+.cardFooter{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.cardStatus{
+
+grid-template-columns:1fr;
+
+}
+
+.workflowGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.overviewPanel{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:520px){
+
+.hero h1{
+
+font-size:2.2rem;
+
+}
+
+.featuredRight{
+
+grid-template-columns:1fr;
+
+}
+
+.cardTop{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.algorithmRow{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.algorithmRight{
+
+width:100%;
+
+}
+
+.algorithmRight strong{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
+/* ===========================================================
+   PREMIUM MICRO INTERACTIONS
+=========================================================== */
+
+.hero,
+.statCard,
+.featuredPanel,
+.metricCard,
+.algorithmCard,
+.sideCard,
+.workflowCard,
+.overviewPanel div{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before,
+.statCard::before,
+.featuredPanel::before,
+.metricCard::before,
+.algorithmCard::before,
+.sideCard::before,
+.workflowCard::before,
+.overviewPanel div::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.55),
+        transparent 40%
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
+    pointer-events:none;
+
+}
+
+.hero:hover::before,
+.statCard:hover::before,
+.featuredPanel:hover::before,
+.metricCard:hover::before,
+.algorithmCard:hover::before,
+.sideCard:hover::before,
+.workflowCard:hover::before,
+.overviewPanel div:hover::before{
+
+    opacity:1;
+
+}
+
+/* ===========================================================
+   SOFT GLOW
+=========================================================== */
+
+.algorithmCard:hover{
+
+    border-color:#dce5ff;
+
+    box-shadow:
+
+    0 10px 25px rgba(37,84,216,.08),
+
+    0 24px 60px rgba(0,0,0,.06);
+
+}
+
+.sideCard:hover{
+
+    border-color:#dce5ff;
+
+}
+
+.metricCard:hover{
+
+    border-color:#dce5ff;
+
+}
+
+.statCard:hover{
+
+    border-color:#dce5ff;
+
+}
+
+/* ===========================================================
+   FEATURED TITLE
+=========================================================== */
+
+.featuredLeft h2{
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #101010,
+        #2554d8
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* ===========================================================
+   CARD INDEX
+=========================================================== */
+
+.cardIndex{
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #2554d8,
+        #8aa7ff
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    opacity:.18;
+
+}
+
+/* ===========================================================
+   NUMBER STYLING
+=========================================================== */
+
+.statCard h2,
+.metricCard h2,
+.overviewPanel h2{
+
+    letter-spacing:-1px;
+
+}
+
+.cardSummary strong{
+
+    letter-spacing:-.5px;
+
+}
+
+/* ===========================================================
+   STATUS DOTS
+=========================================================== */
+
+.cardFooter div{
+
+    position:relative;
+
+    padding-left:18px;
+
+}
+
+.cardFooter div::before{
+
+    content:"";
+
+    width:7px;
+
+    height:7px;
+
+    border-radius:50%;
+
+    background:#39b56b;
+
+    position:absolute;
+
+    left:8px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+/* ===========================================================
+   CHIP ANIMATION
+=========================================================== */
+
+.badgeChip{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.badgeChip::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.8),
+
+        transparent
+
+    );
+
+    transition:.7s;
+
+}
+
+.algorithmRow:hover .badgeChip::after{
+
+    left:160%;
+
+}
+
+/* ===========================================================
+   BLUE STRIP
+=========================================================== */
+
+.algorithmCard::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0;
+
+    height:4px;
+
+    background:#2554d8;
+
+    transition:.35s;
+
+}
+
+.algorithmCard:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+   SUMMARY ANIMATION
+=========================================================== */
+
+.cardSummary div{
+
+    position:relative;
+
+}
+
+.cardSummary div::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0;
+
+    height:3px;
+
+    background:#2554d8;
+
+    transition:.3s;
+
+}
+
+.algorithmCard:hover .cardSummary div::after{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+   WORKFLOW ICON
+=========================================================== */
+
+.workflowCircle{
+
+    transition:.35s;
+
+}
+
+.workflowCard:hover .workflowCircle{
+
+    transform:rotate(10deg) scale(1.08);
+
+}
+
+/* ===========================================================
+   TECH CHIPS
+=========================================================== */
+
+.techStack span{
+
+    border:1px solid transparent;
+
+}
+
+.techStack span:hover{
+
+    border-color:#2554d8;
+
+}
+
+/* ===========================================================
+   COMPLEXITY ROW
+=========================================================== */
+
+.complexityRow{
+
+    transition:.25s;
+
+}
+
+.complexityRow:hover{
+
+    padding-left:10px;
+
+}
+
+/* ===========================================================
+   LIST ITEMS
+=========================================================== */
+
+.sideCard li{
+
+    transition:.25s;
+
+}
+
+.sideCard li:hover{
+
+    color:#2554d8;
+
+    transform:translateX(6px);
+
+}
+
+/* ===========================================================
+   METRIC CARD
+=========================================================== */
+
+.metricCard{
+
+    overflow:hidden;
+
+}
+
+.metricCard::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-30px;
+
+    top:-30px;
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(37,84,216,.05);
+
+}
+
+/* ===========================================================
+   HEADER SPACING
+=========================================================== */
+
+.hero{
+
+    margin-bottom:4px;
+
+}
+
+.metricsRibbon{
+
+    margin-top:-2px;
+
+}
+
+.dashboardGrid{
+
+    margin-top:-4px;
+
+}
+
+/* ===========================================================
+   TEXT SELECTION
+=========================================================== */
+
+::selection{
+
+    background:#2554d8;
+
+    color:white;
+
+}
+
+/* ===========================================================
+   KEYBOARD ACCESSIBILITY
+=========================================================== */
+
+button:focus-visible,
+a:focus-visible{
+
+    outline:3px solid #2554d8;
+
+    outline-offset:4px;
+
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+*{
+
+animation:none!important;
+
+transition:none!important;
+
+scroll-behavior:auto!important;
+
+}
+
+}
