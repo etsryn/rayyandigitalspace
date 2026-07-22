@@ -7,23 +7,23 @@ import { FaUserCircle } from "react-icons/fa";
 import { Trash2, X } from "lucide-react";
 
 export default function Layout({ children }) {
-    
-async function fetchVisitorCount() {
 
-    const { count, error } = await supabase
-        .from("visitors")
-        .select("*", {
-            count: "exact",
-            head: true
-        });
+    async function fetchVisitorCount() {
 
-    if (error) {
-        console.error(error);
-        return;
+        const { count, error } = await supabase
+            .from("visitors")
+            .select("*", {
+                count: "exact",
+                head: true
+            });
+
+        if (error) {
+            console.error(error);
+            return;
+        }
+
+        setVisitorCount(count);
     }
-
-    setVisitorCount(count);
-}
     const location = useLocation();
     const navigate = useNavigate();
     const [visitor, setVisitor] = useState("Visitor");
@@ -38,7 +38,7 @@ async function fetchVisitorCount() {
     const [history, setHistory] = useState(() => {
         return JSON.parse(localStorage.getItem("search-history")) || [];
     });
-    
+
 
 
     const [navFloating, setNavFloating] = useState(false);
@@ -311,14 +311,14 @@ async function fetchVisitorCount() {
 
     useEffect(() => {
 
-    async function init() {
-        await trackVisitor();
-        await fetchVisitorCount();
-    }
+        async function init() {
+            await trackVisitor();
+            await fetchVisitorCount();
+        }
 
-    init();
+        init();
 
-}, [location.pathname]);
+    }, [location.pathname]);
 
     return (
         <div className="container">
@@ -328,16 +328,18 @@ async function fetchVisitorCount() {
                         <span className="logo-icon">
                             <FaUserCircle size={25} color="#000" />
                         </span>
-
                         <span className="logo-text">
                             Welcome <span>{visitor}</span>
                         </span>
                     </Link>
 
                     <div className="header-right">
-                        <span>UTC {utcTime}</span>
-                        <span>|</span>
                         <span>Visitor #{visitorCount.toString().padStart(6, "0")}</span>
+                        <span>|</span>
+                        <span>
+                            <Link to="/admin" className={isActive("/admin") ? "active" : ""}>ADMIN</Link>
+                        </span>
+                        {/* <span>UTC {utcTime}</span> Time Feature currently disabled */}
                     </div>
                 </div>
                 <div ref={navTriggerRef}>
@@ -408,8 +410,6 @@ async function fetchVisitorCount() {
                             <Link to="/gym" className={isActive("/gym") ? "active" : ""}>GYM</Link>
                             <Link to="/contact" className={isActive("/contact") ? "active" : ""}>CONTACT</Link>
                             <Link to="/faq" className={isActive("/faq") ? "active" : ""}>FAQs</Link>
-                            <Link to="/admin"className={isActive("/admin") ? "active" : ""}>ADMIN</Link>
-
                         </div>
 
                         <div
