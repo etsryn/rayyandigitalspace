@@ -334,7 +334,7 @@ export default function Layout({ children }) {
                     </Link>
 
                     <div className="header-right">
-                        <span>Visitor #{visitorCount.toString().padStart(6, "0")}</span>
+                        <span>Visits: {visitorCount.toString().padStart(6, "0")}</span>
                         <span>|</span>
                         <span>
                             <Link to="/admin" className={isActive("/admin") ? "active" : ""}>ADMIN</Link>
