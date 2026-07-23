@@ -31,231 +31,59 @@ const KeyValueTable = ({ rows }) => (
 );
 
 const repoCategories = [
-  ["Software Engineering", 5, "Desktop Applications, OOP, System Design"],
-  ["Web Development", 5, "React, HTML, CSS, JavaScript"],
   [
-    "Artificial Intelligence & Machine Learning",
-    5,
-    "NLP, AI Systems, Predictive Models",
+    "Software Engineering",
+    4,
+    "Desktop Applications, OOP, System Design",
   ],
   [
-    "Data Science",
-    5,
-    "Analytics, Streamlit Applications, Data Processing",
+    "Knowledge Management",
+    1,
+    "Documentation, Personal Knowledge Base",
   ],
-  ["Embedded Systems", 1, "Arduino, Sensors, Hardware Programming"],
   [
     "Educational Repositories",
-    5,
-    "Programming Resources, Documentation, Notes",
+    2,
+    "Programming Resources, Notes, Challenges",
   ],
-  ["Knowledge Management", 3, "Productivity & Documentation"],
+  [
+    "Financial Technology",
+    1,
+    "Finance Platform, FinTech Concepts",
+  ],
+  [
+    "Web Development",
+    1,
+    "Modern Web Applications, React",
+  ],
 ];
 
 const projectIndex = [
-  ["P001", "DeepVision-ExAegis", "Artificial Intelligence", "Active"],
-  ["P002", "StudentVision", "Web Platform", "Active"],
-  ["P003", "BuildWithRayyan", "Portfolio", "Active"],
-  ["P004", "NRDAI", "Data Science", "Active"],
+  ["P001", "To-Do Task Manager", "Desktop Application", "Completed"],
+  ["P002", "PDF Manipulator", "Productivity Tool", "Completed"],
+  ["P003", "File Type Converter", "Productivity Tool", "Completed"],
   [
-    "P005",
-    "Natural Language Processing",
-    "Machine Learning",
-    "Active",
-  ],
-  ["P006", "To-Do Task Manager", "Desktop Application", "Completed"],
-  ["P007", "PDF Manipulator", "Productivity Tool", "Completed"],
-  ["P008", "File Type Converter", "Productivity Tool", "Completed"],
-  ["P009", "Linear Regression", "Machine Learning", "Active"],
-  [
-    "P010",
+    "P004",
     "Movie Ticket Reservation System",
     "Software Engineering",
     "Completed",
   ],
+  
+  ["P005", "Rayyan Notion", "Knowledge Management", "Active"],
+  ["P006", "RNotion Questions", "Educational Repository", "Active"],
+  ["P007", "RNotion Challenge", "Programming Challenges", "Active"],
   [
-    "P011",
-    "Ultrasonic Distance Measurement and Alarming System",
-    "Embedded Systems",
-    "Completed",
-  ],
-  ["P012", "YouTube Clone", "Frontend Development", "Completed"],
-  ["P013", "Specialized Python", "Educational Repository", "Active"],
-  [
-    "P014",
-    "GATE Computer Science Compendium",
-    "Educational Repository",
-    "Active",
-  ],
-  ["P015", "Tech Anthotheca", "Technical Library", "Active"],
-  ["P016", "Git Commands", "Developer Resource", "Completed"],
-  [
-    "P017",
-    "LeetCode Solutions",
-    "Algorithms & Data Structures",
-    "Ongoing",
-  ],
-  ["P018", "OpenAI GPTs", "Artificial Intelligence", "Active"],
-  ["P019", "DataSanitized", "Data Science", "Active"],
-  ["P020", "Rayyan Notion", "Knowledge Management", "Active"],
-  ["P021", "RNotion Questions", "Educational Repository", "Active"],
-  ["P022", "RNotion Challenge", "Programming Challenges", "Active"],
-  [
-    "P023",
+    "P008",
     "Rayyan Digital Finance Corporation (RDFC)",
     "Financial Technology",
     "Active",
   ],
-  ["P024", "UPI", "Financial Technology", "Active"],
-  ["P025", "RayyanDigitalSpace", "Personal Website", "Completed"],
-  ["P026", "For Personal Usage", "Utility Repository", "Active"],
-  ["P027", "Sawt Al-Radd", "Web Development", "Active"],
-  ["P028", "AWS MLU Explain", "Cloud Computing", "Active"],
+  ["P009", "Sawt Al-Radd", "Web Development", "Active"],
 ];
 
 const projects = [
   {
     id: "P001",
-    title: "DeepVision-ExAegis",
-    fields: [
-      ["Category", "Artificial Intelligence"],
-      [
-        "Project Type",
-        "AI-Powered Examination Proctoring System",
-      ],
-      [
-        "Technologies",
-        "HTML, CSS, JavaScript, Artificial Intelligence, Computer Vision",
-      ],
-      ["Status", "Active Development"],
-      ["Difficulty", "Advanced"],
-    ],
-    description:
-      "DeepVision-ExAegis is an AI-powered online examination proctoring system developed to enhance the integrity of remote assessments. The project combines artificial intelligence, computer vision and behavioural analysis techniques to monitor candidates, detect suspicious activities and assist institutions in conducting secure online examinations.",
-    features: [
-      "AI-assisted candidate monitoring",
-      "Facial authentication",
-      "Gaze tracking",
-      "Speech activity detection",
-      "Behaviour analysis",
-      "Secure examination workflow",
-    ],
-    concepts: [
-      "Artificial Intelligence",
-      "Computer Vision",
-      "Behaviour Analysis",
-      "Frontend Development",
-      "System Design",
-    ],
-  },
-  {
-    id: "P002",
-    title: "StudentVision",
-    fields: [
-      ["Category", "Educational Platform"],
-      ["Project Type", "Student Learning Platform"],
-      ["Technologies", "HTML, CSS, JavaScript"],
-      ["Status", "Active Development"],
-      ["Difficulty", "Intermediate"],
-    ],
-    description:
-      "StudentVision is an educational web platform designed to provide students with a centralized environment for learning Computer Science, Data Science, Artificial Intelligence and Software Development. The platform aims to simplify access to technical resources, documentation, datasets and programming materials.",
-    features: [
-      "Educational resource portal",
-      "Dataset collection",
-      "Student learning materials",
-      "Structured navigation",
-      "Responsive user interface",
-    ],
-    concepts: [
-      "Frontend Development",
-      "User Experience Design",
-      "Information Architecture",
-      "Responsive Web Design",
-    ],
-  },
-  {
-    id: "P003",
-    title: "BuildWithRayyan",
-    fields: [
-      ["Category", "Portfolio Website"],
-      ["Project Type", "Professional Engineering Portfolio"],
-      ["Technologies", "React, JavaScript, HTML, CSS"],
-      ["Status", "Ongoing"],
-      ["Difficulty", "Advanced"],
-    ],
-    description:
-      "BuildWithRayyan is my personal engineering portfolio developed using React. Unlike conventional portfolio websites, it documents technical projects, engineering reports, fitness analytics, learning progress, technical blogs and long-term professional development in a structured and report-oriented format.",
-    features: [
-      "Responsive React application",
-      "Engineering documentation layout",
-      "Project archive",
-      "Fitness analytics dashboard",
-      "Technical blog integration",
-      "Professional portfolio design",
-    ],
-    concepts: [
-      "React Components",
-      "React Router",
-      "Responsive Design",
-      "Frontend Architecture",
-      "Component Reusability",
-    ],
-  },
-  {
-    id: "P004",
-    title: "NRDAI",
-    fields: [
-      ["Category", "Data Science & Analytics"],
-      ["Project Type", "Interactive Data Analytics Dashboard"],
-      ["Technologies", "Python, Streamlit, Plotly, Pandas"],
-      ["Status", "Active"],
-      ["Difficulty", "Advanced"],
-    ],
-    description:
-      "NRDAI is an interactive Streamlit dashboard developed for analysing rape case statistics across Indian States and Union Territories. The project focuses on transforming historical datasets into meaningful visual insights through interactive charts, summaries and statistical exploration.",
-    features: [
-      "Interactive dashboards",
-      "Plotly visualisations",
-      "State-wise analysis",
-      "Age-wise categorisation",
-      "Trend analysis",
-      "Statistical summaries",
-    ],
-    concepts: [
-      "Exploratory Data Analysis",
-      "Data Visualisation",
-      "Dashboard Development",
-      "Interactive Analytics",
-    ],
-  },
-  {
-    id: "P005",
-    title: "Natural Language Processing",
-    fields: [
-      ["Category", "Machine Learning"],
-      ["Technologies", "Python, NLP Libraries"],
-      ["Status", "Active"],
-      ["Focus Area", "Natural Language Processing"],
-    ],
-    description:
-      "This repository explores Natural Language Processing through multiple experiments involving text processing, feature extraction and language understanding. It serves as a learning repository documenting practical implementation of NLP techniques.",
-    features: [
-      "Text preprocessing",
-      "Tokenisation",
-      "Feature extraction",
-      "Language modelling experiments",
-      "Machine learning workflows",
-    ],
-    concepts: [
-      "Natural Language Processing",
-      "Machine Learning",
-      "Python Programming",
-      "Data Preparation",
-    ],
-  },
-  {
-    id: "P006",
     title: "Python To-Do Task Manager",
     fields: [
       ["Category", "Desktop Application"],
@@ -282,7 +110,7 @@ const projects = [
     ],
   },
   {
-    id: "P007",
+    id: "P002",
     title: "PDF Manipulator",
     fields: [
       ["Category", "Productivity Tool"],
@@ -300,7 +128,7 @@ const projects = [
     concepts: [],
   },
   {
-    id: "P008",
+    id: "P003",
     title: "File Type Converter",
     fields: [
       ["Category", "Productivity Tool"],
@@ -318,35 +146,7 @@ const projects = [
     concepts: [],
   },
   {
-    id: "P009",
-    title: "Linear Regression",
-    fields: [
-      ["Category", "Machine Learning"],
-      ["Project Type", "Predictive Modelling Repository"],
-      [
-        "Technologies",
-        "Python, NumPy, Pandas, Matplotlib, Scikit-Learn",
-      ],
-      ["Status", "Active"],
-    ],
-    description:
-      "A collection of Linear Regression models demonstrating supervised learning on different datasets. The repository explores regression analysis, feature engineering, model evaluation and prediction using various machine learning workflows.",
-    features: [
-      "Regression model implementation",
-      "Model evaluation",
-      "Prediction analysis",
-      "Dataset experimentation",
-      "Performance comparison",
-    ],
-    concepts: [
-      "Machine Learning",
-      "Regression Analysis",
-      "Data Visualization",
-      "Feature Engineering",
-    ],
-  },
-  {
-    id: "P010",
+    id: "P004",
     title: "Movie Ticket Reservation System",
     fields: [
       ["Category", "Software Engineering"],
@@ -371,227 +171,7 @@ const projects = [
     ],
   },
   {
-    id: "P011",
-    title: "Ultrasonic Distance Measurement and Alarming System",
-    fields: [
-      ["Category", "Embedded Systems"],
-      ["Hardware", "Arduino Uno, Ultrasonic Sensor"],
-      ["Programming Language", "Arduino C++"],
-      ["Status", "Completed"],
-    ],
-    description:
-      "An embedded system designed to continuously measure the distance of nearby objects using an ultrasonic sensor and trigger alarms whenever the measured distance crosses predefined thresholds.",
-    features: [
-      "Real-time distance monitoring",
-      "Obstacle detection",
-      "Alarm triggering",
-      "Sensor integration",
-      "Microcontroller programming",
-    ],
-    concepts: [
-      "Embedded Systems",
-      "Sensor Programming",
-      "Arduino Development",
-      "Electronics",
-    ],
-  },
-  {
-    id: "P012",
-    title: "YouTube Clone",
-    fields: [
-      ["Category", "Frontend Development"],
-      ["Technologies", "HTML, CSS"],
-      ["Status", "Completed"],
-    ],
-    description:
-      "A responsive frontend recreation of YouTube developed using HTML and CSS. The project focuses on webpage layout design, responsive styling, navigation and recreating a modern user interface.",
-    features: [
-      "Responsive layout",
-      "Video grid interface",
-      "Navigation panel",
-      "Sidebar implementation",
-      "Modern CSS styling",
-    ],
-    concepts: [
-      "HTML5",
-      "CSS3",
-      "Responsive Design",
-      "Frontend Development",
-    ],
-  },
-  {
-    id: "P013",
-    title: "Specialized Python",
-    fields: [
-      ["Category", "Educational Repository"],
-      ["Primary Language", "Python"],
-      ["Repository Type", "Learning Resource"],
-      ["Status", "Active"],
-    ],
-    description:
-      "Specialized Python is a structured repository containing well-documented implementations of Python libraries used in Data Science, Machine Learning, Deep Learning and Artificial Intelligence. The repository serves as a reference library for practical development and revision.",
-    features: [
-      "Library-wise documentation",
-      "Example implementations",
-      "Machine Learning utilities",
-      "Deep Learning references",
-      "Data Science workflows",
-    ],
-    concepts: [
-      "Python Programming",
-      "Technical Documentation",
-      "Data Science",
-      "Knowledge Organisation",
-    ],
-  },
-  {
-    id: "P014",
-    title: "GATE Computer Science Compendium",
-    fields: [
-      ["Category", "Educational Repository"],
-      ["Purpose", "Competitive Examination Preparation"],
-      ["Repository Type", "Knowledge Base"],
-      ["Status", "Active Development"],
-    ],
-    description:
-      "A structured repository developed for GATE Computer Science preparation containing subject-wise notes, formula sheets, algorithm implementations, previous year questions, programming references and revision material.",
-    features: [
-      "Subject-wise notes",
-      "Formula sheets",
-      "Algorithm implementations",
-      "Solved PYQs",
-      "Revision resources",
-    ],
-    concepts: [
-      "Technical Documentation",
-      "Knowledge Management",
-      "Algorithm Design",
-      "Computer Science Fundamentals",
-    ],
-  },
-  {
-    id: "P015",
-    title: "Tech Anthotheca",
-    fields: [
-      ["Category", "Technical Library"],
-      ["Repository Type", "Learning Resource"],
-      ["Status", "Active"],
-    ],
-    description:
-      "Tech Anthotheca is a curated digital library containing engineering and technology books covering Computer Science, Mathematics, Data Science, Artificial Intelligence, Programming and related technical disciplines.",
-    features: [
-      "Curated technical books",
-      "Engineering references",
-      "Programming resources",
-      "Computer Science material",
-      "Mathematics references",
-    ],
-    concepts: [
-      "Knowledge Management",
-      "Technical Documentation",
-      "Resource Organisation",
-    ],
-  },
-  {
-    id: "P016",
-    title: "Git Commands",
-    fields: [
-      ["Category", "Developer Resource"],
-      ["Technologies", "HTML, Git"],
-      ["Status", "Completed"],
-    ],
-    description:
-      "A quick-reference repository documenting commonly used Git commands for version control, collaboration and repository management. It serves as a concise learning companion for developers.",
-    features: [
-      "Frequently used Git commands",
-      "Version control reference",
-      "Repository management guide",
-      "Developer cheat sheets",
-    ],
-    concepts: [
-      "Git",
-      "Version Control",
-      "Software Development Workflow",
-    ],
-  },
-  {
-    id: "P017",
-    title: "LeetCode Solutions",
-    fields: [
-      ["Category", "Algorithms & Data Structures"],
-      ["Languages", "C++, Java"],
-      ["Repository Type", "Programming Practice"],
-      ["Status", "Ongoing"],
-    ],
-    description:
-      "A curated collection of LeetCode problem solutions covering Data Structures, Algorithms, Dynamic Programming, Graphs, Trees, Searching, Sorting and other fundamental programming concepts using C++ and Java.",
-    features: [
-      "Problem-wise solutions",
-      "Multiple programming languages",
-      "Algorithmic explanations",
-      "Interview preparation",
-      "Competitive programming practice",
-    ],
-    concepts: [
-      "Algorithms",
-      "Data Structures",
-      "Problem Solving",
-      "Competitive Programming",
-    ],
-  },
-  {
-    id: "P018",
-    title: "OpenAI GPTs",
-    fields: [
-      ["Category", "Artificial Intelligence"],
-      ["Project Type", "Research & Experimentation Repository"],
-      [
-        "Primary Technologies",
-        "Python, Large Language Models, Prompt Engineering",
-      ],
-      ["Status", "Active"],
-    ],
-    description:
-      "OpenAI GPTs is a repository dedicated to experimenting with modern Large Language Models, prompt engineering techniques, model deployment workflows and natural language processing applications. The repository serves as a practical learning environment for generative AI.",
-    features: [
-      "Prompt Engineering",
-      "LLM Experiments",
-      "Model Deployment Concepts",
-      "Natural Language Processing",
-      "AI Workflows",
-    ],
-    concepts: [
-      "Artificial Intelligence",
-      "Large Language Models",
-      "Natural Language Processing",
-      "Machine Learning",
-    ],
-  },
-  {
-    id: "P019",
-    title: "DataSanitized",
-    fields: [
-      ["Category", "Data Science"],
-      ["Project Type", "Dataset Repository"],
-      ["Status", "Active"],
-    ],
-    description:
-      "DataSanitized is a repository containing carefully prepared datasets that have been cleaned, structured and organised for machine learning, analytics and research purposes.",
-    features: [
-      "Clean datasets",
-      "Structured data",
-      "Ready for Machine Learning",
-      "Research friendly organisation",
-    ],
-    concepts: [
-      "Data Cleaning",
-      "Data Engineering",
-      "Dataset Preparation",
-      "Machine Learning Pipelines",
-    ],
-  },
-  {
-    id: "P020",
+    id: "P005",
     title: "Rayyan Notion",
     fields: [
       ["Category", "Knowledge Management"],
@@ -613,7 +193,7 @@ const projects = [
     ],
   },
   {
-    id: "P021",
+    id: "P006",
     title: "RNotion Questions",
     fields: [
       ["Category", "Educational Repository"],
@@ -635,7 +215,7 @@ const projects = [
     ],
   },
   {
-    id: "P022",
+    id: "P007",
     title: "RNotion Challenge",
     fields: [
       ["Category", "Programming Challenges"],
@@ -658,7 +238,7 @@ const projects = [
     ],
   },
   {
-    id: "P023",
+    id: "P008",
     title: "Rayyan Digital Finance Corporation (RDFC)",
     fields: [
       ["Category", "Financial Technology"],
@@ -683,76 +263,7 @@ const projects = [
     ],
   },
   {
-    id: "P024",
-    title: "UPI",
-    fields: [
-      ["Category", "FinTech"],
-      ["Project Type", "Payment Interface Prototype"],
-      ["Status", "Active"],
-    ],
-    description:
-      "A repository exploring concepts related to Unified Payments Interface (UPI), digital transactions and modern payment systems while studying secure and efficient financial technology implementations.",
-    features: [
-      "Digital payment concepts",
-      "Transaction workflows",
-      "Modern interface design",
-      "Payment system exploration",
-    ],
-    concepts: [
-      "FinTech",
-      "Payment Systems",
-      "Digital Transactions",
-      "Software Architecture",
-    ],
-  },
-  {
-    id: "P025",
-    title: "RayyanDigitalSpace",
-    fields: [
-      ["Category", "Personal Website"],
-      ["Technologies", "HTML, CSS, JavaScript"],
-      ["Status", "Completed"],
-    ],
-    description:
-      "RayyanDigitalSpace represents one of my earlier personal web development projects focused on creating an online presence while experimenting with responsive layouts, UI design and frontend engineering practices.",
-    features: [
-      "Responsive website",
-      "Portfolio pages",
-      "Modern navigation",
-      "Clean user interface",
-    ],
-    concepts: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Responsive Design",
-    ],
-  },
-  {
-    id: "P026",
-    title: "For Personal Usage",
-    fields: [
-      ["Category", "Utility Repository"],
-      ["Repository Type", "Development Utilities"],
-      ["Status", "Active"],
-    ],
-    description:
-      "A collection of reusable scripts, templates, automation utilities and helper programs developed to improve productivity during software development and experimentation.",
-    features: [
-      "Reusable utilities",
-      "Automation scripts",
-      "Developer templates",
-      "Personal workflow tools",
-    ],
-    concepts: [
-      "Automation",
-      "Software Utilities",
-      "Developer Productivity",
-      "Code Reusability",
-    ],
-  },
-  {
-    id: "P027",
+    id: "P009",
     title: "Sawt Al-Radd",
     fields: [
       ["Category", "Web Development"],
@@ -774,34 +285,10 @@ const projects = [
       "User Experience",
     ],
   },
-  {
-    id: "P028",
-    title: "AWS MLU Explain",
-    fields: [
-      ["Category", "Cloud Computing"],
-      ["Project Type", "Educational Repository"],
-      ["Focus Area", "AWS Machine Learning University"],
-      ["Status", "Active"],
-    ],
-    description:
-      "AWS MLU Explain documents concepts learned from AWS Machine Learning University, providing explanations, notes and implementation references related to cloud computing, machine learning and modern AI infrastructure.",
-    features: [
-      "AWS learning notes",
-      "Machine Learning concepts",
-      "Cloud computing references",
-      "Technical documentation",
-    ],
-    concepts: [
-      "Cloud Computing",
-      "AWS",
-      "Machine Learning",
-      "Technical Documentation",
-    ],
-  },
 ];
 
 const repoStatRows = [
-  ["Public Repositories", "28+"],
+  ["Public Repositories", "9+"],
   [
     "Primary Languages",
     "Python · JavaScript · C++ · Java · HTML · CSS",
@@ -827,9 +314,9 @@ export default function Project() {
           <p className={styles.eyebrow}>Repository Archive</p>
           <h1 className={styles.title}>Projects</h1>
           <p className={styles.subtitle}>
-            A structured record of 28+ repositories spanning software
+            A structured record of 9 repositories spanning software
             engineering, artificial intelligence, data science and
-            technical documentation — 2023 to present.
+            technical documentation — 2022 to present.
           </p>
         </header>
 
@@ -976,7 +463,7 @@ export default function Project() {
 
         {/* ---------- Footer ---------- */}
         <p className={styles.footerNote}>
-          Record last updated 2026 · 28 entries · Compiled for reference
+          Record last updated 2026 · 9 entries · Compiled for reference
         </p>
       </div>
     </main>
